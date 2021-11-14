@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    height: 100%;
+}
+
+li, a, button,p, label, input, h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/*banner*/
+    #banner {
+        background-image: url("https://wallpaperaccess.com/full/2439754.jpg");
+        background-size: 100%;
+    }
+
+
+
+/*footer*/
+    footer {
+        margin: auto;
+        width: 50%;
+        padding: 400px 200px;
+    }
+
+/*navigation bar*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 10%;
+    }
+    .logo {
+        cursor: pointer;
+        margin-right: auto;
+    }
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+        transition: top .3s;
+    }
+
+    .nav_links li a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: gold;
+    }
+
+/* intro */
+    #intro{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 70%;
+        margin-top: 150px;
+        margin-bottom: 300px;
+    }
+
+    #intro img {
+        max-width: 400px;
+        max-height: 400px;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+
+/*about*/
+    #aboutme {
+        margin-top: 0px;
+        margin: auto;
+        width: 70%;
+    }    
+
+    #aboutme h1 {
+        margin-top: 200px;
+    }
+
+    #aboutme #makeGold {
+        color: gold;
+    }
+
+    #aboutme button {
+        padding: 20px 50px;
+        background-color: transparent;
+        border: 3px solid white;
+        transition: all 0.5s ease 0s;
+    }
+    #aboutme button:hover {
+        background-color: transparent;
+        border: 3px solid gold;
+        transition: all 0.5s ease 0s;
+    }
