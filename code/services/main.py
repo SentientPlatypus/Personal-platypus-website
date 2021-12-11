@@ -12,8 +12,8 @@ context = ssl.create_default_context()
 def createApp():
     app = Flask(
     __name__,
-    template_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\templates",
-    static_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static"
+    template_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\services\templates",
+    static_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\services\static"
     )
     return app
 
