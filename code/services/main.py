@@ -1,4 +1,3 @@
-from quart import Quart, render_template, request, session, redirect, url_for
 from flask import Flask,render_template, request, session, redirect, url_for
 import smtplib, ssl
 emailRegex = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
