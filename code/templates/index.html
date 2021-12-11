@@ -8,31 +8,64 @@
         <title>Sentient Platypus</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel= "stylesheet" type= "text/css" href= "C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/indexStyles.css') }}">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
     </head>
     <body>
         <div id="banner">
             <header>
-                <a href="./intex.html" class="logo">
-                    <img class = "logo" src = "{{ url_for('static',filename='pfp.jpg') }}" alt="logo" width="100" height="80">
+                <a href="./index.html" class="logo">
+                    <a href="" class="logo"></a>
                 </a>
                 <nav>
                     <ul class="nav_links" id="nav_links">
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact me</a></li>
-                        <li><a href="#">Projects</a></li>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/index#aboutme">About me</a></li>
+                        <li><a href="/resume">Resume</a></li>
+                        <li><a href="/ContactMe/0">Contact me</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">My work</button>
+                                <div class="dropdown-content">
+                                    <a href="/products", id="account">
+                                        <button>Products</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </header>
 
             <div id="intro">
-                <div id="text">
-                    <h1>Hi, <br> Im SentientPlatypus, <br> Developer.</h1>
-                    <p>Full Stack Dev | Enthusiast | Visionary</p>
-                </div>
-                <img src="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024" alt="me">
+                <div id="main">
+                    <div id="text">
+                        <h1>Hi, <br> Im SentientPlatypus, <br> Developer.</h1>
+                        <p>Full Stack Dev | Enthusiast | Visionary</p>
+                    </div>
+
+                    <img src="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024" alt="me">
+
+                </div> 
+                <div class="social-icons">
+                    <a href="#" class="instagram">
+                        <div class="front"><i class="fab fa-instagram" aria-hidden="true"></i></div>  
+                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>  
+                    </a>
+                    <a href="./discord" class="discord">
+                        <div class="front"><i class="fab fa-discord" aria-hidden="true"></i></div>  
+                        <div class="back"><i class="fab fa-discord" aria-hidden="true"></i></div>  
+                    </a>
+                    <a href="https://github.com/SentientPlatypus" class="github">
+                        <div class="front"><i class="fab fa-github" aria-hidden="true"></i></div>  
+                        <div class="back"><i class="fab fa-github" aria-hidden="true"></i></div>  
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=geneustace.wicaksono@icsd.k12.ny.us&su=Contact&body=BODY" class="gmail">
+                        <div class="front"><i class="far fa-envelope" aria-hidden="true"></i></div>  
+                        <div class="back"><i class="far fa-envelope" aria-hidden="true"></i></div>  
+                    </a>
+                </div> 
             </div>
 
             <div id="aboutme">
@@ -40,12 +73,12 @@
                     Since the february of <span id="makeGold">2021</span>, <br> I have been a Computer Science <span id="makeGold">Enthusiast</span>.
                 </h1>
                 <h1>
-                    I have worked on <span id="makeGold">several projects</span> and have experience <span id="makeGold">collaborating</span> with fellow developers.
+                    I have worked on <a href="./products"><h1><span id="makeGoldandButton">several projects</span></h1></a> and have experience <span id="makeGold">collaborating</span> with fellow developers.
                 </h1>
                 <h1>
-                    Join me sometime?
+                     Join me sometime?
                 </h1>
-                <a href="#"><button>Contact me</button></a>
+                <a href="./ContactMe/0"><button>Contact me</button></a>
             </div>
 
 
@@ -78,5 +111,6 @@
             }
             }
         </script>
+        <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
     </body>
 </html>

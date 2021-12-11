@@ -16,7 +16,7 @@ body {
     height: 100%;
 }
 
-li, a, button,p, label, input, h1{
+li, a, button,p, label, input, h1, textarea, h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -24,11 +24,36 @@ li, a, button,p, label, input, h1{
     text-decoration: none;
 }
 
+
+h2 {
+    font-size: 20px;
+}
+
 h1 {
     font-size: 50px;
 }
 
-
+.title{
+    margin: auto;
+    width: 70%;
+}
+.title h1{
+    margin-bottom: 250px;
+    margin-top: 200px;
+}
+.title button {
+    margin: auto;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: 3px solid white;
+    transition: all 0.5s ease 0s;
+}
+.title button:hover {
+    background-color: transparent;
+    border: 3px solid gold;
+    transition: all 0.5s ease 0s;
+}
 /*banner*/
     #banner {
         background-image: url("https://wallpaperaccess.com/full/2439754.jpg");
@@ -205,81 +230,71 @@ h1 {
       border: 2px gold solid;
     }
 
-    /* SOCIAL ICONS*/
-    .social-icons {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 0px;
-        width: 100%;
-        display: flex;
-    }
 
-    .social-icons a{
-        position: relative;
-        display: inline-block;
-        margin-left: 10px;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        margin: 0 5;
-        text-align: center;
-        line-height: 60px;
-        transition: 0.5s ;
-        transform-style: preserve-3d;
+.formcontainer{
+    display: flex;
+}
 
-    }
 
-    .social-icons .front {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateZ(35px);
-        backface-visibility: visible;
-        font-size: 20px;
-        border-radius: 6px;
-    }
+.Form{
+    border: gold 2px solid;
+    border-radius: 15px;
+    width: 60%;
+    background: #10042c;
+    margin-top: 50px;
+    margin-bottom: 800px;
+    padding: 30px;
+}
 
-    .social-icons .back {
+.Form *{
+    margin-top: 10px;
+}
 
-        transform: rotateX(90deg) translateZ(40px);
-        backface-visibility: hidden;
-        background: #fff;
-        border-radius: 8px;
-    }
+.formcontainer #rightside{
+    margin-top: 50px;
+    padding: 30px;
+}
 
-    .social-icons .front i {
-        color: #fff;
-        font-size: 25px;
-    }
 
-    .social-icons a:hover{
-        transform: rotateX(-90deg);
+#identity{
+    width: 100%;
+    display: flex;
+}
 
-    }
+#identity #name, #identity #email{
+    border: white 3px solid;
+    background-color: #10042c;
+    width: 50%;
+}
 
-    .social-icons a:hover .back{
-        backface-visibility: visible;
-        
-    }
+#identity #email{
+    margin-left: 20px;
+}
 
-    .social-icons .back i {
-        color: #000;
-        font-size: 25px;
-    }
+#content, #subject{
+    border: white 3px solid;
+    width: 100% ;
+    background-color: #10042c;
+}
 
-    .social-icons a.instagram .front{
-        background: #f46f30;
-    }
-    .social-icons a.github .front{
-        background: #171515;
-    }
-    .social-icons a.discord .front{
-        background: #7289da;
-    }
-    .social-icons a.gmail .front{
-        background: #bb001b;
-    }
+#content{
+    height: 100px;
+}
+.submitbutton {
+    padding: 10px 25px;
+    background-color: gold;
+    margin: 20px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.submitbutton:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+#green {
+    color: green;
+    float: right;
+}

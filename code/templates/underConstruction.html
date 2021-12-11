@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--{{ url_for('static',filename='styles/indexStyles.css') }}-->
+<!--C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sentient Platypus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/discordStyles.css') }}">
+    </head>
+    <body>
+        <div id="banner">
+            <header>
+                <a href="./index" class="logo">
+                    <a href="" class="logo"></a>
+                </a>
+                <nav>
+                    <ul class="nav_links" id="nav_links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/index#aboutme">About me</a></li>s
+                        <li><a href="/resume">Resume</a></li>
+                        <li><a href="/ContactMe/0">Contact me</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">My work</button>
+                                <div class="dropdown-content">
+                                    <a href="/products", id="account">
+                                        <button>Products</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="title">
+                <h1>
+                    Under construction!
+                </h1>
+                <a href="/ContactMe/0"><button class="joinserv">Cry about it</button></a>  
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+        <footer id="date"></footer>
+        <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            document.getElementById("date").innerHTML = Date();
+            window.onscroll = scrollShowNav;
+            function scrollShowNav() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementsByTagName("nav")[0].style.top = "-50px";
+            } else {
+                document.getElementsByTagName("nav")[0].style.top = "0px";
+            }
+            }
+        </script>
+    </body>
+</html>

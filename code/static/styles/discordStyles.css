@@ -25,10 +25,30 @@ li, a, button,p, label, input, h1{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 90px;
 }
 
-
+.title{
+    margin: auto;
+    width: 70%;
+}
+.title h1{
+    margin-bottom: 250px;
+    margin-top: 200px;
+}
+.title button {
+    margin: auto;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: transparent;
+    border: 3px solid white;
+    transition: all 0.5s ease 0s;
+}
+.title button:hover {
+    background-color: transparent;
+    border: 3px solid gold;
+    transition: all 0.5s ease 0s;
+}
 /*banner*/
     #banner {
         background-image: url("https://wallpaperaccess.com/full/2439754.jpg");
@@ -205,81 +225,3 @@ h1 {
       border: 2px gold solid;
     }
 
-    /* SOCIAL ICONS*/
-    .social-icons {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 0px;
-        width: 100%;
-        display: flex;
-    }
-
-    .social-icons a{
-        position: relative;
-        display: inline-block;
-        margin-left: 10px;
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        margin: 0 5;
-        text-align: center;
-        line-height: 60px;
-        transition: 0.5s ;
-        transform-style: preserve-3d;
-
-    }
-
-    .social-icons .front {
-        width: 60px;
-        height: 60px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateZ(35px);
-        backface-visibility: visible;
-        font-size: 20px;
-        border-radius: 6px;
-    }
-
-    .social-icons .back {
-
-        transform: rotateX(90deg) translateZ(40px);
-        backface-visibility: hidden;
-        background: #fff;
-        border-radius: 8px;
-    }
-
-    .social-icons .front i {
-        color: #fff;
-        font-size: 25px;
-    }
-
-    .social-icons a:hover{
-        transform: rotateX(-90deg);
-
-    }
-
-    .social-icons a:hover .back{
-        backface-visibility: visible;
-        
-    }
-
-    .social-icons .back i {
-        color: #000;
-        font-size: 25px;
-    }
-
-    .social-icons a.instagram .front{
-        background: #f46f30;
-    }
-    .social-icons a.github .front{
-        background: #171515;
-    }
-    .social-icons a.discord .front{
-        background: #7289da;
-    }
-    .social-icons a.gmail .front{
-        background: #bb001b;
-    }
