@@ -56,9 +56,6 @@ def HandleData():
             form[key] = values[0]
         else:
             form[key] = values
-    print("------------------------------")
-    print(form)
-    print("------------------------------\n\n\n")
 
     sendingEmail = form["email"]
     name = form["name"]
@@ -78,7 +75,6 @@ def HandleData():
 
     %s
     """ % (sendingEmail,name, ", ".join(to), subject, message)
-    print(email_text)
     try:
         smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         smtp_server.ehlo()
