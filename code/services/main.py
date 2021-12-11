@@ -9,13 +9,15 @@ context = ssl.create_default_context()
 
 
 
-
-app = Flask(
+def createApp():
+    app = Flask(
     __name__,
     template_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\templates",
     static_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static"
-)
+    )
+    return app
 
+app = createApp()
 
 @app.route("/")
 def home():
