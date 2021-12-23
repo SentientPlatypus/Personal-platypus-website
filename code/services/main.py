@@ -6,13 +6,17 @@ port = 465  # For SSL
 # Create a secure SSL context
 context = ssl.create_default_context()
 
+#path = '/home/SentientPlatypus/Personal-platypus-website/code'
+#if path not in sys.path:
+#    sys.path.append(path)
 
+#from services.main import app as application
 
 def createApp():
     app = Flask(
     __name__,
-    template_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\services\templates",
-    static_folder=r"C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\services\static"
+    template_folder=r"templates",
+    static_folder=r"static"
     )
     return app
 
