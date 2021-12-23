@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--{{ url_for('static',filename='styles/indexStyles.css') }}-->
+<!--C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sentient Platypus</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/productsStyles.css') }}">
+    </head>
+    <body>
+        <div id="banner">
+            <header>
+                <a href="./index" class="logo">
+                    <a href="" class="logo"></a>
+                </a>
+                <nav>
+                    <ul class="nav_links" id="nav_links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/index#aboutme">About me</a></li>
+                        <li><a href="/resume">resume</a></li>
+                        <li><a href="/ContactMe/0">Contact me</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">My work</button>
+                                <div class="dropdown-content">
+                                    <a href="/products", id="account">
+                                        <button>Products</button>
+                                    </a>
+                                    <a href="/projects", id="account">
+                                        <button>Projects</button>
+                                    </a>
+                                    <a href="/inProgress", id="account">
+                                        <button> in Progress</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="ProductPageTitle">
+                <h1>
+                    Works In Progress
+                </h1>
+                <p>
+                    Masterpieces in the making
+                </p>
+            </div>
+            
+            <div class="product" id="CombatMod">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="mainProductButton"><h1>CombatPlus</h1></a>
+                        <h1>Minecraft Combat just got better.</h1>
+                        <p>A forge mod with new items, and modified behavior of current tools including combos, and animations</p>
+                    </div>
+                    <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="me">
+                </div>
+                <br>
+            </div>
+
+            <div class="product" id="scraper">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="mainProductButton"><h1>Political scraper</h1></a>
+                        <h1>Analyze where websites stand politcally</h1>
+                        <p>A program that analyzes hundreds of websites, and determines how conservative or liberal they are.</p>
+                    </div>
+                    <img src="data:image/png;base64,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" alt="me">
+                </div>
+                <br>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+        <footer id="date"></footer>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+            var slideIndex1 = 1;
+            showSlides1(slideIndex1);
+
+            // Next/previous controls
+            function plusSlides1(n) {
+            showSlides1(slideIndex1 += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide1(n) {
+            showSlides1(slideIndex1 = n);
+            }
+
+            function showSlides1(n) {
+                var i;
+                var slides1 = document.getElementsByClassName("mySlides1");
+                var dots1 = document.getElementsByClassName("dot1");
+                if (n > slides1.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = slides1.length}
+                for (i = 0; i < slides1.length; i++) {
+                    slides1[i].style.display = "none";
+                }
+                for (i = 0; i < dots1.length; i++) {
+                    dots1[i].className = dots1[i].className.replace(" active1", "");
+                }
+                slides1[slideIndex1-1].style.display = "block";
+                dots1[slideIndex1-1].className += " active1";
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            document.getElementById("date").innerHTML = Date();
+            window.onscroll = scrollShowNav;
+            function scrollShowNav() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementsByTagName("nav")[0].style.top = "-50px";
+            } else {
+                document.getElementsByTagName("nav")[0].style.top = "0px";
+            }
+            }
+        </script>
+    </body>
+</html>

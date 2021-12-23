@@ -34,6 +34,16 @@ def discord():
 def products():
     return render_template("./products.html")
 
+@app.route("/projects")
+def projects():
+    return render_template("./projects.html")
+
+
+@app.route("/inProgress")
+def inProgress():
+    return render_template("./inProgress.html")
+
+
 @app.route("/ContactMe/<int:sent>")
 def ContactMe(sent):
     bool = False
