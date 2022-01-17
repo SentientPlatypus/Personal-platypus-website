@@ -42,6 +42,10 @@ def products():
 def projects():
     return render_template("./projects.html")
 
+@app.route("/papers")
+def papers():
+    return render_template("./papers.html")
+
 
 @app.route("/inProgress")
 def inProgress():
