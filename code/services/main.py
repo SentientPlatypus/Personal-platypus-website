@@ -63,7 +63,11 @@ def ContactMe(sent):
 def resume():
     return render_template("./underConstruction.html")
 
+@app.route("/underConstruction")
+def underConstruction():
+    return render_template("./underConstruction.html")
 
+    
 @app.route("/ContactMe/HandleData", methods=['POST'])
 def HandleData():
     projectpath = request.form
