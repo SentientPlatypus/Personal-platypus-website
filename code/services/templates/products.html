@@ -49,7 +49,7 @@
 
             <div class="ProductPageTitle">
                 <h1>
-                    My Products
+                    Products
                 </h1>
                 <p>
                     Larger projects that users can take advantage of in a few clicks.   
@@ -101,7 +101,51 @@
                     <span class="dot1" onclick="currentSlide1(2)"></span>
                     <span class="dot1" onclick="currentSlide1(3)"></span>
                 </div>
+            </div>
+
+            <div class="product" id="Calcom">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.pycalc.com/calcom" id="mainProductButton"><h1>Calcom</h1></a>
+                        <h1>Your solution to <br><span id="makeGold">Computation</span>.</h1>
+                        <p>One of the most efficient, scientific and trustworthy application services that PyCalc X provides is Calcom. The name "Calcom" is derived from 2 important branches of Mathematics: Calculus and Combinatorics. Calcom is a highly structured graphical calculator application that is compatible with Windows, Linux and MacOS. </p>
+                    </div>
+                    <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="me">
+                </div>
+                <div class="slideshow-container2" id="updates">
+                    <!-- Full-width images with number and caption text -->
+        
+                    <div class="mySlides2 fade2">
+                    <div class="numbertext2">1 / 3</div>
+                    <img src="{{ url_for('static',filename='calcomweb.png') }}" style="width:100%">
+                    <div class="text2">Web application</div>
+                    </div>
+        
+                    <div class="mySlides2 fade2">
+                    <div class="numbertext2">2 / 3</div>
+                    <img src="{{ url_for('static',filename='calcom_lotsofoptions.png') }}" style="width:100%">
+                    <div class="text2">Lots of options and operations!</div>
+                    </div>
                 
+                    <div class="mySlides2 fade2">
+                    <div class="numbertext2">3 / 3</div>
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/01/05/security-shield-logo-vector-Graphics-1-1-580x386.jpg" style="width:100%">
+                    <div class="text2">100% secure</div>
+                    </div>
+            
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+                    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot2" onclick="currentSlide2(1)"></span>
+                    <span class="dot2" onclick="currentSlide2(2)"></span>
+                    <span class="dot2" onclick="currentSlide2(3)"></span>
+                </div>
             </div>
 
             <div class="product" id="lives">
@@ -149,21 +193,6 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>        
             </div>
-
-
-            <div class="product" id="Calcom">
-                <div class="productHead">
-                    <div id="text">
-                        <a href="https://www.pycalc.com/calcom" id="mainProductButton"><h1>Calcom</h1></a>
-                        <h1>Your solution to <br><span id="makeGold">Computation</span>.</h1>
-                        <p>One of the most efficient, scientific and trustworthy application services that PyCalc X provides is Calcom. The name "Calcom" is derived from 2 important branches of Mathematics: Calculus and Combinatorics. Calcom is a highly structured graphical calculator application that is compatible with Windows, Linux and MacOS. </p>
-                    </div>
-                    <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="me">
-                </div>
-            </div>
-
-
-
         </div>
 
 
@@ -218,7 +247,6 @@
             function currentSlide1(n) {
             showSlides1(slideIndex1 = n);
             }
-
             function showSlides1(n) {
                 var i;
                 var slides1 = document.getElementsByClassName("mySlides1");
@@ -235,6 +263,36 @@
                 dots1[slideIndex1-1].className += " active1";
             }
 
+
+
+
+            var slideIndex2 = 1;
+            showSlides2(slideIndex2);
+
+            function plusSlides2(n) {
+            showSlides2(slideIndex2 += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide2(n) {
+            showSlides2(slideIndex2 = n);
+            }
+
+            function showSlides2(n) {
+                var i;
+                var slides2 = document.getElementsByClassName("mySlides2");
+                var dots2 = document.getElementsByClassName("dot2");
+                if (n > slides2.length) {slideIndex2 = 1}
+                if (n < 1) {slideIndex2 = slides2.length}
+                for (i = 0; i < slides2.length; i++) {
+                    slides2[i].style.display = "none";
+                }
+                for (i = 0; i < dots2.length; i++) {
+                    dots2[i].className = dots2[i].className.replace(" active2", "");
+                }
+                slides2[slideIndex2-1].style.display = "block";
+                dots2[slideIndex2-1].className += " active2";
+            }
 
 
 
