@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!--{{ url_for('static',filename='styles/indexStyles.css') }}-->
+<!--C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gene W</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/indexStyles.css') }}">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
+    </head>
+    <body>
+        <div class="NavBar">
+            <p class="Home">
+                Home()
+            </p>
+            <p class="about">
+                me.About()
+            </p>
+            <p class="Contact">
+                me.Contact()
+            </p>
+            <p class="work">
+                me.Work()
+            </p>
+        </div>
+
+        <div class="TitleBox">
+            <p>
+                me = <span class="function">Dev</span>(<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">name</span> = <span class = "str">“Gene”</span>, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">age</span> = <span class="int">15</span>, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">values</span> = [ <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "str">“<a>Persistence</a>”</span>, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "str">“<a>Prolificity</a>”</span>, <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "str">“<a>Pleasure</a>”</span> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;] <br>
+                )
+            </p>
+        </div>
+
+
+        <div class="AboutMe">
+            <div class = AboutMeContainer>
+                <div class="AboutMeText">
+                    <h1>
+                        me.About()
+                    </h1>
+                    <p>“””Since the February of 2021, 
+                        I have been a computer science enthusiast. 
+                        I have worked on several projects and have experience collaborating with fellow developers.”””
+                    </p> 
+                </div>
+                <div class="Info">
+                    <div class="mainSkills">
+                        <h3>
+                            Main skills
+                        </h3>
+                        <p>
+                            Databases,<br>  
+                            Frontend,<br>  
+                            Backend,<br>  
+                            Datascience,<br>  
+                            Computer Visions,<br>  
+                            Discord Bots,<br>  
+                            MC Plugins,<br>  
+                            Game Development,<br>  
+                            3D modeling<br>  
+                        </p>
+                    </div>
+                    <div class="tools">
+                        <h3>
+                            Tools
+                        </h3>
+                        <p>
+                            Tools
+
+                            MongoDB,<br>  
+                            HTML/CSS/JS,<br>  
+                            Python,<br>  
+                            Java,<br>  
+                            GPT-3,<br>  
+                            OpenCV,<br>  
+                            Limelight, <br>  
+                            Jevois,<br>  
+                            Spigot,<br>  
+                            nextcord,<br>  
+                            Unreal Engine,<br>  
+                            Blender,      <br>                
+                        </p>
+
+                    </div>
+                    <div class="Experience">
+                        <h3>
+                            Experience
+                        </h3>
+                        <p>
+
+                            Webapp developer
+                            and Cofounder
+                            @Pycalc X
+                            2021 - now <br><br>  
+
+                            Freelance
+                            2021 - now      <br><br>    
+
+                            Datascience Research project
+                            @CodeBozu
+                            2021 <br><br>
+                            
+                            Visions Member
+                            @Code Red
+                            2021 - now <br><br>
+                                    
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="Visuals">
+                <div class="Img">
+                    <img src="{{ url_for('static',filename='profilepic.png') }}" alt="">
+                </div>
+                <div class="quote">
+                    <p>
+                        <span class="quoteHead">me.Quote()</span> <br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="quoteText">"This cheese would make a really good tiramisu."</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="quoteFoot">-Gene, 2022</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

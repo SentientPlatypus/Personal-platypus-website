@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--{{ url_for('static',filename='styles/indexStyles.css') }}-->
+<!--C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gene W</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/productsStyles.css') }}">
+    </head>
+    <body>
+        <div id="banner">
+            <header>
+                <a href="./index" class="logo">
+                    <a href="" class="logo"></a>
+                </a>
+                <nav>
+                    <ul class="nav_links" id="nav_links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/index#aboutme">About me</a></li>
+                        <li><a href="/resume">resume</a></li>
+                        <li><a href="/ContactMe/0">Contact me</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">My work</button>
+                                <div class="dropdown-content">
+                                    <a href="/products", id="account">
+                                        <button>Products</button>
+                                    </a>
+                                    <a href="/projects", id="account">
+                                        <button>Projects</button>
+                                    </a>
+                                    <a href="/papers", id="account">
+                                        <button>Papers</button>
+                                    </a>
+                                    <a href="/inProgress", id="account">
+                                        <button>in Progress</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="ProductPageTitle">
+                <h1>
+                    Works In Progress
+                </h1>
+                <p>
+                    Masterpieces in the making
+                </p>
+            </div>
+            
+            <div class="product" id="TeachX">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="mainProductButton"><h1>TeachX</h1></a>
+                        <h1>Alexa but harder better faster stronger (and smarter)</h1>
+                        <p>TeachX offers a learning solutions for anyone. On anything. TeachX scours the internet for the most reliable sources of information to ensure that taught lessons are accurate. Ask about any topic, and teachX will do what it does best: teach. It monitors your understanding with top of the line
+                            AI and also offers more traditional ways to guarantee proficiency in AI generated quizzes. You can also keep track of the progress of the students in your classroom. 
+                        </p>
+                    </div>
+                    <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="me">
+                </div>
+                <br>
+            </div>
+
+            <div class="product" id="filter">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="mainProductButton"><h1>Computer Vision tools</h1></a>
+                        <h1>Cool opencv stuff</h1>
+                        <p>Hand detection projects, Pose detection, based on opencv and mediapipe</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png" alt="me">
+                </div>
+                <br>
+            </div>
+
+
+            <div class="product" id="CombatMod">
+                <div class="productHead">
+                    <div id="text">
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="mainProductButton"><h1>CombatPlus</h1></a>
+                        <h1>Minecraft Combat just got better.</h1>
+                        <p>A forge mod with new items, and modified behavior of current tools including combos, and animations</p>
+                    </div>
+                    <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="me">
+                </div>
+                <br>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+        <footer id="date"></footer>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+
+            var slideIndex1 = 1;
+            showSlides1(slideIndex1);
+
+            // Next/previous controls
+            function plusSlides1(n) {
+            showSlides1(slideIndex1 += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide1(n) {
+            showSlides1(slideIndex1 = n);
+            }
+
+            function showSlides1(n) {
+                var i;
+                var slides1 = document.getElementsByClassName("mySlides1");
+                var dots1 = document.getElementsByClassName("dot1");
+                if (n > slides1.length) {slideIndex1 = 1}
+                if (n < 1) {slideIndex1 = slides1.length}
+                for (i = 0; i < slides1.length; i++) {
+                    slides1[i].style.display = "none";
+                }
+                for (i = 0; i < dots1.length; i++) {
+                    dots1[i].className = dots1[i].className.replace(" active1", "");
+                }
+                slides1[slideIndex1-1].style.display = "block";
+                dots1[slideIndex1-1].className += " active1";
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            document.getElementById("date").innerHTML = Date();
+            window.onscroll = scrollShowNav;
+            function scrollShowNav() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementsByTagName("nav")[0].style.top = "-50px";
+            } else {
+                document.getElementsByTagName("nav")[0].style.top = "0px";
+            }
+            }
+        </script>
+    </body>
+</html>

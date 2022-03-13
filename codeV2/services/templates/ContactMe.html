@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--{{ url_for('static',filename='styles/indexStyles.css') }}-->
+<!--C:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\code\static\styles\indexStyles.css -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gene W</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
+
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/ContactMeStyles.css') }}">
+    </head>
+    <body>
+        <div id="banner">
+            <header>
+                <a href="./index" class="logo">
+                    <a href="" class="logo"></a>
+                </a>
+                <nav>
+                    <ul class="nav_links" id="nav_links">
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/index#aboutme">About me</a></li>
+                        <li><a href="/resume">Resume</a></li>
+                        <li><a href="/ContactMe/0">Contact me</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="dropbtn">My work</button>
+                                <div class="dropdown-content">
+                                    <a href="/products", id="account">
+                                        <button>Products</button>
+                                    </a>
+                                    <a href="/projects", id="account">
+                                        <button>Projects</button>
+                                    </a>
+                                    <a href="/papers", id="account">
+                                        <button>Papers</button>
+                                    </a>
+                                    <a href="/inProgress", id="account">
+                                        <button>in Progress</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="formcontainer">
+                <div class="Form">
+                    <h1>Contact Me</h1>
+                    <form action="/ContactMe/HandleData" method="POST" name="form">
+                        <div id="identity">
+                            <input type="text" id="name" value="Name" name="name" required>
+                            <input type="text" id="email" value="Email" name="email" required>
+                        </div>
+                        <input type="text" id="subject" value="subject" name="subject" required>
+                        <textarea  cols="30" rows="10" id="content" value="message" name="content" required></textarea>
+                        <input type="submit", value="Send" class="submitbutton">
+                        {% if sent %}
+                        <p id="green">Sent!</p>
+                        {%endif%}
+                    </form>
+                </div>
+                <div id="rightside">
+                    <h1>    
+                        I would appreciate any project you could use help with!
+                    </h1>
+                    <h2>
+                        I would actually be very happy.
+                    </h2>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        
+        <footer id="date"></footer>
+        <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            document.getElementById("date").innerHTML = Date();
+            window.onscroll = scrollShowNav;
+            function scrollShowNav() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementsByTagName("nav")[0].style.top = "-50px";
+            } else {
+                document.getElementsByTagName("nav")[0].style.top = "0px";
+            }
+            }
+        </script>
+    </body>
+</html>
