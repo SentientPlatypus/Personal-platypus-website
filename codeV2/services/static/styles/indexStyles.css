@@ -12,16 +12,50 @@ body {
     background: #272822;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE600;
+    border-radius: 10px;
+    width: 20px;
+  }
+
+
 .NavBar {
+    z-index: 1;
+    position: fixed;
     width: 1440px;
     height: 117px;
-    left: 0px;
+    right: 0px;
     top: 0px;
     justify-content: right;
     display: flex;
 }
 
-.NavBar p {
+
+
+
+@media (min-width:1921px) {
+    .NavBar a {
+        font-size: 18px;
+    }
+
+}
+
+
+.NavBar a {
+    
+    text-decoration: none;
     width: 101px;
     height: 31px;
     left: 126px;
@@ -36,17 +70,108 @@ body {
     color: #ADFF00;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease 0.1s;
 
 }
 
+
+.NavBar a:hover {
+    font-size: 125%;
+}
+
+.NavBar a span{
+    color: white;
+}
+
+@keyframes bounce
+{
+  0%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  50%{
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  
+  100%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
 
 .TitleBox {
-width: 1203px;
-height: 812px;
-margin-left: 10em;
-margin-top: 6em;
+    position: relative;
+
+    width: 1203px;
+    height: 812px;
+    margin-top: 6em;
+    margin-left: calc(50% - 1203px/2 + 24.5px);
 
 }
+
+.values {
+    position: relative;
+    width: 1203px;
+    height: 579px;
+    margin-left: calc(50% - 1203px/2 + 24.5px);
+    top: 10em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.values .valueCircle {
+    width: 301px;
+    height: 301px;
+    margin-left: calc(50% - 301px/2);
+    margin-top: calc(50% - 301px/2 - 103px);
+    background: #FFE600;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.values .valueTitle {
+    width: 1203px;
+    height: 58px;
+    left: calc(50% - 1203px/2);
+    top: calc(50% - 58px/2 + 95.5px);
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    
+    color: #FFE600;
+}
+
+.values .valueText {
+    width: 1203px;
+    height: 100px;
+    left: 0px;
+    top: 435px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.valueIcon {
+    color: white;
+    position:relative;
+    top: calc(50% - .5em); /* 50% - 3/4 of icon height */
+}
+
 
 .TitleBox p {
 width: 1074px;
@@ -74,11 +199,16 @@ color: #FFFFFF;
 
 .TitleBox .str {
     color: #FFE600;
+    transition: all 0.3s ease 0.1s;
 }
 
-.TitleBox .str  a{
-    text-decoration-line: underline;
+.TitleBox  a{
+    text-decoration: none;
     color: #FFE600;
+}
+
+.TitleBox  a :hover{
+    color: #DB00FF;
 }
 
 .TitleBox .int {
@@ -87,11 +217,20 @@ color: #FFFFFF;
 
 
 .AboutMe {
+    position: relative;
+
     width: 1156px;
     height: 668px;
     margin-left: 10em;
     margin-top: 30em;
     display: flex;
+}
+
+@media (max-aspect-ratio:9/12)
+{
+    .AboutMe {
+        display: block;
+    }
 }
 
 .AboutMe .AboutMeText {
@@ -127,7 +266,12 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 }
-
+.AboutMe .function {
+    color: #ADFF00;
+}
+.quote .quoteHead .function {
+    color: #ADFF00;
+}
 .AboutMe .AboutMeText p {
     width: 624px;
 height: 92px;
