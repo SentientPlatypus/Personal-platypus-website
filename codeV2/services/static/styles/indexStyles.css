@@ -14,7 +14,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
+    height: 7px;
   }
   
   /* Track */
@@ -115,7 +116,7 @@ body {
     position: relative;
     width: 1203px;
     height: 579px;
-    margin-left: calc(50% - 1203px/2 + 24.5px);
+    margin-left: calc(50% - 1203px/2 + 23.5px);
     top: 10em;
     align-items: center;
     text-align: center;
@@ -226,7 +227,7 @@ color: #FFFFFF;
     display: flex;
 }
 
-@media (max-aspect-ratio:9/12)
+@media (max-aspect-ratio:12/9)
 {
     .AboutMe {
         display: block;
@@ -249,7 +250,7 @@ color: #FFFFFF;
     
 }
 
-.AboutMe .AboutMeText h1{
+.AboutMe .AboutMeText h1, .Work .WorkText h1{
     width: 472px;
     height: 107px;
     left: 9px;
@@ -266,13 +267,13 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 }
-.AboutMe .function {
+.AboutMe .function, .Work .function {
     color: #ADFF00;
 }
 .quote .quoteHead .function {
     color: #ADFF00;
 }
-.AboutMe .AboutMeText p {
+.AboutMe .AboutMeText p{
     width: 624px;
 height: 92px;
 left: 12px;
@@ -296,13 +297,7 @@ top: 244px;
 display: flex;
 }
 
-.AboutMe .Info .mainSkills {
-width: 196px;
-height: 335px;
-left: 8px;
-top: 253px;
 
-}
 
 
 .Info div{
@@ -318,32 +313,17 @@ line-height: 32px;
 color: #FFFFFF;
 }
 
-.AboutMe .Info .mainSkills p {
-    width: 198px;
-    height: 334px;
-    left: -2px;
-    top: 1px;
-    
-    font-family: 'Roboto Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 32px;
-    overflow-x:hidden; 
-overflow-y:auto;
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.tools {
+.mainSkills, .tools, .Experience, .Languages {
     width: 196px;
-    height: 334px;
-    left: 232px;
-    top: 254px;
+    height: 333px;
+    left: 8px;
+    top: 253px;
+    
+    }
 
-}
 
-.tools p {
-    width: 198px;
+.mainSkills p, .tools p, .Experience p, .Languages p{
+    width: 140px;
     height: 333px;
     left: -2px;
     top: 1px;
@@ -351,39 +331,16 @@ overflow-y:auto;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     overflow-x:hidden; 
     overflow-y:auto;
-
     color: rgba(255, 255, 255, 0.75);
 }
 
-.Experience {
-    width: 196px;
-    height: 363px;
-    left: 457px;
-    top: 254px;
-    
-
+.Experience span, .mainSkills span, .tools span, .Languages span{
+    color: #ADFF00;
 }
-
-.Experience p {
-width: 198px;
-height: 333px;
-left: -2px;
-top: 1px;
-overflow-x:hidden; 
-overflow-y:auto;
-font-family: 'Roboto Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 32px;
-
-color: rgba(255, 255, 255, 0.75);
-}
-
 
 
 .Visuals{
@@ -445,12 +402,165 @@ color: #FFFFFF;
 }
 
 
+.Work {
+    position: relative;
+    width: 1203px;
+    height: 1379px;
+    margin-left: 10em;
+    margin-top: 30em;
+}
+
+.WorkText {
+    position: relative;
+    width: 660px;
+    height: 192px;
+    left: 0px;
+    top: 0px;    
+}
+
+.WorkText p {
+    width: 624px;
+    height: 92px;
+    left: 12px;
+    top: 128px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+.Products, .Papers, .Projects, .InProgress {
+    width: 1192px;
+    height: 456px;
+    left: 11px;
+    top: 225px;
+}
+
+.ProductHeader, .PaperHeader, .ProjectHeader, .InProgressHeader {
+    width: 777px;
+height: 119px;
+left: 0px;
+top: 3px;
+
+} 
+
+
+.subHeader {
+    width: 284px;
+    height: 59px;
+    left: 1px;
+    top: 1px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+
+    color: #FFFFFF;
+ }
+
+.ProductHeader p, .PaperHeader p, .ProjectHeader p, .InProgressHeader p {
+    width: 773px;
+    height: 27px;
+    left: 4px;
+    top: 61px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+
+.ProductCarousel, .PaperCarousel, .ProjectCarousel, .InProgressCarousel {
+    width: 1192px;
+    height: 296px;
+    left: 0px;
+    top: 122px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.ProductTile, .PaperTile, .ProjectTile, .InProgressTile {
+    width: 350px;
+    justify-content: center;
+    display:flex;
+}
+
+.ProductTile a, .PaperTile a, .ProjectTile a, .InProgressTile a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
 
 
 
 
+.ProductItem, .PaperItem, .ProjectItem, .InProgressItem {
+    width: 100%;
+    height: 100%;
+    left: 12px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    left: calc(50% - 238px/2);
+    
 
+}
 
+.ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease;
+
+}
+
+.ProductItem img:hover, .PaperItem img:hover, .ProjectItem img:hover, .InProgressItem img:hover{
+    width: 315px;
+    height: 215px;
+    margin-left:auto;
+}
+
+.ProductItem p, .PaperItem p, .ProjectItem p, .InProgressItem p{
+    width: 100%px;
+    height: 30px;
+    left: 48px;
+    top: 238px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFE600;
+}
+
+.ProductItem h3, .PaperItem h3, .ProjectItem h3, .InProgressItem h3{
+    width: 100%;
+    height: 10px;
+    left: 48px;
+    top: 200px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
 
 
 
