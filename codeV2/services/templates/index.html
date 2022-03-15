@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/indexStyles.css') }}">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css. ">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.1/css/all.css. ">
         <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
         <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
     </head>
@@ -17,8 +17,8 @@
         <div class="NavBar">
             <a href="#" class="btn">Home<span>()</span></a>
             <a href="#AboutMe" class="btn"><span>me.</span>About<span>()</span></a>
-            <a href="" class="btn"><span>me.</span>Contact<span>()</span></a>
-            <a href="" class="btn"><span>me.</span>Work<span>()</span></a>
+            <a href="#" class="btn"><span>me.</span>Contact<span>()</span></a>
+            <a href="#Work" class="btn"><span>me.</span>Work<span>()</span></a>
         </div>
 
         <div class="TitleBox">
@@ -29,7 +29,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">values</span> = [ <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Persistence"><span class = "str">"Persistence"</span></a>, <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Prolificity"><span class = "str">"Prolificity"</span></a>, <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Persistence"><span class = "str">"Pleasure"</span></a> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Pleasure"><span class = "str">"Pleasure"</span></a> <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;] <br>
                 )
             </p>
@@ -156,11 +156,11 @@
                 Prolificity
             </p>
             <p class="valueText">
-                Why would you be anything else?
+                You dont get another chance, life is no Nintendo game.
             </p>
         </div>
 
-        <div class="Work">
+        <div class="Work" id="Work">
             <div class= "WorkText">
                 <h1>
                     me.<span class="function">Work</span>()
@@ -327,7 +327,18 @@
                     </div>
                 </div>
             </div>
-
+        <div class="values" id="Pleasure">
+            <div class="valueCircle">
+                <i class="fa-solid fa-face-smile valueIcon fa-10x"></i>
+            </div>
+            <p class="valueTitle">
+                Pleasure
+            </p>
+            <p class="valueText">
+                Kiss me more.
+            </p>
+        </div>
+    
 
         </div>
 
