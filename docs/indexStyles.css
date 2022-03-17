@@ -105,7 +105,7 @@ body {
 .TitleBox {
     position: relative;
 
-    width: 1203px;
+    width: 100%;
     height: 812px;
     margin-top: 6em;
     margin-left: calc(50% - 1203px/2 + 24.5px);
@@ -575,8 +575,7 @@ top: 3px;
 
 #TitleBoxSection {
     width: 100%;
-    background: linear-gradient(180deg, #272822 0%, rgba(1, 218, 248, 0.0333335) 99.99%, rgba(0, 224, 255, 0) 100%);}
-
+}
 
 
 
