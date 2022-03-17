@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #272822;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE600;
+    border-radius: 10px;
+    width: 20px;
+  }
+
+
+.NavBar {
+    z-index: 1;
+    position: fixed;
+    width: 1440px;
+    height: 117px;
+    right: 0px;
+    top: 0px;
+    justify-content: right;
+    display: flex;
+}
+
+
+
+
+@media (min-width:1921px) {
+    .NavBar a {
+        font-size: 18px;
+    }
+
+}
+
+
+.NavBar a {
+    
+    text-decoration: none;
+    width: 101px;
+    height: 31px;
+    left: 126px;
+    margin: 1em;
+    top: 43px;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+    color: #ADFF00;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+
+}
+
+
+.NavBar a:hover {
+    font-size: 125%;
+}
+
+.NavBar a span{
+    color: white;
+}
+
+@keyframes bounce
+{
+  0%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  50%{
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  
+  100%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
+.TitleBox {
+    position: relative;
+
+    width: 1203px;
+    height: 812px;
+    margin-top: 6em;
+    margin-left: calc(50% - 1203px/2 + 24.5px);
+
+}
+
+.values {
+    position: relative;
+    width: 1203px;
+    height: 579px;
+    margin-left: calc(50% - 1203px/2 + 23.5px);
+    top: 10em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.values .valueCircle {
+    width: 301px;
+    height: 301px;
+    margin-left: calc(50% - 301px/2);
+    margin-top: calc(50% - 301px/2 - 103px);
+    background: #FFE600;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.values .valueTitle {
+    width: 1203px;
+    height: 58px;
+    left: calc(50% - 1203px/2);
+    top: calc(50% - 58px/2 + 95.5px);
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    
+    color: #FFE600;
+}
+
+.values .valueText {
+    width: 1203px;
+    height: 100px;
+    left: 0px;
+    top: 435px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.valueIcon {
+    color: white;
+    position:relative;
+    top: calc(50% - .5em); /* 50% - 3/4 of icon height */
+}
+
+
+.TitleBox p {
+width: 1074px;
+height: 812px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 63px;
+
+color: #FFFFFF;
+}
+
+.TitleBox .function {
+    color: #ADFF00;
+}
+
+.TitleBox .param {
+    color: #FF6B00;
+    font-style: italic;
+}
+
+.TitleBox .str {
+    color: #FFE600;
+    transition: all 0.3s ease;
+}
+
+.TitleBox  a{
+    text-decoration: none;
+    color: #FFE600;
+}
+
+.TitleBox  a :hover{
+    color: #DB00FF;
+}
+
+.TitleBox .int {
+    color: #DB00FF;
+}
+
+
+.AboutMe {
+    position: relative;
+
+    width: 1156px;
+    height: 668px;
+    margin-left: 10em;
+    margin-top: 30em;
+    display: flex;
+}
+
+@media (max-aspect-ratio:12/9)
+{
+    .AboutMe {
+        display: block;
+    }
+}
+
+.AboutMe .AboutMeText {
+    width: 660px;
+    height: 239px;
+    left: 0px;
+    top: 0px;
+}
+
+
+.AboutMeTextContainer {
+    width: 654px;
+    height: 668px;
+    left: -1px;
+    top: 0px;
+    
+}
+
+.AboutMe .AboutMeText h1, .Work .WorkText h1{
+    width: 472px;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+}
+.AboutMe .function, .Work .function {
+    color: #ADFF00;
+}
+.quote .quoteHead .function {
+    color: #ADFF00;
+}
+.AboutMe .AboutMeText p{
+    width: 624px;
+height: 92px;
+left: 12px;
+top: 128px;
+
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+
+color: #FFE600;
+}
+
+
+.AboutMe .Info {
+    width: 653px;
+height: 424px;
+left: 0px;
+top: 244px;
+display: flex;
+}
+
+
+
+
+.Info div{
+    margin-right: 2em;
+}
+
+.Info h3{
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+color: #FFFFFF;
+}
+
+.mainSkills, .tools, .Experience, .Languages {
+    width: 196px;
+    height: 333px;
+    left: 8px;
+    top: 253px;
+    
+    }
+
+
+.mainSkills p, .tools p, .Experience p, .Languages p{
+    width: 140px;
+    height: 333px;
+    left: -2px;
+    top: 1px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    overflow-x:hidden; 
+    overflow-y:auto;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.Experience span, .mainSkills span, .tools span, .Languages span{
+    color: #ADFF00;
+}
+
+
+.Visuals{
+    width: 503px;
+    height: 668px;
+    margin-left: 4em;
+}
+.Img img {
+    width: 471px;
+    height: 420px;
+    left: 685px;
+    top: 5px;
+    border-radius: 24px;
+}
+
+.quote {
+    width: 470px;
+height: 224px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFE600;
+}
+
+span.quoteHead {
+    font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 47px;
+
+color: #FFFFFF;
+}
+
+span.quoteText {
+    font-family: 'Roboto Mono';
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFE600;
+}
+
+span.quoteFoot {
+    font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+}
+
+
+.Work {
+    position: relative;
+    width: 1203px;
+    height: 2100px;
+    margin-left: 10em;
+    margin-top: 30em;
+}
+
+.WorkText {
+    position: relative;
+    width: 660px;
+    height: 192px;
+    left: 0px;
+    top: 0px;    
+}
+
+.WorkText p {
+    width: 624px;
+    height: 92px;
+    left: 12px;
+    top: 128px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+.Products, .Papers, .Projects, .InProgress {
+    width: 1192px;
+    height: 456px;
+    left: 11px;
+    top: 225px;
+}
+
+.ProductHeader, .PaperHeader, .ProjectHeader, .InProgressHeader {
+    width: 777px;
+height: 119px;
+left: 0px;
+top: 3px;
+
+} 
+
+
+.subHeader {
+    width: 284px;
+    height: 59px;
+    left: 1px;
+    top: 1px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+
+    color: #FFFFFF;
+ }
+
+.ProductHeader p, .PaperHeader p, .ProjectHeader p, .InProgressHeader p {
+    width: 773px;
+    height: 27px;
+    left: 4px;
+    top: 61px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+
+.ProductCarousel, .PaperCarousel, .ProjectCarousel, .InProgressCarousel {
+    width: 1192px;
+    height: 296px;
+    left: 0px;
+    top: 122px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.ProductTile, .PaperTile, .ProjectTile, .InProgressTile {
+    width: 350px;
+    justify-content: center;
+    display:flex;
+}
+
+.ProductTile a, .PaperTile a, .ProjectTile a, .InProgressTile a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+
+.ProductItem, .PaperItem, .ProjectItem, .InProgressItem {
+    width: 100%;
+    height: 100%;
+    left: 12px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    left: calc(50% - 238px/2);
+    
+
+}
+
+.ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease;
+
+}
+
+.ProductItem img:hover, .PaperItem img:hover, .ProjectItem img:hover, .InProgressItem img:hover{
+    width: 315px;
+    height: 215px;
+    margin-left:auto;
+}
+
+.ProductItem p, .PaperItem p, .ProjectItem p, .InProgressItem p{
+    width: 100%px;
+    height: 30px;
+    left: 48px;
+    top: 238px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFE600;
+}
+
+.ProductItem h3, .PaperItem h3, .ProjectItem h3, .InProgressItem h3{
+    width: 100%;
+    height: 10px;
+    left: 48px;
+    top: 200px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#ProlificitySection
+{
+    width: 100%;
+}
+
+#PersistenceSection
+{
+    width: 100%;
+}
+
+
+#TitleBoxSection {
+    width: 100%;
+    background: linear-gradient(180deg, #272822 0%, rgba(1, 218, 248, 0.0333335) 99.99%, rgba(0, 224, 255, 0) 100%);}
+
+
+
+
+
+    /* SOCIAL ICONS*/
+    .social-icons {
+        transform: translate(-50%, -50%);
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social-icons a{
+        display: inline-block;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin: 0 5;
+        text-align: center;
+        line-height: 60px;
+        transition: 0.5s ;
+        transform-style: preserve-3d;
+
+    }
+
+    .social-icons .front {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateZ(35px);
+        backface-visibility: visible;
+        font-size: 20px;
+        border-radius: 6px;
+    }
+
+    .social-icons .back {
+
+        transform: rotateX(90deg) translateZ(40px);
+        backface-visibility: hidden;
+        background: #fff;
+        border-radius: 8px;
+    }
+
+    .social-icons .front i {
+        color: #fff;
+        font-size: 25px;
+    }
+    .social-icons a:hover{
+        transform: rotateX(-90deg);
+    }
+
+    .social-icons a:hover .back{
+        backface-visibility: visible;
+        
+    }
+
+    .social-icons .back i {
+        color: #000;
+        font-size: 25px;
+    }
+
+    .social-icons a.instagram .front{
+        background: #f46f30;
+    }
+    .social-icons a.github .front{
+        background: #171515;
+    }
+    .social-icons a.discord .front{
+        background: #7289da;
+    }
+    .social-icons a.gmail .front{
+        background: #bb001b;
+    }
