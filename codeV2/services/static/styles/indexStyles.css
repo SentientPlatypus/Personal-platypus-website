@@ -674,6 +674,12 @@ color: #FFFFFF;
 .PleasureItem a img{
     width: 100%;
     height: 80%;
+    transition: all 0.3s ease;
+}
+
+.PleasureItem a img:hover{
+    width: 97%;
+    height: 77%;
 }
 
 .caption {

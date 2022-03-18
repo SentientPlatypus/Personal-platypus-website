@@ -12,6 +12,12 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.1/css/all.css. ">
         <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
         <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!--<script language="JavaScript" src="{{ url_for('static',filename='./js/custom.js') }}"></script>-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
     </head>
     <body>
         <div class="NavBar">
@@ -22,7 +28,7 @@
         </div>
 
         <section id="TitleBoxSection">
-            <div class="TitleBox">
+            <div class="TitleBox" id="TitleBox">
                 <p>
                     me = <span class="function">Dev</span>(<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">name</span> = <span class = "str">“Gene”</span>, <br>
@@ -38,7 +44,7 @@
         </section>
         <section id="PersistenceSection">
             <div class="values" id="Persistence">
-                <div class="valueCircle">
+                <div class="valueCircle", id="PersistenceValueCircle">
                     <i class="fa-solid fa-dumbbell valueIcon fa-10x"></i>
                 </div>
                 <p class="valueTitle">
@@ -194,6 +200,7 @@
                                 </div>
                             </a>
                         </div>
+                        <!--
                         <div class="ProductTile">
                             <a href="https://discord.com/api/oauth2/authorize?client_id=822265614244511754&permissions=8&scope=bot">
                                 <div class="ProductItem" id="Amoris">
@@ -207,6 +214,7 @@
                                 </div>
                             </a>
                         </div>
+                        -->
                         <div class="ProductTile">
                             <a href="https://www.spigotmc.org/resources/lives-smp.96177/">
                                 <div class="ProductItem" id="Lives SMP">
@@ -394,7 +402,7 @@
                     <div class="caption">
                         <p>
                             <span>Exercise</span> <br>
-                            50 percent pain,
+                            5 percent pleasure, 50 percent pain,
                         </p>
                     </div>
                 </div>
@@ -424,25 +432,6 @@
 
 
 
-        <script type="text/javascript">
-            const btns = document.querySelectorAll(".btn");
-
-            btns.forEach((btn) => {
-            btn.addEventListener("mousemove", function(e){
-                const position = btn.getBoundingClientRect();
-                const x = e.pageX - position.left - position.width / 2;
-                const y = e.pageY - position.top - position.height / 2;
-        
-                btn.children[0].style.transform = "translate(" + x * 0.3 + "px, " + y * 0.5 + "px)";
-            });
-            });
-        
-            btns.forEach((btn) => {
-            btn.addEventListener("mouseout", function(e){
-                btn.children[0].style.transform = "translate(0px, 0px)";
-            });
-            });
-        </script>
     </body>
     
 </html>
