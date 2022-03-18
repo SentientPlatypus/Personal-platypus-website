@@ -104,30 +104,33 @@ body {
 }
 
 .TitleBox {
+    width: 40vw;
     position: relative;
-
+    left: calc(50% - 70vw/2 - 64.5px);
+    top: calc(50% - 50vw/2);
+    
     height: 812px;
     margin-top: 6em;
-    margin-left: calc(50% - 1203px/2 + 24.5px);
 
 }
 
 .values {
     position: relative;
-    width: 1203px;
-    height: 579px;
-    margin-left: calc(50% - 1203px/2 + 23.5px);
+    width: 60vmax;
+    height: auto;
+    margin-left: calc(50% - 60vmax/2 + 23.5px);
     top: 10em;
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 20vmin;
 }
 
 .values .valueCircle {
-    width: 301px;
-    height: 301px;
-    margin-left: calc(50% - 301px/2);
-    margin-top: calc(50% - 301px/2 - 103px);
+    width: 20vmax;
+    height: 20vmax;
+    margin-left: calc(50% - 20vmax/2);
+    margin-top: calc(50% - 20vmax/2 - 103px);
     background: #FFE600;
     border-radius: 50%;
     text-align: center;
@@ -136,9 +139,9 @@ body {
 }
 
 .values .valueTitle {
-    width: 1203px;
+    width: 60vmax;
     height: 58px;
-    left: calc(50% - 1203px/2);
+    left: calc(50% - 60vmax/2);
     top: calc(50% - 58px/2 + 95.5px);
     
     font-family: 'Roboto Mono';
@@ -152,7 +155,7 @@ body {
 }
 
 .values .valueText {
-    width: 1203px;
+    width: 60vmax;
     height: 100px;
     left: 0px;
     top: 435px;
@@ -175,16 +178,16 @@ body {
 
 
 .TitleBox p {
-width: 1074px;
-height: 812px;
+width: 70vmax;
+height: 50vmax;
 left: 0px;
 top: 0px;
 
 font-family: 'Roboto Mono';
 font-style: normal;
 font-weight: 400;
-font-size: 48px;
-line-height: 63px;
+font-size: 3vmax;
+line-height: 3.5vmax;
 
 color: #FFFFFF;
 }
@@ -217,12 +220,13 @@ color: #FFFFFF;
 }
 
 
+
 .AboutMe {
     position: relative;
 
-    width: 1156px;
+    width: 90vw;
     height: 668px;
-    margin-left: 10em;
+    margin-left: 5vw;
     margin-top: 30em;
     display: flex;
 }
@@ -231,16 +235,80 @@ color: #FFFFFF;
 {
     .AboutMe {
         display: block;
+        height: 160vmax;
+        margin-bottom: 20vmax;
     }
+    .AboutMe .AboutMeContainer .AboutMe {
+        width: 90vw;
+    }
+    .AboutMe .AboutMeContainer .AboutMeText *{
+        width: 90vw;
+    }
+    .Visuals.Img img {
+        width: 80vmin;
+        height: 80vmin;
+        left: 10vmin;
+        top: 5px;
+        border-radius: 24px;
+    }
+    .AboutMe .Visuals{
+        width: 80vmin;
+        height: 80vmin;
+        margin-left: 0px;
+    }
+
+    .AboutMe .AboutMeContainer .Info {
+        width: 90vw;
+        overflow-x: auto;
+    }
+
+    .quote span.quoteHead {
+        font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15vw;
+    line-height: 47px;
+    
+    color: #FFFFFF;
+    }
+    
+    .quote span.quoteText {
+        font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 32px;
+    
+    color: #FFE600;
+    }
+    
+    .quote span.quoteFoot {
+        font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 32px;
+    
+    color: #FFFFFF;
+    }
+    .AboutMe .quote {
+        width: 80vmin;
+    }
+    
+
 }
 
 .AboutMe .AboutMeText {
-    width: 660px;
-    height: 239px;
+    width: 100%;
+    height: auto;
     left: 0px;
     top: 0px;
+    text-align: left;
 }
 
+.AboutMeContainer{
+    width: 60%;
+}
 
 .AboutMeTextContainer {
     width: 654px;
@@ -251,10 +319,11 @@ color: #FFFFFF;
 }
 
 .AboutMe .AboutMeText h1, .Work .WorkText h1{
-    width: 472px;
+    width: 100%;
     height: 107px;
     left: 9px;
     top: 12px;
+    text-decoration: none;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
@@ -274,18 +343,18 @@ color: #FFFFFF;
     color: #ADFF00;
 }
 .AboutMe .AboutMeText p{
-    width: 624px;
-height: 92px;
-left: 12px;
-top: 128px;
+    width: 100%;
+    height: auto;
+    left: 12px;
+    top: 128px;
 
-font-family: 'Roboto Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
 
-color: #FFE600;
+    color: #FFE600;
 }
 
 
@@ -344,9 +413,9 @@ color: #FFFFFF;
 
 
 .Visuals{
-    width: 503px;
-    height: 668px;
-    margin-left: 4em;
+    width: 40%;
+    height: 40vw;
+    margin-left: 5%;
 }
 .Img img {
     width: 471px;
@@ -367,7 +436,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 24px;
 line-height: 32px;
-
+margin-bottom: 15vmax;
 color: #FFE600;
 }
 
@@ -570,11 +639,77 @@ top: 3px;
 #PersistenceSection
 {
     width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 
 #TitleBoxSection {
 }
+
+.PleasureBox {
+    position: relative;
+    width: 90vw;
+    height: 150vmin;
+    left: 5vw;
+    top: 20vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.LeftCol {
+    width: 40vw;
+    height: 1688px;
+}
+
+.RightCol {
+    width: 40vw;
+    height: 1688px;
+    margin-left: 5vw;
+    margin-top: 45vh;
+}
+
+
+.PleasureItem {
+    width: 100%;
+    height: 125vh;
+}
+
+.PleasureItem a img{
+    width: 100%;
+    height: 80%;
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption p span {
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.caption p{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFE600;
+    
+}
+
+
+
+
 
 
 
