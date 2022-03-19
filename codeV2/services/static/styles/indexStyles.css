@@ -297,6 +297,29 @@ color: #FFFFFF;
     }
     
 
+    .ContactMe .ContactMeForm .identity {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .ContactMeForm .identity #name,  .ContactMeForm .identity #email{
+        font-size: 18px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        border-radius:1vmin;
+        color: white;
+        background-color: #1e1f1c;
+        width: 45%;
+        height: 7vh;
+
+        margin-left: 0px;
+        margin-bottom: 5vmin;
+    }
+    
+
 }
 
 .AboutMe .AboutMeText {
@@ -319,7 +342,7 @@ color: #FFFFFF;
     
 }
 
-.AboutMe .AboutMeText h1, .Work .WorkText h1{
+.AboutMe .AboutMeText h1, .Work .WorkText h1, .ContactMe .contactText h1{
     width: 100%;
     height: 107px;
     left: 9px;
@@ -337,13 +360,13 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 }
-.AboutMe .function, .Work .function {
+.AboutMe .function, .Work .function, .ContactMe .function {
     color: #ADFF00;
 }
 .quote .quoteHead .function {
     color: #ADFF00;
 }
-.AboutMe .AboutMeText p{
+.AboutMe .AboutMeText p, .ContactMe .contactText p{
     width: 100%;
     height: auto;
     left: 12px;
@@ -643,10 +666,14 @@ color: #FFFFFF;
 #TitleBoxSection {
 }
 
+#PleasureSection {
+    height: auto;
+}
+
 .PleasureBox {
     position: relative;
     width: 90vw;
-    height: 150vmin;
+    height: auto;
     left: 5vw;
     top: 20vmin;
     display: flex;
@@ -655,12 +682,12 @@ color: #FFFFFF;
 
 .LeftCol {
     width: 40vw;
-    height: 1688px;
+    height: auto;
 }
 
 .RightCol {
     width: 40vw;
-    height: 1688px;
+    height: auto;
     margin-left: 5vw;
     margin-top: 45vh;
 }
@@ -709,6 +736,134 @@ color: #FFFFFF;
     color: #FFE600;
     
 }
+
+
+.ContactMe {
+    position: relative;
+    top: 25vmin;
+    left:5vw;
+    width: 70vw;
+    height: 60vmin;
+    margin-bottom: 50vmin;
+}
+
+.contact .ContactMe .contactText h1 {
+    width: 100%;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+
+}
+
+.contactFormContainer {
+    width: 70vw;
+    height: auto;
+    margin-left: 10vw;
+    top: calc(50% - 357px/2 + 2.5px);
+    border-radius: 15%;
+}
+
+.ContactMeForm {
+    border: white;
+}
+
+
+.ContactMeForm .identity {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 5vmin;
+}
+
+ #name,  #email{
+     font-size: 18px;
+     border: none;
+     outline: none;
+    text-decoration: none;
+    border-radius:1vmin;
+    color: white;
+    background-color: #1e1f1c;
+    width: 45%;
+    height: 7vh;
+}
+
+ #email{
+    margin-left: 10%;
+}
+
+#subject{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    margin-bottom: 5vmin;
+    color: white;
+    width: 100% ;
+    height: 7vh;
+
+    background-color: #1e1f1c;
+}
+
+#content{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    color: white;
+    width: 100% ;
+    background-color: #1e1f1c;
+}
+
+#content{
+    height: 21vh;
+}
+.submitbutton {
+    outline: none;
+    border: none;
+    margin-top: 5vh;
+    background: transparent;
+    color: #ADFF00;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.submitbutton:hover{
+    font-size: larger;
+}
+
+#green {
+    color: green;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

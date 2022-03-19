@@ -424,6 +424,27 @@
             </div>
         </div>
         </section>
+        <section class="contact">
+            <div class="ContactMe">
+                <div class="contactText">
+                    <h1>me.<span class="function">Contact</span>()</h1>
+                    <p>
+                        """so call me, maybe?"""
+                    </p>
+                </div>
+                <div class="contactFormContainer">
+                    <form class="ContactMeForm" action="/ContactMe/HandleData" method="POST" name="form">
+                        <div class="identity">
+                            <input type="text" id="name" value="Name" name="name" required>
+                            <input type="text" id="email" value="Email" name="email" required>
+                        </div>
+                        <input type="text" id="subject" value="subject" name="subject" required>
+                        <textarea  cols="30" rows="10" id="content" value="message" name="content" required></textarea>
+                        <input type="submit", value="send()" class="submitbutton">
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
