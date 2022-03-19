@@ -173,6 +173,7 @@ body {
 .valueIcon {
     color: white;
     position:relative;
+    width: 100%;
     top: calc(50% - .5em); /* 50% - 3/4 of icon height */
 }
 
@@ -266,7 +267,7 @@ color: #FFFFFF;
         font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 15vw;
+    font-size: 10vw;
     line-height: 47px;
     
     color: #FFFFFF;
@@ -296,6 +297,29 @@ color: #FFFFFF;
     }
     
 
+    .ContactMe .ContactMeForm .identity {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .ContactMeForm .identity #name,  .ContactMeForm .identity #email{
+        font-size: 18px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        border-radius:1vmin;
+        color: white;
+        background-color: #1e1f1c;
+        width: 45%;
+        height: 7vh;
+
+        margin-left: 0px;
+        margin-bottom: 5vmin;
+    }
+    
+
 }
 
 .AboutMe .AboutMeText {
@@ -318,7 +342,7 @@ color: #FFFFFF;
     
 }
 
-.AboutMe .AboutMeText h1, .Work .WorkText h1{
+.AboutMe .AboutMeText h1, .Work .WorkText h1, .ContactMe .contactText h1{
     width: 100%;
     height: 107px;
     left: 9px;
@@ -336,13 +360,13 @@ color: #FFFFFF;
     
     color: #FFFFFF;
 }
-.AboutMe .function, .Work .function {
+.AboutMe .function, .Work .function, .ContactMe .function {
     color: #ADFF00;
 }
 .quote .quoteHead .function {
     color: #ADFF00;
 }
-.AboutMe .AboutMeText p{
+.AboutMe .AboutMeText p, .ContactMe .contactText p{
     width: 100%;
     height: auto;
     left: 12px;
@@ -359,11 +383,9 @@ color: #FFFFFF;
 
 
 .AboutMe .Info {
-    width: 653px;
-height: 424px;
-left: 0px;
-top: 244px;
-display: flex;
+    width: 100%;
+    height: 424px;
+    display: flex;
 }
 
 
@@ -383,16 +405,13 @@ color: #FFFFFF;
 }
 
 .mainSkills, .tools, .Experience, .Languages {
-    width: 196px;
-    height: 333px;
-    left: 8px;
-    top: 253px;
-    
+    width: 20%;
+    height: 333px;    
     }
 
 
 .mainSkills p, .tools p, .Experience p, .Languages p{
-    width: 140px;
+    width: 100%;
     height: 333px;
     left: -2px;
     top: 1px;
@@ -473,15 +492,15 @@ color: #FFFFFF;
 
 .Work {
     position: relative;
-    width: 1203px;
+    width: 90vw;
     height: 2100px;
-    margin-left: 10em;
+    margin-left: 5vw;
     margin-top: 30em;
 }
 
 .WorkText {
     position: relative;
-    width: 660px;
+    width: auto;
     height: 192px;
     left: 0px;
     top: 0px;    
@@ -502,17 +521,17 @@ color: #FFFFFF;
  }
 
 .Products, .Papers, .Projects, .InProgress {
-    width: 1192px;
+    width: 90vw;
     height: 456px;
     left: 11px;
     top: 225px;
 }
 
 .ProductHeader, .PaperHeader, .ProjectHeader, .InProgressHeader {
-    width: 777px;
-height: 119px;
-left: 0px;
-top: 3px;
+    width: auto;
+    height: 119px;
+    left: 0px;
+    top: 3px;
 
 } 
 
@@ -533,7 +552,7 @@ top: 3px;
  }
 
 .ProductHeader p, .PaperHeader p, .ProjectHeader p, .InProgressHeader p {
-    width: 773px;
+    width: auto;
     height: 27px;
     left: 4px;
     top: 61px;
@@ -549,7 +568,7 @@ top: 3px;
 
 
 .ProductCarousel, .PaperCarousel, .ProjectCarousel, .InProgressCarousel {
-    width: 1192px;
+    width: 90vw;
     height: 296px;
     left: 0px;
     top: 122px;
@@ -647,10 +666,14 @@ top: 3px;
 #TitleBoxSection {
 }
 
+#PleasureSection {
+    height: auto;
+}
+
 .PleasureBox {
     position: relative;
     width: 90vw;
-    height: 150vmin;
+    height: auto;
     left: 5vw;
     top: 20vmin;
     display: flex;
@@ -659,12 +682,12 @@ top: 3px;
 
 .LeftCol {
     width: 40vw;
-    height: 1688px;
+    height: auto;
 }
 
 .RightCol {
     width: 40vw;
-    height: 1688px;
+    height: auto;
     margin-left: 5vw;
     margin-top: 45vh;
 }
@@ -678,10 +701,17 @@ top: 3px;
 .PleasureItem a img{
     width: 100%;
     height: 80%;
+    transition: all 0.3s ease;
+}
+
+.PleasureItem a img:hover{
+    width: 97%;
+    height: 77%;
 }
 
 .caption {
     text-align: center;
+    height: auto;
 }
 
 .caption p span {
@@ -706,6 +736,134 @@ top: 3px;
     color: #FFE600;
     
 }
+
+
+.ContactMe {
+    position: relative;
+    top: 25vmin;
+    left:5vw;
+    width: 70vw;
+    height: 60vmin;
+    margin-bottom: 50vmin;
+}
+
+.contact .ContactMe .contactText h1 {
+    width: 100%;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+
+}
+
+.contactFormContainer {
+    width: 70vw;
+    height: auto;
+    margin-left: 10vw;
+    top: calc(50% - 357px/2 + 2.5px);
+    border-radius: 15%;
+}
+
+.ContactMeForm {
+    border: white;
+}
+
+
+.ContactMeForm .identity {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 5vmin;
+}
+
+ #name,  #email{
+     font-size: 18px;
+     border: none;
+     outline: none;
+    text-decoration: none;
+    border-radius:1vmin;
+    color: white;
+    background-color: #1e1f1c;
+    width: 45%;
+    height: 7vh;
+}
+
+ #email{
+    margin-left: 10%;
+}
+
+#subject{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    margin-bottom: 5vmin;
+    color: white;
+    width: 100% ;
+    height: 7vh;
+
+    background-color: #1e1f1c;
+}
+
+#content{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    color: white;
+    width: 100% ;
+    background-color: #1e1f1c;
+}
+
+#content{
+    height: 21vh;
+}
+.submitbutton {
+    outline: none;
+    border: none;
+    margin-top: 5vh;
+    background: transparent;
+    color: #ADFF00;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.submitbutton:hover{
+    font-size: larger;
+}
+
+#green {
+    color: green;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
