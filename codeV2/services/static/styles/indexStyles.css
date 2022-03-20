@@ -576,7 +576,7 @@ color: #FFFFFF;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .ProductTile, .PaperTile, .ProjectTile, .InProgressTile {
