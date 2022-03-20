@@ -57,9 +57,20 @@ def ContactMe(sent):
         bool = True
     return render_template("./index.html", sent=bool)
 
+@app.route("/gaming")
+def gaming():
+    return render_template("./gaming.html")
+
+
 @app.route("/resume")
 def resume():
     return render_template("./underConstruction.html")
+
+
+@app.route("/socials")
+def socials():
+    return render_template("./socials.html")
+
 
 @app.route("/underConstruction")
 def underConstruction():
