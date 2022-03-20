@@ -107,14 +107,14 @@ body {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 24px;
     line-height: 47px;
     color: white;
     transition: all 0.3s ease 0s;
 }
 
 .backIconContainer p:hover{
-    font-size: 64px;
+    font-size: 32px;
 }
 
 .backIconContainer p span{
@@ -155,7 +155,7 @@ body {
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 52px;
     line-height: 95px;
     
     color: #FFFFFF;

@@ -608,7 +608,7 @@ color: #FFFFFF;
 
 .ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
     width: 300px;
-    height: 200px;
+    height: 250px;
     transition: all 0.3s ease;
 
 }
