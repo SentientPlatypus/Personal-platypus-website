@@ -245,7 +245,7 @@ color: #FFFFFF;
     .AboutMe .AboutMeContainer .AboutMeText *{
         width: 90vw;
     }
-    .Visuals.Img img {
+    .Visuals .Img img {
         width: 80vmin;
         height: 80vmin;
         left: 10vmin;
