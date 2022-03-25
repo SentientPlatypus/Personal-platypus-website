@@ -2,21 +2,30 @@ $(document).ready(function(){
     // Create a scroll container
     var controller = new ScrollMagic.Controller();
 
-    // Create a scene for first trigger and set properties via an object
     var sceneOne = new ScrollMagic.Scene({
         duration: 500
-    }).setPin('#TitleBox');
+    }).setPin('#TitleBoxSection');
 
-
-    // Create a Scene for second trigger and set properties via an object
     var sceneTwo = new ScrollMagic.Scene({
-        triggerElement: '#PersistenceValueCircle',
+        triggerElement: '#PersistenceSection',
         duration: 500
-    }).setPin('#PersistenceValueCircle');
+    }).setPin('#PersistenceSection');
 
-    // Add scenes to controller
     controller.addScene([
+        sceneOne,
+        sceneTwo
     ]);
-
-
 });
+
+
+
+
+
+
+// var element = document.querySelector(".wrapper")
+// if (element)
+// {
+//     element.addEventListener('click', (e) => {
+//         e.currentTarget.classList.toggle('is-active');
+//     });
+// }
