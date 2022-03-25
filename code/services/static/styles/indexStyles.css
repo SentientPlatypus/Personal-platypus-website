@@ -1,223 +1,956 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    
-    font-family: "Montserrat", sans-serif;
-    overflow-y: auto;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252A;
+    position: relative;
+    width: 100%;
     height: 100%;
+    background: #272822;
 }
 
-li, a, button,p, label, input, h1{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-
-h1 {
-    font-size: 50px;
-}
-
-
-/*banner*/
-    #banner {
-        background-image: url("https://wallpaperaccess.com/full/2439754.jpg");
-        background-size: 100%;
-    }
-
-
-
-/*footer*/
-    footer {
-        margin: auto;
-        width: 50%;
-        padding: 400px 200px;
-    }
-
-/*navigation bar*/
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10%;
-    }
-    .logo {
-        cursor: pointer;
-        margin-right: auto;
-    }
-    .nav_links li {
-        display: inline-block;
-        padding: 0px 20px;
-        transition: top .3s;
-    }
-
-    .nav_links li a {
-        color: white;
-        text-decoration: none;
-        transition: all 0.3s ease 0s;
-    }
-
-    .nav_links li a:hover {
-        color: gold;
-    }
-
-/* intro */
-    #intro{
-
-        margin: auto;
-        margin-top: 100px;
-        margin-bottom: 300px;
-        width: 70%;
-    }
-    #main{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #main img {
-        max-width: 400px;
-        max-height: 400px;
-        border-radius: 30px;
-        padding: 10px;
-    }
-
-
-/*about*/
-    #aboutme {
-        margin-top: 0px;
-        margin: auto;
-        width: 70%;
-        padding-bottom: 500px;
-    }    
-
-    #aboutme h1 {
-        margin-top: 200px;
-        display: inline-block;
-    }
-
-    #aboutme a h1 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        border-bottom: 3px solid gold;
-        transition: 0.4s ease;
-    }
-
-    #aboutme #makeGoldandButton:hover{
-        border-bottom: 3px solid white;
-        color: white;
-    }
-
-    #aboutme #makeGoldandButton {
-        color: gold;
-        transition: 0.4s ease;
-    }
-
-    #aboutme #makeGold {
-        color: gold;
-        transition: 0.4s ease;
-    }
-
-    #aboutme button {
-        padding: 20px 50px;
-        background-color: transparent;
-        border: 3px solid white;
-        transition: all 0.5s ease 0s;
-    }
-    #aboutme button:hover {
-        background-color: transparent;
-        border: 3px solid gold;
-        transition: all 0.5s ease 0s;
-    }
-
-    /*dropdown*/
-    .dropbtn {
-        padding: 9px 25px;
-        color:white;
-        background-color: transparent;
-        border: 2px white solid;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease 0s;
-      }
-      
-      /* The container <div> - needed to position the dropdown content */
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      
-      /* Dropdown Content (Hidden by Default) */
-      .dropdown-content {
-        background-color: transparent;
-        border-radius: 30px;
-        border: 2px gold solid;
-        padding: 10px;
-        text-decoration: none;
-        display: none;
-        position: absolute;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-
-      .dropdown-content button {
-          background-color: transparent;
-          color: white;
-          border: none;
-          transition: 0.5s ease;
-      }
-      .dropdown-content button:hover {
-        background-color: transparent;
-        color: gold;
-        border: none;
-    }
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
   }
   
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {color: #8a00a9;}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+  }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-        color: white;
-        background-color: #10042c;
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFE600;
+    border-radius: 10px;
+    width: 20px;
+  }
+
+
+.NavBar {
+    z-index: 1;
+    position: fixed;
+    width: 1440px;
+    height: 117px;
+    right: 0px;
+    top: 0px;
+    justify-content: right;
+    display: flex;
+}
+
+
+
+
+@media (min-width:1921px) {
+    .NavBar a {
+        font-size: 18px;
+    }
+
+}
+
+
+.NavBar a {
+    
+    text-decoration: none;
+    width: 101px;
+    height: 31px;
+    left: 126px;
+    margin: 1em;
+    top: 43px;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+    color: #ADFF00;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+
+}
+
+
+.NavBar a:hover {
+    font-size: 125%;
+}
+
+.NavBar a span{
+    color: white;
+}
+
+@keyframes bounce
+{
+  0%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  50%{
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  
+  100%{
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+}
+
+.TitleBox {
+    width: 40vw;
+    position: relative;
+    left: calc(50% - 70vw/2 - 64.5px);
+    top: calc(50% - 50vw/2);
+    
+    height: 812px;
+    margin-top: 6em;
+
+}
+
+.values {
+    position: relative;
+    width: 60vmax;
+    height: auto;
+    margin-left: calc(50% - 60vmax/2 + 23.5px);
+    top: 10em;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20vmin;
+}
+
+.values .valueCircle {
+    width: 20vmax;
+    height: 20vmax;
+    margin-left: calc(50% - 20vmax/2);
+    margin-top: calc(50% - 20vmax/2 - 103px);
+    background: #FFE600;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.values .valueTitle {
+    width: 60vmax;
+    height: 58px;
+    left: calc(50% - 60vmax/2);
+    top: calc(50% - 58px/2 + 95.5px);
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+    text-align: center;
+    
+    color: #FFE600;
+}
+
+.values .valueText {
+    width: 60vmax;
+    height: 100px;
+    left: 0px;
+    top: 435px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.valueIcon {
+    color: white;
+    position:relative;
+    width: 100%;
+    top: calc(50% - .5em); /* 50% - 3/4 of icon height */
+}
+
+
+.TitleBox p {
+width: 70vmax;
+height: 50vmax;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 3vmax;
+line-height: 3.5vmax;
+
+color: #FFFFFF;
+}
+
+.TitleBox .function {
+    color: #ADFF00;
+}
+
+.TitleBox .param {
+    color: #FF6B00;
+    font-style: italic;
+}
+
+.TitleBox .str {
+    color: #FFE600;
+    transition: all 0.3s ease;
+}
+
+.TitleBox  a{
+    text-decoration: none;
+    color: #FFE600;
+}
+
+.TitleBox  a :hover{
+    color: #DB00FF;
+}
+
+.TitleBox .int {
+    color: #DB00FF;
+}
+
+
+
+.AboutMe {
+    position: relative;
+
+    width: 90vw;
+    height: 668px;
+    margin-left: 5vw;
+    margin-top: 30em;
+    display: flex;
+}
+
+@media (max-aspect-ratio:12/9)
+{
+    .AboutMe {
         display: block;
+        height: 160vmax;
+        margin-bottom: 20vmax;
     }
+    .AboutMe .AboutMeContainer .AboutMe {
+        width: 90vw;
+    }
+    .AboutMe .AboutMeContainer .AboutMeText *{
+        width: 90vw;
+    }
+    .Visuals .Img img {
+        width: 80vmin;
+        height: 80vmin;
+        left: 10vmin;
+        top: 5px;
+        border-radius: 24px;
+    }
+    .AboutMe .Visuals{
+        width: 80vmin;
+        height: 80vmin;
+        margin-left: 0px;
+    }
+
+    .AboutMe .AboutMeContainer .Info {
+        width: 90vw;
+        overflow-x: auto;
+    }
+
+    .quote span.quoteHead {
+        font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10vw;
+    line-height: 47px;
+    
+    color: #FFFFFF;
+    }
+    
+    .quote span.quoteText {
+        font-family: 'Roboto Mono';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 32px;
+    
+    color: #FFE600;
+    }
+    
+    .quote span.quoteFoot {
+        font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 32px;
+    
+    color: #FFFFFF;
+    }
+    .AboutMe .quote {
+        width: 80vmin;
+    }
+    
+
+    .ContactMe .ContactMeForm .identity {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-bottom: 0px;
+    }
+    
+    .ContactMeForm .identity #name,  .ContactMeForm .identity #email{
+        font-size: 18px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        border-radius:1vmin;
+        color: white;
+        background-color: #1e1f1c;
+        width: 45%;
+        height: 7vh;
+
+        margin-left: 0px;
+        margin-bottom: 5vmin;
+    }
+    
+
+}
+
+.AboutMe .AboutMeText {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    text-align: left;
+}
+
+.AboutMeContainer{
+    width: 60%;
+}
+
+.AboutMeTextContainer {
+    width: 654px;
+    height: 668px;
+    left: -1px;
+    top: 0px;
+    
+}
+
+.AboutMe .AboutMeText h1, .Work .WorkText h1, .ContactMe .contactText h1{
+    width: 100%;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+}
+.AboutMe .function, .Work .function, .ContactMe .function {
+    color: #ADFF00;
+}
+.quote .quoteHead .function {
+    color: #ADFF00;
+}
+.AboutMe .AboutMeText p, .ContactMe .contactText p{
+    width: 100%;
+    height: auto;
+    left: 12px;
+    top: 128px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #FFE600;
+}
+
+
+.AboutMe .Info {
+    width: 100%;
+    height: 424px;
+    display: flex;
+}
+
+
+
+
+.Info div{
+    margin-right: 2em;
+}
+
+.Info h3{
+font-family: 'Roboto Mono';
+font-style: normal;
+height: auto;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+color: #FFFFFF;
+}
+
+.mainSkills, .tools, .Experience, .Languages {
+    width: auto;
+    height: 333px;    
+    }
+
+
+.mainSkills p, .tools p, .Experience p, .Languages p{
+    width: 100%;
+    height: 333px;
+    left: -2px;
+    top: 1px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    overflow-x:hidden; 
+    overflow-y:auto;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.Experience span, .mainSkills span, .tools span, .Languages span{
+    color: #ADFF00;
+}
+
+
+.Visuals{
+    width: 40%;
+    height: 40vw;
+    margin-left: 5%;
+}
+.Img img {
+    width: 471px;
+    height: 420px;
+    left: 685px;
+    top: 5px;
+    border-radius: 24px;
+}
+
+.quote {
+    width: 470px;
+height: 224px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+margin-bottom: 15vmax;
+color: #FFE600;
+}
+
+span.quoteHead {
+    font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 47px;
+
+color: #FFFFFF;
+}
+
+span.quoteText {
+    font-family: 'Roboto Mono';
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFE600;
+}
+
+span.quoteFoot {
+    font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+}
+
+
+.Work {
+    position: relative;
+    width: 90vw;
+    height: 2100px;
+    margin-left: 5vw;
+    margin-top: 30em;
+}
+
+.WorkText {
+    position: relative;
+    width: auto;
+    height: 192px;
+    left: 0px;
+    top: 0px;    
+}
+
+.WorkText p {
+    width: 624px;
+    height: 92px;
+    left: 12px;
+    top: 128px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+.Products, .Papers, .Projects, .InProgress {
+    width: 90vw;
+    height: 456px;
+    left: 11px;
+    top: 225px;
+}
+
+.ProductHeader, .PaperHeader, .ProjectHeader, .InProgressHeader {
+    width: auto;
+    height: 119px;
+    left: 0px;
+    top: 3px;
+
+} 
+
+
+.subHeader {
+    width: 284px;
+    height: 59px;
+    left: 1px;
+    top: 1px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 47px;
+
+    color: #FFFFFF;
+ }
+
+.ProductHeader p, .PaperHeader p, .ProjectHeader p, .InProgressHeader p {
+    width: auto;
+    height: 27px;
+    left: 4px;
+    top: 61px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    
+    color: #FFE600;
+ }
+
+
+.ProductCarousel, .PaperCarousel, .ProjectCarousel, .InProgressCarousel {
+    width: 90vw;
+    height: 296px;
+    left: 0px;
+    top: 122px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: flex-start;
+}
+
+.ProductTile, .PaperTile, .ProjectTile, .InProgressTile {
+    width: 350px;
+    justify-content: center;
+    display:flex;
+}
+
+.ProductTile a, .PaperTile a, .ProjectTile a, .InProgressTile a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+
+
+
+.ProductItem, .PaperItem, .ProjectItem, .InProgressItem {
+    width: 100%;
+    height: 100%;
+    left: 12px;
+    top: 0px;
+    justify-content: center;
+    text-align: center;
+    left: calc(50% - 238px/2);
+    
+
+}
+
+.ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
+    width: 300px;
+    height: 200px;
+    transition: all 0.3s ease;
+
+}
+
+.ProductItem img:hover, .PaperItem img:hover, .ProjectItem img:hover, .InProgressItem img:hover{
+    width: 315px;
+    height: 215px;
+    margin-left:auto;
+}
+
+.ProductItem p, .PaperItem p, .ProjectItem p, .InProgressItem p{
+    width: 100%px;
+    height: 30px;
+    left: 48px;
+    top: 238px;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFE600;
+}
+
+.ProductItem h3, .PaperItem h3, .ProjectItem h3, .InProgressItem h3{
+    width: 100%;
+    height: 10px;
+    left: 48px;
+    top: 200px;
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#ProlificitySection
+{
+    width: 100%;
+}
+
+#PersistenceSection
+{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#TitleBoxSection {
+}
+
+#PleasureSection {
+    height: auto;
+}
+
+.PleasureBox {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+    top: 20vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.LeftCol {
+    width: 40vw;
+    height: auto;
+}
+
+.RightCol {
+    width: 40vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-top: 45vh;
+}
+
+
+.PleasureItem {
+    width: 100%;
+    height: 125vh;
+}
+
+.PleasureItem a img{
+    width: 100%;
+    height: 80%;
+    transition: all 0.3s ease;
+}
+
+.PleasureItem a img:hover{
+    width: 97%;
+    height: 77%;
+}
+
+.caption {
+    text-align: center;
+    height: auto;
+}
+
+.caption p span {
+    
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 63px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.caption p{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #FFE600;
+    
+}
+
+
+.ContactMe {
+    position: relative;
+    top: 25vmin;
+    left:5vw;
+    width: 70vw;
+    height: 60vmin;
+    margin-bottom: 50vmin;
+}
+
+.contact .ContactMe .contactText h1 {
+    width: 100%;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+
+}
+
+.contactFormContainer {
+    width: 70vw;
+    height: auto;
+    margin-left: 10vw;
+    top: calc(50% - 357px/2 + 2.5px);
+    border-radius: 15%;
+}
+
+.ContactMeForm {
+    border: white;
+}
+
+
+.ContactMeForm .identity {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: 5vmin;
+}
+
+ #name,  #email{
+     font-size: 18px;
+     border: none;
+     outline: none;
+    text-decoration: none;
+    border-radius:1vmin;
+    color: white;
+    background-color: #1e1f1c;
+    width: 45%;
+    height: 7vh;
+}
+
+ #email{
+    margin-left: 10%;
+}
+
+#subject{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    margin-bottom: 5vmin;
+    color: white;
+    width: 100% ;
+    height: 7vh;
+
+    background-color: #1e1f1c;
+}
+
+#content{
+    font-size: 18px;
+
+    border: none;
+
+    text-decoration: none;
+    outline: none;
+    border-radius: 1vmin;
+    color: white;
+    width: 100% ;
+    background-color: #1e1f1c;
+}
+
+#content{
+    height: 21vh;
+}
+.submitbutton {
+    outline: none;
+    border: none;
+    margin-top: 5vh;
+    background: transparent;
+    color: #ADFF00;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.submitbutton:hover{
+    font-size: larger;
+}
+
+#green {
+    color: green;
+    float: right;
+}
+
+
+
+.wrapper {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 330ms ease-out;
+  }
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-      color: gold;
-      border: 2px gold solid;
-    }
+  .line-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 6px;
+  }
+  
+  .line-menu.half {
+    width: 50%;
+  }
+  
+  .line-menu.start {
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: right;
+  }
+  
+  .line-menu.end {
+    align-self: flex-end;
+    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transform-origin: left;
+  }
+  
+  
+  /* Click Animation */
+  .wrapper.is-active {
+    transform: rotate(-45deg);  
+  }
+  
+  .is-active .line-menu.start {
+    transform: rotate(-90deg) translateX(3px);
+  }
+  
+  .is-active .line-menu.end {
+    transform: rotate(-90deg) translateX(-3px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* SOCIAL ICONS*/
     .social-icons {
-        position: relative;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         margin-top: 0px;
-        width: 100%;
         display: flex;
+        justify-content: space-between;
     }
 
     .social-icons a{
-        position: relative;
         display: inline-block;
         margin-left: 10px;
         width: 60px;
@@ -255,10 +988,8 @@ h1 {
         color: #fff;
         font-size: 25px;
     }
-
     .social-icons a:hover{
         transform: rotateX(-90deg);
-
     }
 
     .social-icons a:hover .back{

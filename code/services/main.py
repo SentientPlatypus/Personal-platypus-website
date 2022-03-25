@@ -1,9 +1,7 @@
 from flask import Flask,render_template, request, session, redirect, url_for
 import smtplib, ssl
-emailRegex = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-password = "geneavianina"
-port = 465  # For SSL
-# Create a secure SSL context
+import constants
+import csv
 context = ssl.create_default_context()
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'
@@ -57,11 +55,22 @@ def ContactMe(sent):
     bool = False
     if sent == 1:
         bool = True
-    return render_template("./ContactMe.html", sent=bool)
+    return render_template("./index.html", sent=bool)
+
+@app.route("/gaming")
+def gaming():
+    return render_template("./gaming.html")
+
 
 @app.route("/resume")
 def resume():
     return render_template("./underConstruction.html")
+
+
+@app.route("/socials")
+def socials():
+    return render_template("./socials.html")
+
 
 @app.route("/underConstruction")
 def underConstruction():
@@ -85,12 +94,12 @@ def HandleData():
     subject = form["subject"]
     message = form["content"]
 
-
-    gmail_user = 'geneustace.wicaksono@icsd.k12.ny.us'
-    gmail_password = 'geneavianina'
-
-    to = ['geneustace.wicaksono@icsd.k12.ny.us']
-
+    # with open("./contacts.csv", "a") as f:
+    #     csvWriter = csv.writer(f)
+    #     csvWriter.writerow([name, sendingEmail, subject, message])
+    gmail_user = constants.EMAIL
+    gmail_password = constants.EMAILPASSWORD
+    to = [constants.EMAIL]
     email_text = """
     From: %s , %s
     To: %s

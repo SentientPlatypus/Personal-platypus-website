@@ -9,96 +9,478 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/indexStyles.css') }}">
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.1/css/all.css. ">
         <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
+        <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script language="JavaScript" src="{{ url_for('static',filename='./js/custom.js') }}"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </head>
     <body>
-        <div id="banner">
-            <header>
-                <a href="./index.html" class="logo">
-                    <a href="" class="logo"></a>
-                </a>
-                <nav>
-                    <ul class="nav_links" id="nav_links">
-                        <li><a href="/index">Home</a></li>
-                        <li><a href="/index#aboutme">About me</a></li>
-                        <li><a href="/resume">Resume</a></li>
-                        <li><a href="/ContactMe/0">Contact me</a></li>
-                        <li>
-                            <div class="dropdown">
-                                <button class="dropbtn">My work</button>
-                                <div class="dropdown-content">
-                                    <a href="/products", id="account">
-                                        <button>Products</button>
-                                    </a>
-                                    <a href="/projects", id="account">
-                                        <button>Projects</button>
-                                    </a>
-                                    <a href="/papers", id="account">
-                                        <button>Papers</button>
-                                    </a>
-                                    <a href="/inProgress", id="account">
-                                        <button>in Progress</button>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
-            <div id="intro">
-                <div id="main">
-                    <div id="text">
-                        <h1>Hi, <br> Im Gene Wicaksono, <br> Developer.</h1>
-                        <p>Full Stack Dev | Enthusiast | Visionary</p>
-                    </div>
-
-                    <img src="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024" alt="me">
-
-                </div> 
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/genius_ta/" class="instagram">
-                        <div class="front"><i class="fab fa-instagram" aria-hidden="true"></i></div>  
-                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div>  
-                    </a>
-                    <a href="./discord" class="discord">
-                        <div class="front"><i class="fab fa-discord" aria-hidden="true"></i></div>  
-                        <div class="back"><i class="fab fa-discord" aria-hidden="true"></i></div>  
-                    </a>
-                    <a href="https://github.com/SentientPlatypus" class="github">
-                        <div class="front"><i class="fab fa-github" aria-hidden="true"></i></div>  
-                        <div class="back"><i class="fab fa-github" aria-hidden="true"></i></div>  
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=geneustace.wicaksono@icsd.k12.ny.us&su=Contact&body=BODY" class="gmail">
-                        <div class="front"><i class="far fa-envelope" aria-hidden="true"></i></div>  
-                        <div class="back"><i class="far fa-envelope" aria-hidden="true"></i></div>  
-                    </a>
-                </div> 
-            </div>
-
-            <div id="aboutme">
-                <h1>
-                    Since the february of <span id="makeGold">2021</span>, <br> I have been a computer science <span id="makeGold">enthusiast</span>.
-                </h1>
-                <h1>
-                    I have worked on <a href="./products"><h1><span id="makeGoldandButton">several projects</span></h1></a> and have experience <span id="makeGold">collaborating</span> with fellow developers.
-                </h1>
-                <h1>
-                     Join me sometime?
-                </h1>
-                <a href="./ContactMe/0"><button>Contact me</button></a>
-            </div>
-
-
-
-
-
-
-
-
+        <div class="NavBar">
+            <!-- <div class="wrapper">                
+                <div class="line-menu half start"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu half end"></div>      
+            </div> -->
+            <a href="/" class="btn">Home<span>()</span></a>
+            <a href="#AboutMe" class="btn"><span>me.</span>About<span>()</span></a>
+            <a href="#ContactMe" class="btn"><span>me.</span>Contact<span>()</span></a>
+            <a href="#Work" class="btn"><span>me.</span>Work<span>()</span></a>
         </div>
 
+        <section id="TitleBoxSection">
+            <div class="TitleBox" id="TitleBox">
+                <p>
+                    me = <span class="function">Dev</span>(<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">name</span> = <span class = "str">“Gene”</span>, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">age</span> = <span class="int">15</span>, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">values</span> = [ <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Persistence"><span class = "str">"Persistence"</span></a>, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Prolificity"><span class = "str">"Prolificity"</span></a>, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Pleasure"><span class = "str">"Pleasure"</span></a> <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;] <br>
+                    )
+                </p>
+            </div>
+        </section>
+        <section id="PersistenceSection">
+            <div class="values" id="Persistence">
+                <div class="valueCircle", id="PersistenceValueCircle">
+                    <i class="fa-solid fa-dumbbell valueIcon fa-10x"></i>
+                </div>
+                <p class="valueTitle">
+                    Persistence
+                </p>
+                <p class="valueText">
+                    Its about drive.
+                </p>
+            </div>
+
+            <div class="AboutMe" id="AboutMe">
+                <div class = AboutMeContainer>
+                    <div class="AboutMeText">
+                        <h1>
+                            me.<span class="function">About</span>()
+                        </h1>
+                        <p>“””Since the February of 2021, 
+                            I have been a computer science enthusiast. 
+                            I have worked on several projects and have experience collaborating with fellow developers.”””
+                        </p> 
+                    </div>
+                    <div class="Info">
+                        <div class="mainSkills">
+                            <h3>
+                                Skills
+                            </h3>
+                            <p>
+                                Databases,<br>  
+                                Frontend,<br>  
+                                Backend,<br>  
+                                Datascience,<br>  
+                                Computer Visions,<br>  
+                                Discord Bots,<br>  
+                                Video Editing,<br>  
+                                MC Plugins,<br>  
+                                Game Development,<br>  
+                                3D modeling<br>  
+                            </p>
+                        </div>
+                        <div class="tools">
+                            <h3>
+                                Tools
+                            </h3>
+                            <p>
+                                MongoDB,<br>  
+                                HTML/CSS/JS,<br>  
+                                Python,<br>  
+                                Java,<br>  
+                                GPT-3,<br>  
+                                OpenCV,<br>  
+                                Unreal Engine,<br>  
+                                Blender,      <br> 
+                                Limelight, <br>  
+                                Jevois,<br>  
+                                Spigot,<br>  
+                                Davinci Resolve,<br> 
+                                nextcord,<br>                 
+                            </p>
+
+                        </div>
+                        <div class="Experience">
+                            <h3>
+                                Experience
+                            </h3>
+                            <p>
+                                <span>Webapp developer and Cofounder</span> 
+                                @Pycalc X<br>
+                                2021 - now <br><br>  
+
+                                <span>Freelance</span> <br>
+                                2021 - now      <br><br>    
+
+                                <span>Datascience Research project</span> 
+                                @CodeBozu<br>
+                                2021 <br><br>
+
+                                <span>Video editor and main developer</span> 
+                                @Debating404<br>
+                                2022 - now <br><br>  
+                                
+                                <span>Visions Member</span> 
+                                @Code Red<br>
+                                2021 - now <br><br>       
+                            </p>
+                        </div>
+                        <div class="Languages">
+                            <h3>
+                                Languages
+                            </h3>
+                            <p>
+
+                                <span>English</span> <br>
+                                2006 - now <br><br>  
+
+                                <span>Bahasa Indonesia</span> <br>
+                                2006 - now<br><br>    
+
+                                <span>Latin</span> <br>
+                                2020 - now <br><br>      
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Visuals">
+                    <div class="Img">
+                        <img src="{{ url_for('static',filename='profilepic.png') }}" alt="">
+                    </div>
+                    <div class="quote">
+                        <p>
+                            <span class="quoteHead">me.<span class="function">Quote</span>()</span> <br><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="quoteText">"This cheese would make a really good tiramisu."</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="quoteFoot">-Gene, 2022</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ProlificitySection">
+            <div class="values" id="Prolificity">
+                <div class="valueCircle">
+                    <i class="fa-solid fa-lightbulb valueIcon fa-10x"></i>
+                </div>
+                <p class="valueTitle">
+                    Prolificity
+                </p>
+                <p class="valueText">
+                    and maybe one day I'll be wiser.
+                </p>
+            </div>
+
+            <div class="Work" id="Work">
+                <div class= "WorkText">
+                    <h1>
+                        me.<span class="function">Work</span>()
+                    </h1>
+                    <p>
+                        “””Products, Projects, Papers, and Future.”””
+                    </p> 
+                </div>
+                <div class="Products">
+                    <div class="ProductHeader">
+                        <p>
+                            <span class="subHeader">me.<span class="function">Products</span>()</span> <br>
+                            “””Larger scale products you can take advantage of in a few clicks.”””
+                        </p>
+                    </div>
+                    <div class="ProductCarousel">
+                        <div class="ProductTile">
+                            <a href="pycalc.com">
+                                <div class="ProductItem" id="Calcom">
+                                    <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="Calcom">
+                                    <h3>
+                                        Calcom
+                                    </h3>
+                                    <p>
+                                        "Your solution to computation."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <!--
+                        <div class="ProductTile">
+                            <a href="https://discord.com/api/oauth2/authorize?client_id=822265614244511754&permissions=8&scope=bot">
+                                <div class="ProductItem" id="Amoris">
+                                    <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="Amoris">
+                                    <h3>
+                                        Amoris
+                                    </h3>
+                                    <p>
+                                        "What you've always wanted in a bot."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        -->
+                        <div class="ProductTile">
+                            <a href="https://www.spigotmc.org/resources/lives-smp.96177/">
+                                <div class="ProductItem" id="Lives SMP">
+                                    <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="Lives SMP">
+                                    <h3>
+                                        Lives SMP
+                                    </h3>
+                                    <p>
+                                        "MC Life system with lifesteal."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Projects">
+                    <div class="ProjectHeader">
+                        <p>
+                            <span class="subHeader">me.<span class="function">Projects</span>()</span> <br>
+                            ”””Non marketable projects.”””
+                        </p>
+                    </div>
+                    <div class="ProjectCarousel">
+                        <div class="ProjectTile">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <div class="ProjectItem" id="CodeRedRoboticsVision">
+                                    <img src="https://pbs.twimg.com/profile_images/1350201636354977793/8etruElX_400x400.jpg" alt="Calcom">
+                                    <h3>
+                                        Rapid React Robot Vision
+                                    </h3>
+                                    <p>
+                                        "FRC 2022"
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ProjectTile">
+                            <a href="http://codebozu.com/">
+                                <div class="ProjectItem" id="BozuBot">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFmTZ4t_b7H8A/company-logo_200_200/0/1639364471276?e=2159024400&v=beta&t=tf8UFG64VrtNFu7wH-mLfuZX2Re0gH7cNt-TzuirvGs" alt="CodeBozu">
+                                    <h3>
+                                        BozuBot
+                                    </h3>
+                                    <p>
+                                        "Insane Time Constraint"
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ProjectTile">
+                            <a href="http://sentientplatypus.pythonanywhere.com/underConstruction">
+                                <div class="ProjectItem" id="ReflexTesting">
+                                    <img src="https://www.vhv.rs/dpng/d/259-2592088_blue-circle-png-pictures-blue-eat-circle-transparent.png" alt="ReflexTesting">
+                                    <h3>
+                                        Reflex Testing Game
+                                    </h3>
+                                    <p>
+                                        "Aimlabs but with a camera."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ProjectTile">
+                            <a href="https://github.com/Sleek-Snails/Snail-Snacks">
+                                <div class="ProjectItem" id="puzzles">
+                                    <img src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/04/How-To-Get-Better-At-Puzzles-gear-patrol-lead-feature-V2.jpg" alt="puzzles">
+                                    <h3>
+                                        Puzzles
+                                    </h3>
+                                    <p>
+                                        "Discord code jam submission"
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Papers">
+                    <div class="PaperHeader">
+                        <p>
+                            <span class="subHeader">me.<span class="function">Papers</span>()</span> <br>
+                            ”””Research papers, Documentation, etc.”””
+                        </p>
+                    </div>
+                    <div class="PaperCarousel">
+                        <div class="PaperTile">
+                            <a href="">
+                                <div class="PaperItem" id="CodeRedRoboticsVision">
+                                    <img src="https://pbs.twimg.com/profile_images/1350201636354977793/8etruElX_400x400.jpg" alt="Calcom">
+                                    <h3>
+                                        Rapid React Robot Vision
+                                    </h3>
+                                    <p>
+                                        "FRC 2022"
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="PaperTile">
+                            <a href="https://docs.google.com/document/d/1wopOZllNE47XJXkMYUnJH79BcgCRephUfpS8FBaqJrw/export?format=pdf">
+                                <div class="PaperItem" id="PresidentResearchProject">
+                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="Politician Scraping">
+                                    <h3>
+                                        Politician Scraping
+                                    </h3>
+                                    <p>
+                                        "Analysis of US Politician Data."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="InProgress">
+                    <div class="InProgressHeader">
+                        <p>
+                            <span class="subHeader">me.<span class="function">InProgress</span>()</span> <br>
+                            ”””Masterpieces in the making.”””
+                        </p>
+                    </div>
+                    <div class="InProgressCarousel">
+                        <div class="InProgressTile">
+                            <a href="pycalc.com">
+                                <div class="InProgressItem" id="TeachX">
+                                    <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="TeachX">
+                                    <h3>
+                                        TeachX
+                                    </h3>
+                                    <p>
+                                        "Alexa but better"
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="InProgressTile">
+                            <a href="#">
+                                <div class="InProgressItem" id="CombatPlus">
+                                    <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CombatPlus">
+                                    <h3>
+                                        CombatPlus
+                                    </h3>
+                                    <p>
+                                        "Minecraft Combat just got better."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="InProgressTile">
+                            <a href="debating404.com">
+                                <div class="InProgressItem" id="TeachX">
+                                    <img src="https://www.seekpng.com/png/detail/3-31564_anime-png-tumblr-rainbow-anime-girl-kawaii.png" alt="Impromptu">
+                                    <h3>
+                                        Impromptu
+                                    </h3>
+                                    <p>
+                                        "All things debate."
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="PleasureSection">
+        <div class="values" id="Pleasure">
+            <div class="valueCircle">
+                <i class="fa-solid fa-face-smile valueIcon fa-10x"></i>
+            </div>
+            <p class="valueTitle">
+                Pleasure
+            </p>
+            <p class="valueText">
+                Kiss me more.
+            </p>
+        </div>
+        </div>
+
+        <div class="PleasureBox">
+            <div class="LeftCol">
+                <div class="PleasureItem">
+                    <a href="/gaming">
+                        <img src="https://w0.peakpx.com/wallpaper/375/566/HD-wallpaper-diamond-pickaxe-black-dark-diamond-ore-fluorescent-minecraft-modeled-rendered-simple.jpg" alt="Gaming">
+                    </a>
+                    <div class="caption">
+                        <p>
+                            <span>Gaming</span> <br>
+                            You dont get another chance, life is no Nintendo game.
+                        </p>
+                    </div>
+                </div>
+                <div class="PleasureItem">
+                    <a href="">
+                        <img src="https://i.pinimg.com/736x/56/1f/6a/561f6abb9160c5b7d00a19561505801a--wallpaper-for-iphone-wallpaper.jpg" alt="Exercise">
+                    </a>
+                    <div class="caption">
+                        <p>
+                            <span>Exercise</span> <br>
+                            5 percent pleasure, 50 percent pain,
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="RightCol">
+                <div class="PleasureItem">
+                    <a href="https://open.spotify.com/user/28mvp5mi4u4ez5ks3s0jhxqtq?si=a9f79588cb264dd5">
+                        <img src="https://i.pinimg.com/736x/4b/8b/85/4b8b8583bae65eb0d0dc1b7bb6685f2c.jpg" alt="Music">
+                    </a>
+                    <div class="caption">
+                        <p>
+                            <span>Music</span> <br>
+                            You make elevator music
+                        </p>
+                    </div>
+                </div>
+                <div class="PleasureItem">
+                    <a href="/socials">
+                        <img src="https://i.etsystatic.com/12541307/r/il/a921bd/1200086784/il_570xN.1200086784_siiu.jpg" alt="Socials">
+                    </a>
+                    <div class="caption">
+                        <p>
+                            <span>Socials</span> <br>
+                            A thousand you's, only one of me.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </section>
+        <section class="contact">
+            <div class="ContactMe" id="ContactMe">
+                <div class="contactText">
+                    <h1>me.<span class="function">Contact</span>()</h1>
+                    <p>
+                        """so call me, maybe?"""
+                    </p>
+                </div>
+                <div class="contactFormContainer">
+                    <form class="ContactMeForm" action="/ContactMe/HandleData" method="POST" name="form">
+                        <div class="identity">
+                            <input type="text" id="name" value="Name" name="name" required>
+                            <input type="text" id="email" value="Email" name="email" required>
+                        </div>
+                        <input type="text" id="subject" value="subject" name="subject" required>
+                        <textarea  cols="30" rows="10" id="content" value="message" name="content" required></textarea>
+                        <input type="submit", value="send()" class="submitbutton">
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
@@ -107,19 +489,6 @@
 
 
 
-        
-        <footer id="date"></footer>
-        <script>
-            document.getElementById("date").innerHTML = Date();
-            window.onscroll = scrollShowNav;
-            function scrollShowNav() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementsByTagName("nav")[0].style.top = "-50px";
-            } else {
-                document.getElementsByTagName("nav")[0].style.top = "0px";
-            }
-            }
-        </script>
-        <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
     </body>
+    
 </html>
