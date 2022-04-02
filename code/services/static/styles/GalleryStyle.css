@@ -84,8 +84,10 @@ body {
 
 
 .backButtonContainer {
-    margin-left: 5vw;
-    width: auto;
+    top: 5vw;
+    left: 5vw;
+    position:relative;
+    width: 5vw;
 }
 
 
@@ -111,6 +113,7 @@ body {
     line-height: 47px;
     color: white;
     transition: all 0.3s ease 0s;
+    z-index:-1;
 }
 
 .backIconContainer p:hover{
