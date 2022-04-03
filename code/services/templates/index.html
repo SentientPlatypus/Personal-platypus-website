@@ -22,11 +22,6 @@
     </head>
     <body>
         <div class="NavBar">
-            <!-- <div class="wrapper">                
-                <div class="line-menu half start"></div>
-                <div class="line-menu"></div>
-                <div class="line-menu half end"></div>      
-            </div> -->
             <a href="/" class="btn">Home<span>()</span></a>
             <a href="#AboutMe" class="btn"><span>me.</span>About<span>()</span></a>
             <a href="#ContactMe" class="btn"><span>me.</span>Contact<span>()</span></a>
@@ -95,16 +90,17 @@
                                 Tools
                             </h3>
                             <p>
-                                MongoDB,<br>  
-                                HTML/CSS/JS,<br>  
                                 Python,<br>  
                                 Java,<br>  
+                                HTML/CSS/JS,<br>  
+                                Unreal Engine,<br>  
+                                Blender,      <br> 
+                                MongoDB,<br>  
+                                Flask <br>
                                 GPT-3,<br>  
                                 OpenCV,<br>  
                                 numpy, <br>
                                 Pandas, <br>
-                                Unreal Engine,<br>  
-                                Blender,      <br> 
                                 Limelight, <br>  
                                 Jevois,<br>  
                                 Spigot,<br>  
@@ -486,13 +482,20 @@
                 <div class="contactFormContainer">
                     <form class="ContactMeForm" action="/ContactMe/HandleData" method="POST" name="form">
                         <div class="identity">
-                            <input type="text" id="name" value="Name" name="name" required>
-                            <input type="text" id="email" value="Email" name="email" required>
+                            <input autocomplete="off" type="text" id="name" placeholder="Name" name="name" required>
+                            <input autocomplete="off" type="text" id="email" placeholder="Email" name="email" required>
                         </div>
-                        <input type="text" id="subject" value="subject" name="subject" required>
-                        <textarea  cols="30" rows="10" id="content" value="message" name="content" required></textarea>
-                        <input type="submit", value="send()" class="submitbutton">
+                        <input autocomplete="off" type="text" id="subject" placeholder="subject" name="subject" required>
+                        <textarea autocomplete="off" cols="30" rows="10" id="content" placeholder="message" name="content" required></textarea>
+                        <input type="submit" value="send()" class="submitbutton">
                     </form>
+                    <script>
+                        document.querySelector(".ContactMeForm").addEventListener("submit", function(e){
+                            alert("SENT");
+                            var submitButton = document.querySelector(".submitbutton");
+                            e.preventDefault();
+                        })
+                    </script>
                 </div>
             </div>
         </section>
