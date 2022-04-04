@@ -1,5 +1,6 @@
 from flask import Flask,render_template, request, session, redirect, url_for
 import smtplib, ssl
+from threading import Thread
 import csv
 context = ssl.create_default_context()
 
@@ -77,6 +78,10 @@ def resume():
 def socials():
     return render_template("./socials.html")
 
+@app.route("/exercise")
+def exercise():
+    return render_template("./exercise.html")
+
 
 @app.route("/underConstruction")
 def underConstruction():
@@ -124,9 +129,16 @@ def HandleData():
         print ("Something went wrong….",ex)
     return redirect(url_for("ContactMe", sent=1))
 
+
+def run():
+  app.run(host='0.0.0.0',port=8080)
+
+
+def keep_alive():
+    t = Thread(target=run)
+    t.start()
+
+
 if __name__ == '__main__':
-    app.run(
-        debug=True,
-        port=80,
-        )
+    keep_alive()
 
