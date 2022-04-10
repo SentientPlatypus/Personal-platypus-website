@@ -126,7 +126,7 @@ def HandleData():
         smtp_server.close()
         print ("Email sent successfully!")
     except Exception as ex:
-        print ("Something went wrong….",ex)
+        print ("Something went wrong….", ex)
     return redirect(url_for("ContactMe", sent=1))
 
 
