@@ -7,8 +7,8 @@ context = ssl.create_default_context()
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    EMAIL                 = "trexycrocs@gmail.com"
-    EMAILPASSWORD         = "geneavianina"
+    EMAIL                 = "trexxxxxxxxxxy@gmail.com"
+    EMAILPASSWORD         = "toltlbokcaiicooy"
     PORT                  = 465  # For SSL
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'
@@ -90,24 +90,11 @@ def underConstruction():
     
 @app.route("/ContactMe/HandleData", methods=['POST'])
 def HandleData():
-    projectpath = request.form
-    print(projectpath)
-    form = {}
-    for key in projectpath.keys():
-        values = projectpath.getlist(key)
-        if len(values) == 1:
-            form[key] = values[0]
-        else:
-            form[key] = values
-
-    sendingEmail = form["email"]
-    name = form["name"]
-    subject = form["subject"]
-    message = form["content"]
-
-    # with open("./contacts.csv", "a") as f:
-    #     csvWriter = csv.writer(f)
-    #     csvWriter.writerow([name, sendingEmail, subject, message])
+    projectpath = request.form    
+    sendingEmail = projectpath.get("email")
+    name = projectpath.get("name")
+    subject = projectpath.get("subject")
+    message = projectpath.get("content")
     gmail_user = constants.EMAIL
     gmail_password = constants.EMAILPASSWORD
     to = [constants.EMAIL]
@@ -118,10 +105,15 @@ def HandleData():
 
     %s
     """ % (sendingEmail,name, ", ".join(to), subject, message)
+    print(email_text)
     try:
+        print("working")
         smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
+        print("checkpoint19")
         smtp_server.ehlo()
+        print("checkpoint20")
         smtp_server.login(gmail_user, gmail_password)
+        print("done logging in")
         smtp_server.sendmail(sendingEmail, to, email_text)
         smtp_server.close()
         print ("Email sent successfully!")
