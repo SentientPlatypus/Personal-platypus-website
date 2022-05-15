@@ -342,6 +342,17 @@ color: #FFFFFF;
     
 }
 
+.socialsIcon
+{
+    color: #FFE600;
+    transition: all 0.3s;
+}
+
+.socialsIcon:hover
+{
+    color: #DB00FF;
+}
+
 .AboutMe .AboutMeText h1, .Work .WorkText h1, .ContactMe .contactText h1{
     width: 100%;
     height: 107px;
