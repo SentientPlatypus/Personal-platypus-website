@@ -96,6 +96,7 @@
                                 HTML/CSS/JS,<br>  
                                 Unreal Engine,<br>  
                                 Blender,      <br> 
+                                C# <br>
                                 MongoDB,<br>  
                                 Flask <br>
                                 GPT-3,<br>  
@@ -497,8 +498,13 @@
                         </div>
                         <input autocomplete="off" type="text" id="subject" placeholder="subject" name="subject" required>
                         <textarea autocomplete="off" cols="30" rows="10" id="content" placeholder="message" name="content" required></textarea>
-                        <input type="submit" value="send()" class="submitbutton">
+                        <input type="submit" class="submitbutton">
                     </form>
+                    <script>
+                        document.querySelector(".ContactMeForm").addEventListener("submit", function(e){
+                            alert("SENT");
+                        })
+                    </script>
                     <!-- <script>
                         document.querySelector(".ContactMeForm").addEventListener("submit", function(e){
                             alert("SENT");

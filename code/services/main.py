@@ -1,13 +1,13 @@
 from flask import Flask,render_template, request, session, redirect, url_for
-import smtplib, ssl
+from flask_mail import Mail, Message
 from threading import Thread
 import csv
-context = ssl.create_default_context()
 
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
     EMAIL                 = "trexxxxxxxxxxy@gmail.com"
+    SENDTOEMAIL           = "geneustace.wicaksono@icsd.k12.ny.us"
     EMAILPASSWORD         = "toltlbokcaiicooy"
     PORT                  = 465  # For SSL
 
@@ -25,7 +25,21 @@ def createApp():
     )
     return app
 
+
 app = createApp()
+
+app.config.update(dict(
+    MAIL_SERVER = 'smtp.gmail.com',
+    MAIL_PORT = 587,
+    MAIL_USE_TLS = True,
+    MAIL_USE_SSL = False,
+    MAIL_USERNAME = constants.EMAIL,
+    MAIL_PASSWORD = constants.EMAILPASSWORD,
+))
+
+
+mail = Mail(app)
+
 
 @app.route("/")
 def home():
@@ -95,30 +109,13 @@ def HandleData():
     name = projectpath.get("name")
     subject = projectpath.get("subject")
     message = projectpath.get("content")
-    gmail_user = constants.EMAIL
-    gmail_password = constants.EMAILPASSWORD
-    to = [constants.EMAIL]
-    email_text = """
-    From: %s , %s
-    To: %s
-    Subject: %s
-
-    %s
-    """ % (sendingEmail,name, ", ".join(to), subject, message)
-    print(email_text)
-    try:
-        print("working")
-        smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        print("checkpoint19")
-        smtp_server.ehlo()
-        print("checkpoint20")
-        smtp_server.login(gmail_user, gmail_password)
-        print("done logging in")
-        smtp_server.sendmail(sendingEmail, to, email_text)
-        smtp_server.close()
-        print ("Email sent successfully!")
-    except Exception as ex:
-        print ("Something went wrong….", ex)
+    msg = Message(
+        subject = subject,
+        recipients= [constants.SENDTOEMAIL],
+        body = f"FROM: {name}, EMAIL: {sendingEmail}, \n {message}"
+    )
+    msg.sender = constants.EMAIL
+    mail.send(msg)
     return redirect(url_for("ContactMe", sent=1))
 
 
