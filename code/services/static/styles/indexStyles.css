@@ -108,9 +108,7 @@ body {
     position: relative;
     left: calc(50% - 70vw/2 - 64.5px);
     top: calc(50% - 50vw/2);
-    
-    height: 812px;
-    margin-top: 6em;
+        margin-top: 6em;
 
 }
 
@@ -346,6 +344,7 @@ color: #FFFFFF;
 {
     color: #FFE600;
     transition: all 0.3s;
+    margin-right: 2.5%;
 }
 
 .socialsIcon:hover
@@ -514,7 +513,6 @@ color: #FFFFFF;
 .Work {
     position: relative;
     width: 90vw;
-    height: 2100px;
     margin-left: 5vw;
     margin-top: 30em;
 }

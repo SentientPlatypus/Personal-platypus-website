@@ -1,0 +1,1 @@
+C:\Users\trexx\Documents\PYTHON\ CODE\ LOL\PersonalWebsite\Personal-platypus-website\rocketcode\target\debug\RocketCode.exe: C:\Users\trexx\Documents\PYTHON\ CODE\ LOL\PersonalWebsite\Personal-platypus-website\rocketcode\src\main.rs
