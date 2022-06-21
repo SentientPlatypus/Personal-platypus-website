@@ -6,22 +6,22 @@ use rocket_dyn_templates::{Template, tera::Tera, context};
 
 #[get("/")] 
 fn main_page() -> Template {
-    Template::render("index", &Context::default())
+    Template::render("index", context!{})
 }
 
 #[get("/socials")] 
 fn socials() -> Template {
-    Template::render("socials", &Context::default())
+    Template::render("socials", context!{})
 }
 
 #[get("/gaming")] 
 fn gaming() -> Template {
-    Template::render("gaming", &Context::default())
+    Template::render("gaming", context!{})
 }
 
 #[get("/exercise")] 
 fn exercise() -> Template {
-    Template::render("exercise", &Context::default())
+    Template::render("exercise", context!{})
 }
 
 #[launch]
