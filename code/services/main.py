@@ -2,13 +2,13 @@ from flask import Flask,render_template, request, session, redirect, url_for
 from flask_mail import Mail, Message
 from threading import Thread
 import csv
-
+import os
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    EMAIL                 = "trexxxxxxxxxxy@gmail.com"
-    SENDTOEMAIL           = "geneustace.wicaksono@icsd.k12.ny.us"
-    EMAILPASSWORD         = "toltlbokcaiicooy"
+    EMAIL                 = os.environ("email")
+    SENDTOEMAIL           = os.environ("SendToEmail")
+    EMAILPASSWORD         = os.environ("emailPassword")
     PORT                  = 465  # For SSL
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'
