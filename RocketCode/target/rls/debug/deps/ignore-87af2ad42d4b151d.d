@@ -1,0 +1,12 @@
+c:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\RocketCode\target\rls\debug\deps\ignore-87af2ad42d4b151d.rmeta: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\default_types.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\dir.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\gitignore.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\overrides.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\pathutil.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\types.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\walk.rs
+
+c:\Users\trexx\Documents\PYTHON CODE LOL\PersonalWebsite\Personal-platypus-website\RocketCode\target\rls\debug\deps\ignore-87af2ad42d4b151d.d: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\default_types.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\dir.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\gitignore.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\overrides.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\pathutil.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\types.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\walk.rs
+
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\lib.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\default_types.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\dir.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\gitignore.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\overrides.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\pathutil.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\types.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ignore-0.4.18\src\walk.rs:
