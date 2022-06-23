@@ -6,9 +6,9 @@ import os
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    EMAIL                 = os.environ("email")
-    SENDTOEMAIL           = os.environ("SendToEmail")
-    EMAILPASSWORD         = os.environ("emailPassword")
+    EMAIL                 = os.environ.get("email")
+    SENDTOEMAIL           = os.environ.get("SendToEmail")
+    EMAILPASSWORD         = os.environ.get("emailPassword")
     PORT                  = 465  # For SSL
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'

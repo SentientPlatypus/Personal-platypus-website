@@ -762,8 +762,12 @@ color: #FFFFFF;
     top: 25vmin;
     left:5vw;
     width: 70vw;
-    height: 60vmin;
-    margin-bottom: 50vmin;
+    height: auto;
+    margin-bottom: 50vh;
+}
+
+.contact {
+    height:auto;
 }
 
 .contact .ContactMe .contactText h1 {
@@ -922,7 +926,38 @@ color: #FFFFFF;
     transform: rotate(-90deg) translateX(-3px);
   }
 
+  footer {
+    background-color: #1e1f1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+    width: 100vw;
+  }
 
+  footer h1 {
+    width: 100%;
+    height: 107px;
+    left: 9px;
+    top: 12px;
+    text-decoration: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 95px;
+    
+    color: #FFFFFF;
+  }
+
+  .fa-rust {
+    color: white;
+    margin-left: auto;
+  }
 
 
 

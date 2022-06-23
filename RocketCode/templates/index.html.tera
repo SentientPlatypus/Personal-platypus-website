@@ -527,14 +527,10 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
+        <footer>
+            <i class="fa-brands fa-rust fa-5x"></i>
+            <h1>Oxidized.</h1>
+        </footer>
     </body>
     
 </html>
