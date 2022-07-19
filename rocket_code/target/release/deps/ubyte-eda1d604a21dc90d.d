@@ -1,0 +1,11 @@
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\ubyte-eda1d604a21dc90d.rmeta: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\arithmetic.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\byte_unit.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\parse.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\ser_de.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\libubyte-eda1d604a21dc90d.rlib: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\arithmetic.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\byte_unit.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\parse.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\ser_de.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\ubyte-eda1d604a21dc90d.d: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\arithmetic.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\byte_unit.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\parse.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\ser_de.rs
+
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\lib.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\arithmetic.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\byte_unit.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\parse.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\ubyte-0.10.2\src\ser_de.rs:

@@ -1,0 +1,11 @@
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\socket2-0f0cb14f2f7ceccd.rmeta: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockaddr.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\socket.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockref.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sys\windows.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\libsocket2-0f0cb14f2f7ceccd.rlib: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockaddr.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\socket.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockref.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sys\windows.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\socket2-0f0cb14f2f7ceccd.d: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockaddr.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\socket.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockref.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sys\windows.rs
+
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\lib.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockaddr.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\socket.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sockref.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\socket2-0.4.4\src\sys\windows.rs:

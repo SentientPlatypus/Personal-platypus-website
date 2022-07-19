@@ -1,0 +1,11 @@
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\cipher-6841570647cd44f2.rmeta: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\libcipher-6841570647cd44f2.rlib: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\cipher-6841570647cd44f2.d: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs
+
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\lib.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\block.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\common.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\errors.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\cipher-0.3.0\src\stream.rs:

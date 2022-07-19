@@ -1,0 +1,2 @@
+cargo:rustc-env=TYPENUM_BUILD_CONSTS=C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\build\typenum-edafdc373e1f04e8\out\consts.rs
+cargo:rustc-env=TYPENUM_BUILD_OP=C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\build\typenum-edafdc373e1f04e8\out\op.rs

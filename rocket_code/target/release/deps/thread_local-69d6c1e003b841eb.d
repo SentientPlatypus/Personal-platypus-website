@@ -1,0 +1,10 @@
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\thread_local-69d6c1e003b841eb.rmeta: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\cached.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\thread_id.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\unreachable.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\libthread_local-69d6c1e003b841eb.rlib: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\cached.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\thread_id.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\unreachable.rs
+
+C:\Users\trexx\Documents\RUST CODE LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\deps\thread_local-69d6c1e003b841eb.d: C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\lib.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\cached.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\thread_id.rs C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\unreachable.rs
+
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\lib.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\cached.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\thread_id.rs:
+C:\Users\trexx\.cargo\registry\src\github.com-1ecc6299db9ec823\thread_local-1.1.4\src\unreachable.rs:

@@ -1,0 +1,1 @@
+C:\Users\trexx\Documents\RUST\ CODE\ LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\target\release\Oxidized-Platypus-Site.exe: C:\Users\trexx\Documents\RUST\ CODE\ LOL\Personal-Oxidized-Platypus-Website\Oxidized-Platypus-Site\src\main.rs
