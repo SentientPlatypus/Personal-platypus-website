@@ -175,6 +175,13 @@ body {
     top: calc(50% - .5em); /* 50% - 3/4 of icon height */
 }
 
+@media (max-width:1080px)
+{
+    i.valueIcon {
+        visibility: hidden;
+    }
+}
+
 
 .TitleBox p {
 width: 70vmax;
@@ -234,7 +241,7 @@ color: #FFFFFF;
 {
     .AboutMe {
         display: block;
-        height: 160vmax;
+        height: auto;
         margin-bottom: 20vmax;
     }
     .AboutMe .AboutMeContainer .AboutMe {
@@ -250,7 +257,7 @@ color: #FFFFFF;
     }
     .AboutMe .Visuals{
         width: 80vmin;
-        height: 80vmin;
+        height: auto;
         margin-left: 0px;
     }
 
@@ -291,31 +298,6 @@ color: #FFFFFF;
     .AboutMe .quote {
         width: 80vmin;
     }
-    
-
-    .ContactMe .ContactMeForm .identity {
-        width: 100%;
-        text-align: center;
-        display: block;
-        margin-bottom: 0px;
-    }
-    
-    .ContactMeForm .identity #name,  .ContactMeForm .identity #email{
-        font-size: 18px;
-        border: none;
-        outline: none;
-        text-decoration: none;
-        border-radius:1vmin;
-        color: white;
-        background-color: #1e1f1c;
-        width: 45%;
-        height: 7vh;
-
-        margin-left: 0px;
-        margin-bottom: 5vmin;
-    }
-    
-
 }
 
 .AboutMe .AboutMeText {
@@ -327,7 +309,7 @@ color: #FFFFFF;
 }
 
 .AboutMeContainer{
-    width: 60%;
+    width: auto;
 }
 
 .AboutMeTextContainer {
@@ -687,6 +669,21 @@ color: #FFFFFF;
     height: auto;
 }
 
+@media (max-width:580px)
+{
+    div.PleasureBox{
+        display: block;
+    }
+
+    div.LeftCol, div.RightCol {
+        width: 90vw;
+        margin: 0px;
+    }
+}
+
+
+
+
 .PleasureBox {
     position: relative;
     width: 90vw;
@@ -755,6 +752,9 @@ color: #FFFFFF;
 }
 
 
+
+
+
 .ContactMe {
     position: relative;
     top: 25vmin;
@@ -781,7 +781,7 @@ color: #FFFFFF;
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 95px;
     
     color: #FFFFFF;
@@ -799,8 +799,22 @@ color: #FFFFFF;
 .ContactMeForm {
     border: white;
 }
+@media (max-width:395px)
+{
+    .ContactMeForm div.identity{
+        display: block;
+    }
 
-
+    input#name {
+        width: 100%;
+        margin: 0px;
+    }
+    input#email {
+        width: 100%;
+        margin: 0px;
+        margin-top: 5vmin;
+    }
+}
 .ContactMeForm .identity {
     width: 100%;
     text-align: center;
