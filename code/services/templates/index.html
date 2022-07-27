@@ -164,7 +164,7 @@
                 </div>
                 <div class="Visuals">
                     <div class="Img">
-                        <img src="{{ url_for('static',filename='profilepic.png') }}" alt="">
+                        <img src="{{ url_for('static',filename='images/profilepic.png') }}" alt="">
                     </div>
                     <div class="quote">
                         <p>
@@ -205,8 +205,8 @@
                         </p>
                     </div>
                     <div class="ProjectCarousel">
-                        <div class="ProjectItem" id="nnsim" onclick="openThePopup('nnsim')">
-                            <img src="{{ url_for('static',filename='selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION">
+                        <div class="ProjectItem" id="nnsim" onclick="openThePopup('nnsim')" data-hover="Click for More Information!">
+                            <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION">
                             <h3 class="title">
                                 Neural Network Car Sim
                             </h3>
@@ -215,7 +215,7 @@
                             </p>
                             <div class="popupData">
                                 <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION" class="popupBanner">
+                                    <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION" class="popupBanner">
                                 </div>
                                 <div class="popupHead">
                                     <h3>
@@ -242,7 +242,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ProjectItem" id="CodeRedRoboticsVisionCode" onclick="openThePopup('CodeRedRoboticsVisionCode')">
+                        <div class="ProjectItem" id="CodeRedRoboticsVisionCode" onclick="openThePopup('CodeRedRoboticsVisionCode')" title="Click for more Information!">
                             <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
                             <h3>
                                 Rapid React Robot Vision
@@ -264,7 +264,7 @@
                                 </div>
                                 <div class="popupContent">
                                     <p>
-                                        FRC 2022 was a game very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted Visions to program a visions pipeline that would accurately track and relay distance and angle data at a high rate.
+                                        FRC 2022 was a game very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted Visions to program a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
                                         We delivered.
                                     </p>
                                 </div>
@@ -280,7 +280,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ProductItem" id="Calcom" onclick="openThePopup('Calcom')">
+                        <div class="ProjectItem" id="Calcom" onclick="openThePopup('Calcom')">
                             <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="Calcom">
                             <h3>
                                 Calcom
@@ -316,7 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="ProductItem" id="LivesSMP" onclick="openThePopup('LivesSMP')">
+                        <div class="ProjectItem" id="LivesSMP" onclick="openThePopup('LivesSMP')">
                             <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="Lives SMP">
                             <h3>
                                 Lives SMP
@@ -431,7 +431,7 @@
                             </div>          
                         </div>
                         <div class="ProjectItem" id="ReflexTesting" onclick="openThePopup('ReflexTesting')">
-                            <img src="https://www.vhv.rs/dpng/d/259-2592088_blue-circle-png-pictures-blue-eat-circle-transparent.png" alt="ReflexTesting">
+                            <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="ReflexTesting">
                             <h3>
                                 Reflex Testing Game
                             </h3>
@@ -440,7 +440,7 @@
                             </p>
                             <div class="popupData">
                                 <div class="popupBanner">
-                                    <img src="https://www.vhv.rs/dpng/d/259-2592088_blue-circle-png-pictures-blue-eat-circle-transparent.png" alt="blue circle" class="popupBanner">
+                                    <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="blue circle" class="popupBanner">
                                 </div>
                                 <div class="popupHead">
                                     <h3>
@@ -467,7 +467,7 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="ProductItem" id="Amoris" onclick="openThePopup('Amoris')">
+                        <div class="ProjectItem" id="Amoris" onclick="openThePopup('Amoris')">
                             <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="Amoris">
                             <h3>
                                 Amoris
@@ -554,7 +554,7 @@
                         </p>
                     </div>
                     <div class="PaperCarousel">
-                        <div class="PaperItem" id="CodeRedRoboticsVisionDocs" onclick="openThePopup('CodeRedRoboticsVisionDocs')">
+                        <div class="ProjectItem" id="CodeRedRoboticsVisionDocs" onclick="openThePopup('CodeRedRoboticsVisionDocs')">
                             <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
                             <h3>
                                 Rapid React Robot Vision
@@ -576,7 +576,7 @@
                                 </div>
                                 <div class="popupContent">
                                     <p>
-                                        FRC 2022 was a game very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted Visions to program a visions pipeline that would accurately track and relay distance and angle data at a high rate.
+                                        FRC 2022 was a game very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted Visions to program a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
                                         We delivered.
                                     </p>
                                 </div>
@@ -592,7 +592,7 @@
                                 </div>
                             </div>        
                         </div>
-                        <div class="PaperItem" id="PresidentResearchProject" onclick="openThePopup('PresidentResearchProject')">
+                        <div class="ProjectItem" id="PresidentResearchProject" onclick="openThePopup('PresidentResearchProject')">
                             <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="Politician Scraping">
                             <h3>
                                 Politician Scraping
@@ -641,8 +641,8 @@
                         </p>
                     </div>
                     <div class="InProgressCarousel">
-                        <div class="InProgressItem" id="Foresight" onclick="openThePopup('Foresight')">
-                            <img src="{{ url_for('static',filename='LOGONOTEXT.png') }}" alt="Foresight">
+                        <div class="ProjectItem" id="Foresight" onclick="openThePopup('Foresight')">
+                            <img src="{{ url_for('static',filename='images/LOGONOTEXT.png') }}" alt="Foresight">
                             <h3>
                                 Foresight
                             </h3>
@@ -651,7 +651,7 @@
                             </p>
                             <div class="popupData">
                                 <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='LOGONOTEXT.png') }}" alt="CODE RED" class="popupBanner">
+                                    <img src="{{ url_for('static',filename='images/LOGONOTEXT.png') }}" alt="CODE RED" class="popupBanner">
                                 </div>
                                 <div class="popupHead">
                                     <h3>
@@ -679,7 +679,7 @@
                                 </div>
                             </div>                
                         </div>
-                        <div class="InProgressItem" id="TeachX" onclick="openThePopup('TeachX')">
+                        <div class="ProjectItem" id="TeachX" onclick="openThePopup('TeachX')">
                             <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="TeachX">
                             <h3>
                                 GETA
@@ -717,7 +717,7 @@
                                 </div>
                             </div>                
                         </div>
-                        <div class="InProgressItem" id="CombatPlus" onclick="openThePopup('CombatPlus')">
+                        <div class="ProjectItem" id="CombatPlus" onclick="openThePopup('CombatPlus')">
                             <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CombatPlus">
                             <h3>
                                 CombatPlus
@@ -756,7 +756,7 @@
                                 </div>
                             </div>                        
                         </div>
-                        <div class="InProgressItem" id="Impromptu" onclick="openThePopup('Impromptu')">
+                        <div class="ProjectItem" id="Impromptu" onclick="openThePopup('Impromptu')">
                             <img src="https://yt3.ggpht.com/4pPcctOJDziMpzw07Ehb-tFcMJiAAqCJtAmAzmbD6UTjIdjTgFS8xH0TmNQRFL55aeMq1tfAXBs=s900-c-k-c0x00ffffff-no-rj" alt="Impromptu">
                             <h3>
                                 Impromptu
@@ -904,6 +904,16 @@
         <div class="popup hidden" id="popup">
         </div>
 
+        <div class="cursors">
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+            <div><span></span></div>
+        </div>
+        <script src="{{ url_for('static',filename='js/cursor.js') }}"></script>
         <footer>
             <i class="fa-brands fa-rust fa-5x"></i>
             <h1>Oxidized.</h1>

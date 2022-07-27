@@ -280,3 +280,29 @@ body {
     color: #FFE600;
     
 }
+
+div.cursors div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 10px;
+    height: 10px;
+    background-color: white;    
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 300px;  
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Roboto Mono';
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFE600;
+
+}

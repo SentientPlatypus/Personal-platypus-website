@@ -4,6 +4,10 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: none;
+}
+a {
+    cursor: none;
 }
 
 body {
@@ -600,9 +604,6 @@ color: #FFFFFF;
     justify-content: center;
     text-align: center;
     left: calc(50% - 238px/2);
-    cursor: pointer;
-    
-
 }
 
 .ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
@@ -878,7 +879,6 @@ color: #FFFFFF;
     background: transparent;
     color: #ADFF00;
     font-size: 24px;
-    cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
@@ -899,7 +899,6 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     transition: transform 330ms ease-out;
   }
   
@@ -948,6 +947,18 @@ color: #FFFFFF;
     div.popup {
         width: 80vw;
         left: 10vw;
+    }
+
+    .popup div.popupContent {
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    div.popupBanner {
+        width: 100%;
+        max-height: 200px;
+        text-align: center;
     }
 }
 
@@ -1005,7 +1016,6 @@ color: #FFFFFF;
 
 .X:hover {
     color: #DB00FF;
-    cursor: pointer;
 }
 
 .xContainer {
@@ -1034,6 +1044,34 @@ color: #FFFFFF;
 }
 
 
+
+
+
+div.cursors div {
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 10px;
+    height: 10px;
+    background-color: white;    
+    border-radius: 50%;
+    z-index: 10000;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    width: 300px;  
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Roboto Mono';
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFE600;
+
+}
 
 
 
@@ -1157,7 +1195,6 @@ color: #FFFFFF;
         margin-left: 10px;
         width: 60px;
         height: 60px;
-        cursor: pointer;
         margin: 0 5;
         text-align: center;
         line-height: 60px;

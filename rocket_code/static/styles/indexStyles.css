@@ -949,6 +949,12 @@ color: #FFFFFF;
         width: 80vw;
         left: 10vw;
     }
+
+    .popup div.popupContent {
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
 
 .popupBanner {

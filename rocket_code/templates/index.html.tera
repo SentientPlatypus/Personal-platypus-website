@@ -431,7 +431,7 @@
                             </div>          
                         </div>
                         <div class="ProjectItem" id="ReflexTesting" onclick="openThePopup('ReflexTesting')">
-                            <img src="https://www.vhv.rs/dpng/d/259-2592088_blue-circle-png-pictures-blue-eat-circle-transparent.png" alt="ReflexTesting">
+                            <img src="images/ReflexGame.png" alt="ReflexTesting">
                             <h3>
                                 Reflex Testing Game
                             </h3>
@@ -440,7 +440,7 @@
                             </p>
                             <div class="popupData">
                                 <div class="popupBanner">
-                                    <img src="https://www.vhv.rs/dpng/d/259-2592088_blue-circle-png-pictures-blue-eat-circle-transparent.png" alt="blue circle" class="popupBanner">
+                                    <img src="images/ReflexGame.png" alt="blue circle" class="popupBanner">
                                 </div>
                                 <div class="popupHead">
                                     <h3>
