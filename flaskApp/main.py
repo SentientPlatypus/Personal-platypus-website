@@ -1,8 +1,9 @@
 from flask import Flask,render_template, request, session, redirect, url_for
 from flask_mail import Mail, Message
 from threading import Thread
-import csv
-import os
+import gunicorn
+
+server = gunicorn.SERVER
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
