@@ -119,15 +119,11 @@ def HandleData():
     return redirect(url_for("ContactMe", sent=1))
 
 
-def run():
-  app.run(host='0.0.0.0',port=8080)
-
-
-def keep_alive():
-    t = Thread(target=run)
-    t.start()
-
-
 if __name__ == '__main__':
+    def run():
+        app.run(host='0.0.0.0',port=8080)
+    def keep_alive():
+        t = Thread(target=run)
+        t.start()
     keep_alive()
 

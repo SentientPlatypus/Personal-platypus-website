@@ -206,6 +206,10 @@ color: #FFFFFF;
     color: #ADFF00;
 }
 
+.TitleBox .red {
+    color: #d72f37;
+}
+
 .TitleBox .param {
     color: #FF6B00;
     font-style: italic;
@@ -227,6 +231,11 @@ color: #FFFFFF;
 
 .TitleBox .int {
     color: #DB00FF;
+}
+
+.TitleBox .let {
+    color: #58d9ef;
+    font: italic;
 }
 
 
