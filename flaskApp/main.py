@@ -2,14 +2,16 @@ from flask import Flask,render_template, request, session, redirect, url_for
 from flask_mail import Mail, Message
 from threading import Thread
 import gunicorn
+from boto.s3.connection import S3Connection
+import os
 
 server = gunicorn.SERVER
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    EMAIL                 = "trexxxxxxxxxxy@gmail.com"
-    SENDTOEMAIL           = "geneustace.wicaksono@icsd.k12.ny.us"
-    EMAILPASSWORD         = "toltlbokcaiicooy"
+    EMAIL                 = os.getenv("SENDFROMEMAIL")
+    SENDTOEMAIL           = os.getenv("SENDTOEMAIL")
+    EMAILPASSWORD         = os.getenv("EMAILPASSWORD")
     PORT                  = 465  # For SSL
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'
