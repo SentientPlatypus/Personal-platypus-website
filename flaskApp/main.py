@@ -7,9 +7,9 @@ server = gunicorn.SERVER
 
 class constants():
     EMAILREGEX            = '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-    EMAIL                 = ""
-    SENDTOEMAIL           = ""
-    EMAILPASSWORD         = ""
+    EMAIL                 = "trexxxxxxxxxxy@gmail.com"
+    SENDTOEMAIL           = "geneustace.wicaksono@icsd.k12.ny.us"
+    EMAILPASSWORD         = "toltlbokcaiicooy"
     PORT                  = 465  # For SSL
 
 #path = '/home/SentientPlatypus/Personal-platypus-website/code'
