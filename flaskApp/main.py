@@ -2,7 +2,6 @@ from flask import Flask,render_template, request, session, redirect, url_for
 from flask_mail import Mail, Message
 from threading import Thread
 import gunicorn
-from boto.s3.connection import S3Connection
 import os
 
 server = gunicorn.SERVER
