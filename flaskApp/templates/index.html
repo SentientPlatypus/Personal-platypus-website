@@ -24,7 +24,6 @@
             <a href="#ContactMe" class="btn"><span>me.</span>Contact<span>()</span></a>
             <a href="#Work" class="btn"><span>me.</span>Work<span>()</span></a>
         </div>
-
         <section id="TitleBoxSection">
             <div class="TitleBox" id="TitleBox">
                 <p>
@@ -203,6 +202,43 @@
                         </p>
                     </div>
                     <div class="ProjectCarousel">
+                        <div class="ProjectItem" id="foresightapi" onclick="openThePopup('foresightapi')" data-hover="Click for More Information!">
+                            <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="ForesightAPI">
+                            <h3 class="title">
+                                Foresight API
+                            </h3>
+                            <p>
+                                "Google finance + Machine learning"
+                            </p>
+                            <div class="popupData">
+                                <div class="popupBanner">
+                                    <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="Foresight API" class="popupBanner">
+                                </div>
+                                <div class="popupHead">
+                                    <h3>
+                                        Foresight API
+                                    </h3>
+                                    <div class="xContainer">
+                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                    </div>
+                                </div>
+                                <div class="popupContent">
+                                    <p>
+                                        The Foresight API is the brain behind My Stock prediction webapp foresight. It scrapes data from the google finance website, and makes predictions using Tensorflow's LSTM Dense model. 
+                                        Its also open source, so you should check out the github, and some of its endpoints:
+                                    </p>
+                                </div>
+                                <div class="popupFooter">
+                                    <h3>
+                                        Links:
+                                    </h3>
+                                    <div class="links">
+                                        <a href="https://github.com/SentientPlatypus/Foresight-API" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                        <a href="https://foresightapi.herokuapp.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="ProjectItem" id="nnsim" onclick="openThePopup('nnsim')" data-hover="Click for More Information!">
                             <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION">
                             <h3 class="title">
