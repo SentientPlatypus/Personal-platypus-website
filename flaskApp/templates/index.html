@@ -202,6 +202,49 @@
                         </p>
                     </div>
                     <div class="ProjectCarousel">
+                        <div class="ProjectItem" id="foresightapp" onclick="openThePopup('foresightapp')" data-hover="Click for More Information!">
+                            <img src="{{ url_for('static',filename='images/Foresightlogo.png') }}" alt="ForesightAPI">
+                            <h3 class="title">
+                                Foresight
+                            </h3>
+                            <p>
+                                Neural Network stock prediction.
+                            </p>
+                            <div class="popupData">
+                                <div class="popupBanner">
+                                    <img src="{{ url_for('static',filename='images/Foresightlogo.png') }}" alt="Foresight API" class="popupBanner">
+                                </div>
+                                <div class="popupHead">
+                                    <h3>
+                                        Foresight
+                                    </h3>
+                                    <div class="xContainer">
+                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                    </div>
+                                </div>
+                                <div class="popupContent">
+                                    <p>
+                                        The Foresight is a webapp that does stock price prediction with tensorflow's LSTM dense model. <br>
+                                        Foresight splits its responsibilities into 2 applications: The webapp, and the Foresight API. <br>
+                                        The webapp is responsible for displaying content, while the API does most of the heavylifting. <br>
+                                        I did this, because I needed to access data in javascript that is only available with python libraries. <br>
+                                        So, I just had my scripts send queries to a python application: the Foresight API.<br>
+                                        Foresight took a lot of work. Routing, Styling, Scripting, Webscraping, Machine learning, integration and deployment were all things that needed to happen. <br>
+                                        it was daunting at first, but my enthusiasm increased as things started coming together, especially after integrating the graph (Huge thanks to <a href="https://www.anychart.com">anychart</a>) <br>
+                                        The grind began during the summer. i tried my best to do a little bit each day I could. (Not that successfull, check my <a href="https://github.com/SentientPlatypus">github</a>) <br>
+                                        Its here now. feels good.             
+                                    </p>
+                                </div>
+                                <div class="popupFooter">
+                                    <h3>
+                                        Links:
+                                    </h3>
+                                    <div class="links">
+                                        <a href="https://foresightapp.herokuapp.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="ProjectItem" id="foresightapi" onclick="openThePopup('foresightapi')" data-hover="Click for More Information!">
                             <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="ForesightAPI">
                             <h3 class="title">
