@@ -532,12 +532,6 @@ color: #FFFFFF;
     color: #FFE600;
  }
 
-.Products, .Papers, .Projects, .InProgress {
-    width: 90vw;
-    height: 456px;
-    left: 11px;
-    top: 225px;
-}
 
 .ProductHeader, .PaperHeader, .ProjectHeader, .InProgressHeader {
     width: auto;
@@ -578,59 +572,47 @@ color: #FFFFFF;
     color: #FFE600;
  }
 
-
-.ProductCarousel, .PaperCarousel, .ProjectCarousel, .InProgressCarousel {
+ .Projects{
     width: 90vw;
-    height: 296px;
-    left: 0px;
-    top: 122px;
     display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    height: 456px;
     overflow-x: auto;
-    overflow-y: hidden;
-    justify-content: flex-start;
+    background-color: #000;
 }
 
-.ProductTile, .PaperTile, .ProjectTile, .InProgressTile {
-    width: 350px;
-    justify-content: center;
-    display:flex;
-}
-
-.ProductTile a, .PaperTile a, .ProjectTile a, .InProgressTile a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-}
-
-
-
-
-.ProductItem, .PaperItem, .ProjectItem, .InProgressItem {
-    width: 100%;
-    height: 100%;
+.ProjectItem {
+    transition: all 0.3s;
     left: 12px;
     top: 0px;
     justify-content: center;
     text-align: center;
     left: calc(50% - 238px/2);
+    opacity: 0.5;
 }
 
-.ProductItem img, .PaperItem img, .ProjectItem img, .InProgressItem img {
+.ProjectItem:hover {
+    opacity: 1;
+}
+
+.ProjectItem .popupData {
+    display: none;
+}
+
+.ProjectItem h3, .ProjectItem p {
+    display: none;
+}
+
+.ProjectItem img{
     width: 300px;
     height: 200px;
     transition: all 0.3s ease;
-
 }
 
-.ProductItem img:hover, .PaperItem img:hover, .ProjectItem img:hover, .InProgressItem img:hover{
-    width: 315px;
-    height: 215px;
-    margin-left:auto;
-}
-
-.ProductItem p, .PaperItem p, .ProjectItem p, .InProgressItem p{
-    width: 100%;
-    height: 30px;
+.cursors div p{
+    width: 200px;
+    height: auto;
     left: 48px;
     top: 238px;
 
@@ -644,12 +626,11 @@ color: #FFFFFF;
     color: #FFE600;
 }
 
-.ProductItem h3, .PaperItem h3, .ProjectItem h3, .InProgressItem h3{
-    width: 100%;
-    height: 10px;
+.cursors div h3{
+    width: 200px;
+    height: auto;
     left: 48px;
     top: 200px;
-    
     font-family: 'Roboto Mono';
     font-style: normal;
     font-weight: 400;
@@ -1043,6 +1024,8 @@ color: #FFFFFF;
 }
 
 
+
+
 .popupHead {
     display: flex;
     vertical-align: top;
@@ -1067,6 +1050,10 @@ div.cursors div {
     z-index: 10000;
     pointer-events: none;
     transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Roboto Mono';
+    color: #FFE600;
 }
 
 div.cursors div span {
@@ -1079,7 +1066,10 @@ div.cursors div span {
     font-family: 'Roboto Mono';
     background-color: rgba(0, 0, 0, 0.5);
     color: #FFE600;
+}
 
+div.cursors div h3, div.cursors div p {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 

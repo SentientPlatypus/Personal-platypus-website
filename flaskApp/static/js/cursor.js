@@ -24,10 +24,12 @@ const projectItems = document.querySelectorAll("div.ProjectItem")
 projectItems.forEach(item => {
     $(item).hover(
         function () {
-            $(balls[0]).find( "span" ).text( "Click for more info");
+            $(balls[0]).append($(this).find("h3")[0].cloneNode(true))
+            $(balls[0]).append($(this).find("p")[0].cloneNode(true))
+            $(balls[0]).find("p").append(" <br> click for more info!")      
         },
         function() {
-            $(balls[0]).find( "span" ).text("");
+            $(balls[0]).empty()
         }
     )
 })

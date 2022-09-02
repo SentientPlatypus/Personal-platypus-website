@@ -195,662 +195,626 @@
                     </p> 
                 </div>
 
-
-
-
                 <div class="Projects">
-                    <div class="ProjectHeader">
+                    <div class="ProjectItem" id="foresightapp" onclick="openThePopup('foresightapp')" data-hover="Click for More Information!">
+                        <img src="{{ url_for('static',filename='images/ForesightLogo.png') }}" alt="Foresight">
+                        <h3 class="title">
+                            Foresight
+                        </h3>
                         <p>
-                            <span class="subHeader">me.<span class="function">Projects</span>()</span> <br>
-                            ”””Where Ive been”””
+                            Neural Network stock prediction.
                         </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/ForesightLogo.png') }}" alt="Foresight " class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Foresight
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    The Foresight is a webapp that does stock price prediction with tensorflow's LSTM dense model. <br>
+                                    Foresight splits its responsibilities into 2 applications: The webapp, and the Foresight API. <br>
+                                    The webapp is responsible for displaying content, while the API does most of the heavylifting. <br>
+                                    I did this, because I needed to access data in javascript that is only available with python libraries. <br>
+                                    So, I just had my scripts send queries to a python application: the Foresight API.<br>
+                                    Foresight took a lot of work. Routing, Styling, Scripting, Webscraping, Machine learning, integration and deployment were all things that needed to happen. <br>
+                                    it was daunting at first, but my enthusiasm increased as things started coming together, especially after integrating the graph (Huge thanks to <a href="https://www.anychart.com">anychart</a>) <br>
+                                    The grind began during the summer. i tried my best to do a little bit each day I could. (Not that successfull, check my <a href="https://github.com/SentientPlatypus">github</a>) <br>
+                                    Its here now. feels good.             
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://foresight.sentientplatypu.repl.co" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ProjectCarousel">
-                        <div class="ProjectItem" id="foresightapp" onclick="openThePopup('foresightapp')" data-hover="Click for More Information!">
-                            <img src="{{ url_for('static',filename='images/ForesightLogo.png') }}" alt="Foresight">
-                            <h3 class="title">
-                                Foresight
-                            </h3>
-                            <p>
-                                Neural Network stock prediction.
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='images/ForesightLogo.png') }}" alt="Foresight " class="popupBanner">
+                    <div class="ProjectItem" id="foresightapi" onclick="openThePopup('foresightapi')" data-hover="Click for More Information!">
+                        <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="ForesightAPI">
+                        <h3 class="title">
+                            Foresight API
+                        </h3>
+                        <p>
+                            "Google finance + Machine learning"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="Foresight API" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Foresight API
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Foresight
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        The Foresight is a webapp that does stock price prediction with tensorflow's LSTM dense model. <br>
-                                        Foresight splits its responsibilities into 2 applications: The webapp, and the Foresight API. <br>
-                                        The webapp is responsible for displaying content, while the API does most of the heavylifting. <br>
-                                        I did this, because I needed to access data in javascript that is only available with python libraries. <br>
-                                        So, I just had my scripts send queries to a python application: the Foresight API.<br>
-                                        Foresight took a lot of work. Routing, Styling, Scripting, Webscraping, Machine learning, integration and deployment were all things that needed to happen. <br>
-                                        it was daunting at first, but my enthusiasm increased as things started coming together, especially after integrating the graph (Huge thanks to <a href="https://www.anychart.com">anychart</a>) <br>
-                                        The grind began during the summer. i tried my best to do a little bit each day I could. (Not that successfull, check my <a href="https://github.com/SentientPlatypus">github</a>) <br>
-                                        Its here now. feels good.             
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://foresight.sentientplatypu.repl.co" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    The Foresight API is the brain behind My Stock prediction webapp foresight. It scrapes data from the google finance website, and makes predictions using Tensorflow's LSTM Dense model. 
+                                    Its also open source, so you should check out the github, and some of its endpoints:
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/Foresight-API" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://foresightapi.herokuapp.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ProjectItem" id="foresightapi" onclick="openThePopup('foresightapi')" data-hover="Click for More Information!">
-                            <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="ForesightAPI">
-                            <h3 class="title">
-                                Foresight API
-                            </h3>
-                            <p>
-                                "Google finance + Machine learning"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='images/APILOGO.png') }}" alt="Foresight API" class="popupBanner">
+                    </div>
+                    <div class="ProjectItem" id="nnsim" onclick="openThePopup('nnsim')" data-hover="Click for More Information!">
+                        <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION">
+                        <h3 class="title">
+                            Neural Network Car Sim
+                        </h3>
+                        <p>
+                            "Way more trig than expected"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Neural Network Traffic Simulation
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Foresight API
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        The Foresight API is the brain behind My Stock prediction webapp foresight. It scrapes data from the google finance website, and makes predictions using Tensorflow's LSTM Dense model. 
-                                        Its also open source, so you should check out the github, and some of its endpoints:
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/SentientPlatypus/Foresight-API" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://foresightapi.herokuapp.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    A project made entirely on vanilla javascript HTML and CSS. Implements layer like neural network architecture 
+                                    which determines the Cars movements. The Car movements made a great application of the unit circle.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/Self-Driving-Car-Simulation" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://Self-Driving-Car-Simulation.sentientplatypu.repl.co" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ProjectItem" id="nnsim" onclick="openThePopup('nnsim')" data-hover="Click for More Information!">
-                            <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION">
-                            <h3 class="title">
-                                Neural Network Car Sim
-                            </h3>
-                            <p>
-                                "Way more trig than expected"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='images/selfdrivingcar.png') }}" alt="NEURAL NETWORK TRAFFIC SIMULATION" class="popupBanner">
+                    </div>
+                    <div class="ProjectItem" id="CodeRedRoboticsVisionCode" onclick="openThePopup('CodeRedRoboticsVisionCode')" title="Click for more Information!">
+                        <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
+                        <h3>
+                            Rapid React Robot Vision
+                        </h3>
+                        <p>
+                            "The code for FRC 2022 visions"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Rapid React Robot Vision
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Neural Network Traffic Simulation
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        A project made entirely on vanilla javascript HTML and CSS. Implements layer like neural network architecture 
-                                        which determines the Cars movements. The Car movements made a great application of the unit circle.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/SentientPlatypus/Self-Driving-Car-Simulation" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://Self-Driving-Car-Simulation.sentientplatypu.repl.co" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Rapid React, the FRC 2022 game was very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
+                                    We delivered. I worked with one other student and a mentor to create not only a target tracking pipeline, but also a ball tracking one. This was the first year that the visions sytsem worked on the robot. The target tracking pipeline was deployed on a limelight, while the 
+                                    ball tracking one was developed on a jevois camera. Both used OpenCV, involved lots of trig, and yielded results that required (mostly) linear corrections. Overall, It was a solid pipeline that helped the team perform amazing at the competition.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/CRRobotics/2022Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=TQ1GWP2IlH4g" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
+                                    <a href="https://docs.google.com/document/d/1WYECR4K3D5pkXqElIejt85lPNybWfgzisJbbccgZQFE/export?/format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ProjectItem" id="CodeRedRoboticsVisionCode" onclick="openThePopup('CodeRedRoboticsVisionCode')" title="Click for more Information!">
-                            <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
-                            <h3>
-                                Rapid React Robot Vision
-                            </h3>
-                            <p>
-                                "The code for FRC 2022 visions"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED" class="popupBanner">
+                    </div>
+                    <div class="ProjectItem" id="Calcom" onclick="openThePopup('Calcom')">
+                        <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="Calcom">
+                        <h3>
+                            Calcom
+                        </h3>
+                        <p>
+                            "Your solution to computation."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Calcom
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Rapid React Robot Vision
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        Rapid React, the FRC 2022 game was very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
-                                        We delivered. I worked with one other student and a mentor to create not only a target tracking pipeline, but also a ball tracking one. This was the first year that the visions sytsem worked on the robot. The target tracking pipeline was deployed on a limelight, while the 
-                                        ball tracking one was developed on a jevois camera. Both used OpenCV, involved lots of trig, and yielded results that required (mostly) linear corrections. Overall, It was a solid pipeline that helped the team perform amazing at the competition.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/CRRobotics/2022Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=TQ1GWP2IlH4g" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
-                                        <a href="https://docs.google.com/document/d/1WYECR4K3D5pkXqElIejt85lPNybWfgzisJbbccgZQFE/export?/format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Calcom is a graphing calculator made by PyCalc X. It has a TON of features including number theory and matrices
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://www.pycalc.com/website/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCDp9F9yQ5YUx5-WegWRoOAA" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="ProjectItem" id="Calcom" onclick="openThePopup('Calcom')">
-                            <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="Calcom">
-                            <h3>
-                                Calcom
-                            </h3>
-                            <p>
-                                "Your solution to computation."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://static.wixstatic.com/media/a8c221_e651c0f32307486191c3d5793870b8c3~mv2.png/v1/fill/w_646,h_406,al_c,lg_1,q_85/logo.webp" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Calcom
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        Calcom is a graphing calculator made by PyCalc X. It has a TON of features including number theory and matrices
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://www.pycalc.com/website/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                        <a href="https://www.youtube.com/channel/UCDp9F9yQ5YUx5-WegWRoOAA" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
-                                    </div>
+                    </div>
+                    <div class="ProjectItem" id="LivesSMP" onclick="openThePopup('LivesSMP')">
+                        <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="Lives SMP">
+                        <h3>
+                            Lives SMP
+                        </h3>
+                        <p>
+                            "MC Life system with lifesteal."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Lives SMP
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ProjectItem" id="LivesSMP" onclick="openThePopup('LivesSMP')">
-                            <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="Lives SMP">
-                            <h3>
-                                Lives SMP
-                            </h3>
-                            <p>
-                                "MC Life system with lifesteal."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://ih1.redbubble.net/image.927840418.5711/pp,840x830-pad,1000x1000,f8f8f8.jpg" alt="CODE RED" class="popupBanner">
+                            <div class="popupContent">
+                                <p>
+                                    Lives SMP is a spigot plugin for minecraft that implements a life system. In this life system, You can donate lives, and steal lives when you kill another player. 
+                                    When a player's lives reaches 0, they are put in spectator mode, and a message is shown to everyone in the server. 
+                                    This was my first java project, and It was really fun making it.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://www.spigotmc.org/resources/lives-smp.96177/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=vq0kGmKIHyM" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Lives SMP
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="ProjectItem" id="PROIHS" onclick="openThePopup('PROIHS')">
+                        <img src="https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg" alt="Peoples republic of IHS">
+                        <h3>
+                            Peoples Republic of IHS
+                        </h3>
+                        <p>
+                            "just a joke, chill"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Peoples Republic of IHS
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupContent">
-                                    <p>
-                                        Lives SMP is a spigot plugin for minecraft that implements a life system. In this life system, You can donate lives, and steal lives when you kill another player. 
-                                        When a player's lives reaches 0, they are put in spectator mode, and a message is shown to everyone in the server. 
-                                        This was my first java project, and It was really fun making it.
-                                    </p>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    The Peoples Republic of IHS is a discord bot made for my highschools discord server. Each server member is given social credit, which may increase or decrease depending on what they do.
+                                    This project is open source, I am not maintaining it anymore, but feel free to fork and make pull reqs.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/SocialCredit" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
                                 </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://www.spigotmc.org/resources/lives-smp.96177/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=vq0kGmKIHyM" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="ProjectItem" id="BozuBot" onclick="openThePopup('BozuBot')">
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFmTZ4t_b7H8A/company-logo_200_200/0/1639364471276?e=2147483647&v=beta&t=KB2ySCdsQzrU7hV9jmZS_kXoka7GnR_HUifxCRNoVdM" alt="CodeBozu">
+                        <h3>
+                            BozuBot
+                        </h3>
+                        <p>
+                            "Insane Time Constraint"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFmTZ4t_b7H8A/company-logo_200_200/0/1639364471276?e=2147483647&v=beta&t=KB2ySCdsQzrU7hV9jmZS_kXoka7GnR_HUifxCRNoVdM" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    BozuBot
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                            </div>        
-                        </div>
-                        <div class="ProjectItem" id="PROIHS" onclick="openThePopup('PROIHS')">
-                            <img src="https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg" alt="Peoples republic of IHS">
-                            <h3>
-                                Peoples Republic of IHS
-                            </h3>
-                            <p>
-                                "just a joke, chill"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    BozuBot is a discord bot made for the CodeBozu communnity. 
+                                    Codebozu was a cornell edtech startup, which offered coding courses.
+                                    I wrote this bot in like 2 days. Rishi hit me up and asked me If I could make a bot that could sort people into groups based on a google spreadsheet. I said yes.
+                                    This bot also adds support for Bozu point tracking, which was an awards system in the community.
+                                    Unfortunately, CodeBozu has been discontinued.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/BozuBot" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://codebozu.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
                                 </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Peoples Republic of IHS
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="ProjectItem" id="ReflexTesting" onclick="openThePopup('ReflexTesting')">
+                        <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="ReflexTesting">
+                        <h3>
+                            Reflex Testing Game
+                        </h3>
+                        <p>
+                            "Aimlabs but with a camera."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="blue circle" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Reflex Testing Game
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                                <div class="popupContent">
-                                    <p>
-                                        The Peoples Republic of IHS is a discord bot made for my highschools discord server. Each server member is given social credit, which may increase or decrease depending on what they do.
-                                        This project is open source, I am not maintaining it anymore, but feel free to fork and make pull reqs.
-                                    </p>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    This game is played with a camera. The goal is to catch as many circles as you can with your hand. 
+                                    This project was made to help me get familiar with openCV before the code red season. It uses a library that adds landmarks to where 
+                                    the joints in your hands are, after that its just basic math.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/Advanced-AI-Visions/tree/main/Hand%20tracker" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
                                 </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/SentientPlatypus/SocialCredit" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="ProjectItem" id="Amoris" onclick="openThePopup('Amoris')">
+                        <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="Amoris">
+                        <h3>
+                            Amoris
+                        </h3>
+                        <p>
+                            "What you've always wanted in a bot."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Amoris
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                            </div>  
-                        </div>
-                        <div class="ProjectItem" id="BozuBot" onclick="openThePopup('BozuBot')">
-                            <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFmTZ4t_b7H8A/company-logo_200_200/0/1639364471276?e=2147483647&v=beta&t=KB2ySCdsQzrU7hV9jmZS_kXoka7GnR_HUifxCRNoVdM" alt="CodeBozu">
-                            <h3>
-                                BozuBot
-                            </h3>
-                            <p>
-                                "Insane Time Constraint"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFmTZ4t_b7H8A/company-logo_200_200/0/1639364471276?e=2147483647&v=beta&t=KB2ySCdsQzrU7hV9jmZS_kXoka7GnR_HUifxCRNoVdM" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        BozuBot
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        BozuBot is a discord bot made for the CodeBozu communnity. 
-                                        Codebozu was a cornell edtech startup, which offered coding courses.
-                                        I wrote this bot in like 2 days. Rishi hit me up and asked me If I could make a bot that could sort people into groups based on a google spreadsheet. I said yes.
-                                        This bot also adds support for Bozu point tracking, which was an awards system in the community.
-                                        Unfortunately, CodeBozu has been discontinued.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/SentientPlatypus/BozuBot" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://codebozu.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>          
-                        </div>
-                        <div class="ProjectItem" id="ReflexTesting" onclick="openThePopup('ReflexTesting')">
-                            <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="ReflexTesting">
-                            <h3>
-                                Reflex Testing Game
-                            </h3>
-                            <p>
-                                "Aimlabs but with a camera."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="{{ url_for('static',filename='images/ReflexGame.png') }}" alt="blue circle" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Reflex Testing Game
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        This game is played with a camera. The goal is to catch as many circles as you can with your hand. 
-                                        This project was made to help me get familiar with openCV before the code red season. It uses a library that adds landmarks to where 
-                                        the joints in your hands are, after that its just basic math.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/SentientPlatypus/Advanced-AI-Visions/tree/main/Hand%20tracker" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="ProjectItem" id="Amoris" onclick="openThePopup('Amoris')">
-                            <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="Amoris">
-                            <h3>
-                                Amoris
-                            </h3>
-                            <p>
-                                "What you've always wanted in a bot."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://cdn.discordapp.com/avatars/822265614244511754/61cdc288c07c18e83082e538e5ca6671.webp?size=1024" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Amoris
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        Amoris was a discord bot that had an absolute truckload of features. It was my very first project in python. So everything new that I learned, would have some implementation in Amoris.
-                                        Amoris' main feature was the.. well.. lets call it the "friend simulator" This simulator allows you to customize everything about your buddy. Images, personality, etc. The cool thing is, 
-                                        The experiences with your friend would be saved, and their responses would update as well. This is thanks to GPT-3, an incredibly advanced NLP engine.
-                                        Ok. 
-                                        
-                                         <br>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Amoris was a discord bot that had an absolute truckload of features. It was my very first project in python. So everything new that I learned, would have some implementation in Amoris.
+                                    Amoris' main feature was the.. well.. lets call it the "friend simulator" This simulator allows you to customize everything about your buddy. Images, personality, etc. The cool thing is, 
+                                    The experiences with your friend would be saved, and their responses would update as well. This is thanks to GPT-3, an incredibly advanced NLP engine.
+                                    Ok. 
+                                    
+                                     <br>
 
-                                         It should also be noted that Amoris has a webapp that users can go to modify guild settings. Source code is linked down below. It was an excellent application of MongoDB.
-                                    </p>
+                                     It should also be noted that Amoris has a webapp that users can go to modify guild settings. Source code is linked down below. It was an excellent application of MongoDB.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://discord.com/api/oauth2/authorize?client_id=822265614244511754&permissions=8&scope=bot" target="_blank"><i class="fa-brands fa-discord fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/SentientPlatypus/Amoris-Flask-Webapp" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
                                 </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://discord.com/api/oauth2/authorize?client_id=822265614244511754&permissions=8&scope=bot" target="_blank"><i class="fa-brands fa-discord fa-2x socialsIcon"></i></a>
-                                        <a href="https://github.com/SentientPlatypus/Amoris-Flask-Webapp" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                    </div>
+                            </div>
+                        </div>          
+                    </div>
+                    <div class="ProjectItem" id="puzzles" onclick="openThePopup('puzzles')">
+                        <img src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/04/How-To-Get-Better-At-Puzzles-gear-patrol-lead-feature-V2.jpg" alt="puzzles">
+                        <h3>
+                            Puzzles
+                        </h3>
+                        <p>
+                            "Discord code jam submission"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/04/How-To-Get-Better-At-Puzzles-gear-patrol-lead-feature-V2.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Puzzles
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
                                 </div>
-                            </div>          
-                        </div>
-                        <div class="ProjectItem" id="puzzles" onclick="openThePopup('puzzles')">
-                            <img src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/04/How-To-Get-Better-At-Puzzles-gear-patrol-lead-feature-V2.jpg" alt="puzzles">
-                            <h3>
-                                Puzzles
-                            </h3>
-                            <p>
-                                "Discord code jam submission"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://hips.hearstapps.com/amv-prod-gp.s3.amazonaws.com/gearpatrol/wp-content/uploads/2020/04/How-To-Get-Better-At-Puzzles-gear-patrol-lead-feature-V2.jpg" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Puzzles
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        This was the submission for the discord code jam hosted by the Python discord server. It was a competition among groups made of individuals who had solved the qualifier.
-                                        It was my very first time working in a group with other developers, so it was a very valuable experience.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/Sleek-Snails/Snail-Snacks" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://discord.gg/python" target="_blank"><i class="fa-brands fa-discord fa-2x socialsIcon"></i></a>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    This was the submission for the discord code jam hosted by the Python discord server. It was a competition among groups made of individuals who had solved the qualifier.
+                                    It was my very first time working in a group with other developers, so it was a very valuable experience.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/Sleek-Snails/Snail-Snacks" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://discord.gg/python" target="_blank"><i class="fa-brands fa-discord fa-2x socialsIcon"></i></a>
 
-                                    </div>
                                 </div>
-                            </div>                  
-                        </div>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="ProjectItem" id="CodeRedRoboticsVisionDocs" onclick="openThePopup('CodeRedRoboticsVisionDocs')">
+                        <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
+                        <h3>
+                            Rapid React Robot Vision
+                        </h3>
+                        <p>
+                            "the documentation for FRC 2022 visions"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Rapid React Robot Vision
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Rapid React, the FRC 2022 game was very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
+                                    We delivered. I worked with one other student and a mentor to create not only a target tracking pipeline, but also a ball tracking one. This was the first year that the visions sytsem worked on the robot. The target tracking pipeline was deployed on a limelight, while the 
+                                    ball tracking one was developed on a jevois camera. Both used OpenCV, involved lots of trig, and yielded results that required (mostly) linear corrections. Overall, It was a solid pipeline that helped the team perform amazing at the competition.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/CRRobotics/2022Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=TQ1GWP2IlH4g" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
+                                    <a href="https://docs.google.com/document/d/1WYECR4K3D5pkXqElIejt85lPNybWfgzisJbbccgZQFE/export?/format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="ProjectItem" id="PresidentResearchProject" onclick="openThePopup('PresidentResearchProject')">
+                        <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="Politician Scraping">
+                        <h3>
+                            Politician Scraping
+                        </h3>
+                        <p>
+                            "Analysis of US Politician Data."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Politician Scraping
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    This was a project focused on webscraping from various web sources and running sentiment analysis. 
+                                    In this paper, my group details its results and process scraping statistics from the web.
+                                    In the last scrape, We generated a heatmap which showed different news sources sentiment towards different presidents.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/CodeBozu-Group-24" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://docs.google.com/document/d/1wopOZllNE47XJXkMYUnJH79BcgCRephUfpS8FBaqJrw/export?format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+
+                    </div>
+                    <div class="ProjectItem" id="TeachX" onclick="openThePopup('TeachX')">
+                        <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="TeachX">
+                        <h3>
+                            GETA
+                        </h3>
+                        <p>
+                            "Alexa but better"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    GETA
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    GETA is a web application by PyCalc X which seeks to combine both AI and teaching. We are using GPT-3 to help create an app that will teach you anything you ask it to.
+                                </p>
+                                <h3>
+                                    Estimated Release: December 2022
+                                </h3>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://www.pycalc.com/website/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="ProjectItem" id="CombatPlus" onclick="openThePopup('CombatPlus')">
+                        <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CombatPlus">
+                        <h3>
+                            CombatPlus
+                        </h3>
+                        <p>
+                            "Minecraft Combat just got better."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    CombatPlus
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    CombatPlus is a forge mod which seeks to revolutionize minecraft combat. our main goal is to add combos and better animations. Its going to be sick.
+                                    I started this with a good friend of mine, but if you want to help out, feel free to fork and make a pull req!
+                                </p>
+                                <h3>
+                                    Estimated Release: December 2022
+                                </h3>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/Mod-development/CombatPlus" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="ProjectItem" id="Impromptu" onclick="openThePopup('Impromptu')">
+                        <img src="https://yt3.ggpht.com/4pPcctOJDziMpzw07Ehb-tFcMJiAAqCJtAmAzmbD6UTjIdjTgFS8xH0TmNQRFL55aeMq1tfAXBs=s900-c-k-c0x00ffffff-no-rj" alt="Impromptu">
+                        <h3>
+                            Impromptu
+                        </h3>
+                        <p>
+                            "All things debate."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://yt3.ggpht.com/4pPcctOJDziMpzw07Ehb-tFcMJiAAqCJtAmAzmbD6UTjIdjTgFS8xH0TmNQRFL55aeMq1tfAXBs=s900-c-k-c0x00ffffff-no-rj" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Impromptu
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    A discord bot meant to organize and moderate debates with formats such as WSD, LD, and cross examination.
+                                    I was inspired to make this after attending Cornells international debate camp. There, I met a friend who introduced me to Debating404, an organization meant to provide free resources to debaters
+                                </p>
+                                <h3>
+                                    Estimated Release: March 2023
+                                </h3>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://debating404.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>                
                     </div>
                 </div>
-                <div class="Papers">
-                    <div class="PaperHeader">
-                        <p>
-                            <span class="subHeader">me.<span class="function">Papers</span>()</span> <br>
-                            ”””Research papers, Documentation, etc.”””
-                        </p>
-                    </div>
-                    <div class="PaperCarousel">
-                        <div class="ProjectItem" id="CodeRedRoboticsVisionDocs" onclick="openThePopup('CodeRedRoboticsVisionDocs')">
-                            <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
-                            <h3>
-                                Rapid React Robot Vision
-                            </h3>
-                            <p>
-                                "the documentation for FRC 2022 visions"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Rapid React Robot Vision
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        Rapid React, the FRC 2022 game was very similar to basketball. Code Red Robotics (My Highschools Robotics Team), wanted a visions pipeline that would accurately track the circular target and relay its distance and angle data at a high rate.
-                                        We delivered. I worked with one other student and a mentor to create not only a target tracking pipeline, but also a ball tracking one. This was the first year that the visions sytsem worked on the robot. The target tracking pipeline was deployed on a limelight, while the 
-                                        ball tracking one was developed on a jevois camera. Both used OpenCV, involved lots of trig, and yielded results that required (mostly) linear corrections. Overall, It was a solid pipeline that helped the team perform amazing at the competition.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/CRRobotics/2022Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://www.youtube.com/watch?v=TQ1GWP2IlH4g" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
-                                        <a href="https://docs.google.com/document/d/1WYECR4K3D5pkXqElIejt85lPNybWfgzisJbbccgZQFE/export?/format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>        
-                        </div>
-                        <div class="ProjectItem" id="PresidentResearchProject" onclick="openThePopup('PresidentResearchProject')">
-                            <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="Politician Scraping">
-                            <h3>
-                                Politician Scraping
-                            </h3>
-                            <p>
-                                "Analysis of US Politician Data."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://cdn.cnn.com/cnnnext/dam/assets/181105112842-donkey-elephant-top-full-169.jpg" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Politician Scraping
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        This was a project focused on webscraping from various web sources and running sentiment analysis. 
-                                        In this paper, my group details its results and process scraping statistics from the web.
-                                        In the last scrape, We generated a heatmap which showed different news sources sentiment towards different presidents.
-                                    </p>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/CodeBozu-Group-24" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                        <a href="https://docs.google.com/document/d/1wopOZllNE47XJXkMYUnJH79BcgCRephUfpS8FBaqJrw/export?format=pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>        
-
-                        </div>
-                    </div>
-                </div>
-                <div class="InProgress">
-                    <div class="InProgressHeader">
-                        <p>
-                            <span class="subHeader">me.<span class="function">InProgress</span>()</span> <br>
-                            ”””Masterpieces in the making.”””
-                        </p>
-                    </div>
-                    <div class="InProgressCarousel">
-                        <div class="ProjectItem" id="TeachX" onclick="openThePopup('TeachX')">
-                            <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="TeachX">
-                            <h3>
-                                GETA
-                            </h3>
-                            <p>
-                                "Alexa but better"
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://static.wixstatic.com/media/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.png/v1/fill/w_560,h_352,al_c,q_85,usm_0.66_1.00_0.01/a8c221_4e1f5aa42d0b420f973891894b2bb07a~mv2.webp" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        GETA
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        GETA is a web application by PyCalc X which seeks to combine both AI and teaching. We are using GPT-3 to help create an app that will teach you anything you ask it to.
-                                    </p>
-                                    <h3>
-                                        Estimated Release: December 2022
-                                    </h3>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://www.pycalc.com/website/" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>                
-                        </div>
-                        <div class="ProjectItem" id="CombatPlus" onclick="openThePopup('CombatPlus')">
-                            <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CombatPlus">
-                            <h3>
-                                CombatPlus
-                            </h3>
-                            <p>
-                                "Minecraft Combat just got better."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/02/Minecraft-Combat-Tips-7.jpg?q=50&fit=crop&w=1400&dpr=1.5" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        CombatPlus
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        CombatPlus is a forge mod which seeks to revolutionize minecraft combat. our main goal is to add combos and better animations. Its going to be sick.
-                                        I started this with a good friend of mine, but if you want to help out, feel free to fork and make a pull req!
-                                    </p>
-                                    <h3>
-                                        Estimated Release: December 2022
-                                    </h3>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://github.com/Mod-development/CombatPlus" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>                        
-                        </div>
-                        <div class="ProjectItem" id="Impromptu" onclick="openThePopup('Impromptu')">
-                            <img src="https://yt3.ggpht.com/4pPcctOJDziMpzw07Ehb-tFcMJiAAqCJtAmAzmbD6UTjIdjTgFS8xH0TmNQRFL55aeMq1tfAXBs=s900-c-k-c0x00ffffff-no-rj" alt="Impromptu">
-                            <h3>
-                                Impromptu
-                            </h3>
-                            <p>
-                                "All things debate."
-                            </p>
-                            <div class="popupData">
-                                <div class="popupBanner">
-                                    <img src="https://yt3.ggpht.com/4pPcctOJDziMpzw07Ehb-tFcMJiAAqCJtAmAzmbD6UTjIdjTgFS8xH0TmNQRFL55aeMq1tfAXBs=s900-c-k-c0x00ffffff-no-rj" alt="CODE RED" class="popupBanner">
-                                </div>
-                                <div class="popupHead">
-                                    <h3>
-                                        Impromptu
-                                    </h3>
-                                    <div class="xContainer">
-                                        <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
-                                    </div>
-                                </div>
-                                <div class="popupContent">
-                                    <p>
-                                        A discord bot meant to organize and moderate debates with formats such as WSD, LD, and cross examination.
-                                        I was inspired to make this after attending Cornells international debate camp. There, I met a friend who introduced me to Debating404, an organization meant to provide free resources to debaters
-                                    </p>
-                                    <h3>
-                                        Estimated Release: March 2023
-                                    </h3>
-                                </div>
-                                <div class="popupFooter">
-                                    <h3>
-                                        Links:
-                                    </h3>
-                                    <div class="links">
-                                        <a href="https://debating404.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
-                                    </div>
-                                </div>
-                            </div>                
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
             </div>
         </section>
         <section id="PleasureSection">
@@ -959,13 +923,13 @@
         </div>
 
         <div class="cursors">
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
         <script src="{{ url_for('static',filename='js/cursor.js') }}"></script>
         <footer>
