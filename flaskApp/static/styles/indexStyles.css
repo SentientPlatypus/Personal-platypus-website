@@ -573,13 +573,17 @@ color: #FFFFFF;
  }
 
  .Projects{
-    width: 90vw;
+    max-width: 90vw;
     display: flex;
     flex-wrap: wrap;
-    height: 80vh;
-    height: 456px;
+    max-height: 80vh;
     overflow-x: auto;
+    overflow-y: hidden;
     background-color: #000;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: stretch;
+    flex-direction: column;
 }
 
 .ProjectItem {
