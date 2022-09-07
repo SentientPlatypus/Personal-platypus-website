@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    width: 101px;
+    height: 31px;
+    left: 126px;
+    margin: 1em;
+    top: 43px;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+    color: #ADFF00;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+
+}
+
+
+.sidebar a:hover:not(.closebtn) {
+    font-size: 125%;
+}
+
+.sidebar a span{
+    color: white;
+}
+  
+  .sidebar .closebtn {
+    color: #FFE600;
+    font-size: 36px;
+    margin-left: 160px;
+  }
+
+  .sidebar .closebtn:hover {
+    color: #DB00FF;
+  }
+
+  #hamburger {
+    position: fixed;
+    right: 0px;
+    background-color: transparent;
+    color: #FFE600;
+    border: none;
+    font-size: 5vh;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+#hamburger:hover {
+    color: #DB00FF;
+    cursor: pointer;
+}
