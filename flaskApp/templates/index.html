@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/indexStyles.css') }}">
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/sideBarStyles.css') }}">
-        <link rel="icon" href="https://cdn.discordapp.com/avatars/643764774362021899/8ec6aecedaaffd552ab154d9c308b32f.webp?size=1024">
+        <link rel="icon" href="{{ url_for('static',filename='images/portrait.png') }}">
         <script src="https://kit.fontawesome.com/1b4a129057.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script language="JavaScript" src="js/custom.js"></script>
@@ -170,7 +170,7 @@
                 </div>
                 <div class="Visuals">
                     <div class="Img">
-                        <img src="{{ url_for('static',filename='images/profilepic.png') }}" alt="">
+                        <img src="{{ url_for('static',filename='images/portrait.png') }}" alt="">
                     </div>
                     <div class="quote">
                         <p>
