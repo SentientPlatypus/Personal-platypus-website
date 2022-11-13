@@ -203,8 +203,48 @@
                         “””Catch me if I fall.”””
                     </p> 
                 </div>
-
                 <div class="Projects">
+                    <div class="ProjectItem" id="digitrec" onclick="openThePopup('digitrec')" data-hover="Click for More Information!">
+                        <img src="https://miro.medium.com/max/372/1*AO2rIhzRYzFVQlFLx9DM9A.png" alt="Foresight">
+                        <h3 class="title">
+                            Handwritten Digit Recognition
+                        </h3>
+                        <p>
+                            A deep neural network to recognize handwritten digits -- In Rust.
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://miro.medium.com/max/372/1*AO2rIhzRYzFVQlFLx9DM9A.png" alt="Foresight " class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Handwritten Digit Recognition
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    I watched a 3b1b video. "What if i wrote it in rust tho?" So I did. I had to first write a json version of the mnist dataset, which then I parsed with rust's serde_json library.
+                                    I looked 3b1b's code for a neural network. Even though it was in python, It was hard to read. I didnt want to look at it. So I didnt. <br>
+                                    A friend of mine had sent me resources about writing neural networks from scratch. I looked at them, and didnt understand anything. I studied up and it makes sense now. 
+                                    At one point, I scrapped a bunch of code, and rewrote the whole project, because I was modularizing too much, and things were getting blurry.
+                                    I rewrote it, and tested things. When debugging, I was forced to write debug code, so things look nice. The pretty printed structs in the console are something I take pride in.
+                                    Unlike my car driving neural net, this one actually implements "learning." 
+                                    It took a while to wrap my mind around the calculus, but I just now think of stochastic gradient descent as changing each knob in a mystery machine by its derivative with respect to error. After a lot of changes, the machine will be fine-tuned for the job.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/digit-recognition-dnn" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="ProjectItem" id="foresightapp" onclick="openThePopup('foresightapp')" data-hover="Click for More Information!">
                         <img src="{{ url_for('static',filename='images/ForesightLogo.png') }}" alt="Foresight">
                         <h3 class="title">
