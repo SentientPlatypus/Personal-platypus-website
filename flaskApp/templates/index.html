@@ -204,6 +204,44 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="tauv" onclick="openThePopup('tauv')" data-hover="Click for More Information!">
+                        <img src="{{ url_for('static',filename='styles/tauV.png') }}" alt="Foresight">
+                        <h3 class="title">
+                            Tau / 2 r squared
+                        </h3>
+                        <p>
+                            A Defense of the Area of a Circle in Terms of Tau
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='styles/tauV.png') }}" alt="Foresight " class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    A Defense of the Area of a Circle in Terms of Tau
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    I watched a 3b1b video. My math teacher, Shaun Errichiello also had a project. "Well dang those animations go hard." So I learned manim. This proof just details why Tau/2 r squared is actually better than the traditional pi r^2.
+                                    The focus is maintaining the integrity of the circumference.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://www.youtube.com/watch?v=Okraa2ZElrE" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/SentientPlatypus/circle-area-proof" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="ProjectItem" id="digitrec" onclick="openThePopup('digitrec')" data-hover="Click for More Information!">
                         <img src="https://miro.medium.com/max/372/1*AO2rIhzRYzFVQlFLx9DM9A.png" alt="Foresight">
                         <h3 class="title">
