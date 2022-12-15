@@ -205,6 +205,42 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="codejam" onclick="openThePopup('codejam')" data-hover="Click for More Information!">
+                        <img src="{{ url_for('static',filename='images/codeJam.png') }}" alt="Foresight">
+                        <h3 class="title">
+                            Holiday Code Jam 2022
+                        </h3>
+                        <p>
+                            A coding competition for the IHS DEV team
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/codeJam.png') }}" alt="Foresight " class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    IHS DEV TEAM Holiday Code Jam 2022
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    For Dev Team, I wrote a beginner level coding competition. It was really fun making the problems, and writing the solutions. Took much longer than I expected. Dont even try to look at the github before the deadline.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://docs.google.com/document/d/1s8LkKEeAc6ipKuI0Ef2OaoVp34Ib2UhdiXW-0ehfJ9k/edit?usp=sharing" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/SentientPlatypus/HolidayCodeJam2022" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="ProjectItem" id="tauv" onclick="openThePopup('tauv')" data-hover="Click for More Information!">
                         <img src="{{ url_for('static',filename='images/tauV.png') }}" alt="Foresight">
                         <h3 class="title">
@@ -242,7 +278,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="ProjectItem" id="digitrec" onclick="openThePopup('digitrec')" data-hover="Click for More Information!">
                         <img src="https://miro.medium.com/max/372/1*AO2rIhzRYzFVQlFLx9DM9A.png" alt="Foresight">
                         <h3 class="title">
