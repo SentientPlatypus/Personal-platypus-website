@@ -135,11 +135,11 @@
                                 
                                 <span>Computer visions head</span> <br>
                                 <a href="https://team639.org" target="_blank">@Code Red</a><br>
-                                2021 - now <br><br> 
+                                2022 - now <br><br> 
 
                                 <span>Webapp developer + Cofounder</span> <br>
                                 <a href="https://www.pycalc.com/website/" target="_blank">@Pycalc X</a><br>
-                                2021 - now <br><br>  
+                                2021 - 2022 <br><br>  
    
                                 <span>Datascience project + Contributor</span> <br>
                                 <a href="https://codebozu.com" target="_blank">@CodeBozu</a><br>
@@ -147,7 +147,7 @@
 
                                 <span>Video editor</span> <br>
                                 <a href="https://debating404.com" target="_blank">@Debating404</a><br>
-                                2022 - now <br><br>        
+                                2022 <br><br>        
                             </p>
                         </div>
                         <div class="Languages">
@@ -205,6 +205,43 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="det" onclick="openThePopup('det')">
+                        <img src="{{ url_for('static',filename='images/invertedspearmodel.png') }}" alt="Lives SMP">
+                        <h3>
+                            Math animation for finding determinants
+                        </h3>
+                        <p>
+                            "Another shaun project."
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/findingdeterminants.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Math animation for finding determinants
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    I made this to freshen up my manim skills for writing visions documentation for Code red. This was also a project for my math teacher. it was supposed to be extra credit, but I didnt finish the animations in time.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/SentientPlatypus/finding-determinants" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
                     <div class="ProjectItem" id="invertedspear" onclick="openThePopup('invertedspear')">
                         <img src="{{ url_for('static',filename='images/invertedspearmodel.png') }}" alt="Lives SMP">
                         <h3>
