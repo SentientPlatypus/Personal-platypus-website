@@ -208,6 +208,50 @@
                     <div class="ProjectItem" id="det" onclick="openThePopup('det')">
                         <img src="{{ url_for('static',filename='images/findingdeterminants.png') }}" alt="Lives SMP">
                         <h3>
+                            Tyrannosaurus Red
+                        </h3>
+                        <p>
+                            "The code for 2023 FRC Visions"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/tyrannosaurusred.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Tyrannosaurus Red
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    For the 2023 FRC game, Charged up, Code Red made three pipelines, used 5 cameras, and won an award for integrating them into the robot code. One for global positioning, one for game piece detection, and another for game piece orientation. I worked heavily on the first one. 
+                                    Photonvision was mentioned, but a limelight didnt provide a sufficient FOV for detection in the community, so we wrote our own pipeline from scratch. This process forced us to learn how pose estimation was based upon fundamental projection concepts. The details are detailed in documentation I wrote, and I also made this the basis of my AP lang research paper. and ran three cameras, a thread for each. We put a PC on the robot, and made our python script a systemctl service, which ran on startup.
+                                    The second pipeline, was mainly worked on my Rocky Shao, and involved HSV filters on an RGBD camera, and distance calculations.
+                                    The Third, was for a deprecated indexer subsystem.
+
+                                    Good season overall
+
+                                    man I loove solvePnP
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    {# <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a> #}
+                                    <a href="https://github.com/CRRobotics/2023Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://docs.google.com/document/d/11vBBTx2znrTHLFnlTPs0ZAiM80KnKGRd8zlHxrLlmtw/edit#" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="ProjectItem" id="det" onclick="openThePopup('det')">
+                        <img src="{{ url_for('static',filename='images/findingdeterminants.png') }}" alt="Lives SMP">
+                        <h3>
                             Math animation for finding determinants
                         </h3>
                         <p>
@@ -241,7 +285,6 @@
                             </div>
                         </div>        
                     </div>
-
                     <div class="ProjectItem" id="invertedspear" onclick="openThePopup('invertedspear')">
                         <img src="{{ url_for('static',filename='images/invertedspearmodel.png') }}" alt="Lives SMP">
                         <h3>
@@ -513,7 +556,7 @@
                     <div class="ProjectItem" id="CodeRedRoboticsVisionCode" onclick="openThePopup('CodeRedRoboticsVisionCode')" title="Click for more Information!">
                         <img src="https://i.ytimg.com/vi/TQ1GWP2IlH4/mqdefault.jpg" alt="CODE RED">
                         <h3>
-                            Rapid React Robot Vision
+                            Red Zeppelin
                         </h3>
                         <p>
                             "The code for FRC 2022 visions"
