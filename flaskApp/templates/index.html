@@ -205,7 +205,64 @@
                     </p> 
                 </div>
                 <div class="Projects">
-                    <div class="ProjectItem" id="det" onclick="openThePopup('det')">
+                    <div class="ProjectItem" id="gerrymander" onclick="openThePopup('gerrymander')">
+                        <img src="{{ url_for('static',filename='images/Selection.png') }}" alt="Lives SMP">
+                        <h3>
+                            Gerrymandering analyzer
+                        </h3>
+                        <p>
+                            "Rule-Based filtering and analysis"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/Selection.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Gerrymandering analyzer
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Gerrymandering, the manipulation of district boundaries to benefit a particular political party or group, is a serious issue that undermines the integrity of democratic elections.
+                                    It can result in the unfair representation of certain communities, the suppression of minority voices, and the consolidation of power in the hands of a select few.
+
+                                    Our program aims to allow the user to input an image of a voting district and establish the values of the contiguous, compactness and solidity of the district.
+
+                                    We define solidity as the area of a contour subtracted by the areas of all child contours, divided by the area of the parent contour's onvex hull.
+
+                                    A convex hull is a boundary which a line segment connecting any two points within the boundary does not intersect the boundary.
+
+                                    Compactness of a voting district is measured in a different way. If the shape of the voting district is a perfect circle, the compactness will be 100%. The general formula for compactness is: 4π * (A/P²), where A is the area of the district and P is the parameter of the district. For visualizatoin, a circle that has the same area as the distric will appear upon the district
+
+                                    These values will allow the user to then calculate whether or not the district has fallen victim to political gerrymandering or not.
+                                    In addition, the program can aid the user in determining what group or groups have been suppressed.
+
+
+                                    Upon running this program, 3 windows will open. The first has sliders, which allow ou do configure different color filters, and display different elements of our analysis.
+                                    The second is the display window. Upon filtering districts, ideal circles will be drawn along with contiguousness and solidity values. You also have the ability to select different districts by clicking on them. Finally, there is a filtering window. 
+                                    Our filter method relies on an HSV filter for colors. The filter window assists the user in finding their desired HSV thresholds for the districts they wish to analyze.
+
+                                    We hope that our program can lead to the removal of gerrymandered voting districts and the unfair representation of minority groups and communities.
+                                    In turn, this will allow us to hold fair and impartial elections and promote greater transparency and acountability in the political process.
+                                    We believe that developing a reliable and accurate tool to detect gerrymandering, we can ensure that all voices are heard and all communities are represented fairly in our democracy.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    {# <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a> #}
+                                    <a href="https://github.com/Rocky0Shao/GerrymanderProject" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="ProjectItem" id="TRED" onclick="openThePopup('TRED')">
                         <img src="{{ url_for('static',filename='images/tyrannosaurusred.png') }}" alt="Lives SMP">
                         <h3>
                             Tyrannosaurus Red
