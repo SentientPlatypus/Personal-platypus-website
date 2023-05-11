@@ -545,7 +545,7 @@ color: #FFFFFF;
     max-width: 90vw;
     display: flex;
     flex-wrap: wrap;
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-x: auto;
     overflow-y: hidden;
     background-color: #000;
@@ -897,7 +897,7 @@ color: #FFFFFF;
     background: #1e1f1c;
     border-radius: 20px;
     position: fixed;
-    top: 10vh;
+    top: 5vh;
     left: 25vw;
     padding: 1.5%;
 }
