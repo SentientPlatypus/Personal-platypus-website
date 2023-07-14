@@ -96,7 +96,8 @@
                                 Java,<br>  
                                 HTML/CSS/JS,<br>  
                                 R, <br>
-                                Heroku,<br> 
+                                Heroku,<br>
+                                YOLO <br> 
                                 Tensorflow,<br>
                                 nextcord,<br>   
                                 MongoDB,<br>  
@@ -204,6 +205,53 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="cty" onclick="openThePopup('cty')">
+                        <img src="https://i.ytimg.com/vi/XoZz8ZJRpaU/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDdi2EDlwFB1D84LqAiupU-8kdFUg" alt="Lives SMP">
+                        <h3>
+                            JHU-CTY
+                        </h3>
+                        <p>
+                            Lots and Lots of jupyter notebooks
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://i.ytimg.com/vi/XoZz8ZJRpaU/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDdi2EDlwFB1D84LqAiupU-8kdFUg" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Johns Hopkins CTY
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    This is a repository of turned in work for the Center for Talented Youth at Johns Hopkins University, Investigations in Engineering.
+
+                                    This course was taught by
+
+                                    Dr. Manuela Badea
+
+                                    TA. Yarin C.A.
+
+                                    Throughout the 3 week course, we completed lots of labs, and projects, with each of them documented here. I chose to do most of my writeups in notebooks, as it seemed like a great tool when working with datasets and calculations. I tried R, but Im better with np and pandas haha.
+                                    For one of the projects, I designed and prototyped an anti-texting device, and I think I might pursue it, dont know though. Kinda overloaded with other things.
+
+                                    Check it out. CTY is fun
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    {# <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a> #}
+                                    <a href="https://github.com/SentientPlatypus/JHU-CTY/tree/master" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
                     <div class="ProjectItem" id="gerrymander" onclick="openThePopup('gerrymander')">
                         <img src="{{ url_for('static',filename='images/Selection.png') }}" alt="Lives SMP">
                         <h3>
