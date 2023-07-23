@@ -134,8 +134,54 @@ body {
     top: calc(50% - .5em); /* 50% - 3/4 of icon height */
 }
 
+h3{
+    text-decoration: none;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 47px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    z-index:-1;
+}
+
+p{
+    text-decoration: none;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 47px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    z-index:-1;
+}
+span.function{
+    text-decoration: none;
+
+    color: #ADFF00;
+}
+
+span.red{
+    text-decoration: none;
+
+    color: #d72f37;
+}
 
 
+.exercisecard {
+    background-color: #000000;
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 2.5%;
+    margin-top: 5%;
+}
 
 .subPageTitle {
     margin-top: 21vh;
@@ -192,7 +238,13 @@ table * {
 
 .mainContainer {
     margin-top: 10vh;
-    height: auto;
+    margin-left: 5vw;
+    width: 95vw;
+    height: 60vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .dayRight, .dayLeft {

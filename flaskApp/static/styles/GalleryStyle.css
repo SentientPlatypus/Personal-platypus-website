@@ -126,6 +126,29 @@ body {
     color: #ADFF00;
 }
 
+p{
+    text-decoration: none;
+
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 47px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    z-index:-1;
+}
+span.function{
+    text-decoration: none;
+
+    color: #ADFF00;
+}
+
+span.red{
+    text-decoration: none;
+
+    color: #d72f37;
+}
 
 .valueIcon {
     color: white;
