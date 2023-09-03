@@ -214,6 +214,135 @@
                     </p> 
                 </div>
                 <div class="Projects">
+
+                    <div class="ProjectItem" id="fktxt" onclick="openThePopup('fktxt')">
+                        <img src="{{ url_for('static',filename='images/maindemo.png') }}" alt="Lives SMP">
+                        <h3>
+                            FKTXT
+                        </h3>
+                        <p>
+                            Detecting Distracted Drivers
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/maindemo.png') }}" alt="Octane7" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    FKTXT
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Over 1.6 million car crashes happen annually due to texting and driving. We wondered how we could help. This started out as a prompt for an engineering presentation, but we decided to go further. We prototyped our software with the pretrained YOLO dataset and the mediapipe hand landmarking model.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://FKTXT.godaddysites.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/FKTXT/FKTXT" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
+
+                    <div class="ProjectItem" id="bsf" onclick="openThePopup('bsf')">
+                        <img src="https://github.com/junyoung-sim/gbm-drl-quant/raw/main/etc/gbm_sample_path.png" alt="Lives SMP">
+                        <h3>
+                            Beluga Sturgeon Financial
+                        </h3>
+                        <p>
+                            Open-access to financial data and AI financial modeling
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/sentimentovertime.png') }}" alt="Octane7" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Beluga Sturgeon Financial
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    After AP exams, Jun and I decided it would be really cool to start our own finance firm. We thought it would be really cool to combine our skills to create a really great trading model that can be easily accessed and used by anybody. The model expands on Jun's Deep reinforcement learning 
+                                    approach, by adding geometric brownian motion as an indicator. I worked on experimenting with sentiment to see if it was a good indicator. Unfortunately, due to its volatility, it would not provide much advantage to the model. Once we work out some kinks, BelugaSturgeon should be up and running very soon!
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    {# <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a> #}
+                                    <a href="https://github.com/Beluga-Sturgeon" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
+                    <div class="ProjectItem" id="octane" onclick="openThePopup('octane')">
+                        <img src="https://github.com/SentientPlatypus/octane7/raw/main/images/engine.png" alt="Lives SMP">
+                        <h3>
+                            Octane7
+                        </h3>
+                        <p>
+                            Fan design is a bit hard
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="https://github.com/SentientPlatypus/octane7/raw/main/images/engine.png" alt="Octane7" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Octane7
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    I was playing rocket league one day. "dang these cars are cool, what if I made one?" So I sat down my boys and pitched the idea. I proposed some ideas for the jumping, and propulsion, and we had a good discussion. This is going to work. We will make a toy rocket league car that can jump, and do aerials.
+
+                                    There are 4 subsystems on the robot we needed to tackle
+                                    
+                                    **Engine**
+                                    This is the easiest part. Slap a dc motor onto the back wheels.
+                                    
+                                    **Steering**
+                                    Steve handled this. You see, real cars dont just have a servo that turns the wheels the same amount, as the outer wheels need to turn less than the inner wheels. Steve designed a differential, along with a steering mechanism.
+                                    
+                                    **Boost**
+                                    I worked on this part. We thought of using combustible rockets, then jet engines, and finally decided on an EDF. I caded multiple designs (one of them is shown above) and had Mukund print and test them. If we cant engineer a good EDF, I will simply buy the 7kg thrust nuke off amazon.
+                                    
+                                    **Jumping**
+                                    I also worked on this part. I looked up jumping robots, and found a good spring loaded flea like mechanism that looked promising. I printed a prototype, and it can jump quite a bit! However, we are also considering using the jumper from the spider jumping rc car toy. The downside would that it would be pushing off the ground itself instead of the wheels.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    {# <a href="https://youtu.be/t8KajSXUiz8" target="_blank"><i class="fa-brands fa-youtube fa-2x socialsIcon"></i></a> #}
+                                    <a href="https://github.com/SentientPlatypus/octane7" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
+
                     <div class="ProjectItem" id="cty" onclick="openThePopup('cty')">
                         <img src="https://i.ytimg.com/vi/XoZz8ZJRpaU/hqdefault.jpg?sqp=-oaymwEXCOADEI4CSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDdi2EDlwFB1D84LqAiupU-8kdFUg" alt="Lives SMP">
                         <h3>
