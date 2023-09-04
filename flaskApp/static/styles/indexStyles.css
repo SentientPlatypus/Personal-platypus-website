@@ -378,14 +378,14 @@ color: #FFFFFF;
 }
 
 .mainSkills, .tools, .Experience, .Languages {
-    width: auto;
-    height: 333px;    
+    width: 25%;
+    height: 50vh;    
     }
 
 
 .mainSkills p, .tools p, .Experience p, .Languages p{
     width: 100%;
-    height: 333px;
+    height: 80%;
     left: -2px;
     top: 1px;
     
