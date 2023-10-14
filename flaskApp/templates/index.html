@@ -126,7 +126,7 @@
                             </h3>
                             <p>
 
-                                <span>Intern -> Volunteer</span> <br>
+                                <span>Research Intern</span> <br>
                                 <a href="https://www.verifiablerobotics.com" target="_blank">@Cornell Autonomous Systems Lab</a><br>
                                 2023<br><br>  
 
@@ -254,7 +254,7 @@
 
 
                     <div class="ProjectItem" id="bsf" onclick="openThePopup('bsf')">
-                        <img src="https://github.com/junyoung-sim/gbm-drl-quant/raw/main/etc/gbm_sample_path.png" alt="Lives SMP">
+                        <img src="{{ url_for('static',filename='images/belugaSturgeon.png') }}" alt="Lives SMP">
                         <h3>
                             Beluga Sturgeon Financial
                         </h3>
@@ -263,7 +263,7 @@
                         </p>
                         <div class="popupData">
                             <div class="popupBanner">
-                                <img src="{{ url_for('static',filename='images/sentimentovertime.png') }}" alt="Octane7" class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/belugaSturgeon.png') }}" alt="Octane7" class="popupBanner">
                             </div>
                             <div class="popupHead">
                                 <h3>
@@ -275,8 +275,11 @@
                             </div>
                             <div class="popupContent">
                                 <p>
-                                    After AP exams, Jun and I decided it would be really cool to start our own finance firm. We thought it would be really cool to combine our skills to create a really great trading model that can be easily accessed and used by anybody. The model expands on Jun's Deep reinforcement learning 
-                                    approach, by adding geometric brownian motion as an indicator. I worked on experimenting with sentiment to see if it was a good indicator. Unfortunately, due to its volatility, it would not provide much advantage to the model. Once we work out some kinks, BelugaSturgeon should be up and running very soon!
+                                    After AP exams, Jun and I decided it would be really cool to start our own finance firm. We thought it would be really cool to combine our skills to create a really great trading model that can be easily accessed and used by anybody. The model expands on Jun's generalized Deep reinforcement learning 
+                                    approach, by adding geometric brownian motion as an indicator. I worked on experimenting with sentiment to see if it was a good indicator. Unfortunately, due to its volatility, it would not provide much advantage to the model. 
+                                    The website shows the stock price over time, the "state" of the environment over time, and finally a recommended action. (0 for short, 1 for idle, and 2 for long.). We have realized that simulation time is quite a bottleneck for website performance, so we are working to implement the model with CUDA architecture to 
+                                    really take advantage of parallel processing.
+                                    Once we work out some kinks, BelugaSturgeon should be up and running very soon!
                                 </p>
                             </div>
                             <div class="popupFooter">
