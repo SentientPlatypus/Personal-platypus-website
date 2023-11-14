@@ -216,6 +216,53 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="jackal" onclick="openThePopup('jackal')">
+                        <img src="{{ url_for('static',filename='images/jackal.HEIC') }}" alt="Lives SMP">
+                        <h3>
+                            Cornell ASL Jackal
+                        </h3>
+                        <p>
+                            Human robot interaction with contradicting values.
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/jackal.HEIC') }}" alt="Octane7" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Cornell ASL Jackal
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                   Robots have the potential to assist in emergency evacuation tasks, but it is not clear how robots should behave to evacuate people who are not fully compliant, perhaps due to panic or other priorities in an emergency. In our study, we compare two robot strategies: an actively nudging robot that initiates evacuation and pulls toward the exit and a passively waiting robot that stays around users and waits for instruction. Our robot uses the drive base of Clearpath’s wheeled robot, Jackal, and uses a LIDAR for mapping surroundings, along with cameras for human tracking. The robot will use the LIDAR to localize where it is on whatever map we have given it and will use waypoints to guide users to the exit.
+For our study, we time people to retrieve objects of value stored in safes and “escape.” They are given a sheet of paper with a lookup table of the code for each safe. Each run is recorded with go-pros placed around Rhodes Hall for further analysis. We have run pilot studies for each of the evacuation methods, and are currently implementing feedback from participants, for the main study that will happen this November. We will submit our paper to the Robotics Science & Systems (RSS).
+                                    <br>
+                                    I expanded our particle filtering method to handle sensor uncertainty and navigation in unmapped areas. This algorithm projects the human's position onto the roadmap between waypoints. It involves evaluating every segment between waypoints, excluding those intersecting with walls to create a roadmap. The robot moves to the nearest projected position and follows the human within its navigable area.
+
+For the waiting robot, users signal their readiness to be led to the exit using Shadowsense. By placing their hand on top of the robot's inflatable balloon with an embedded camera, the camera detects the hand and signals the robot to change states. I made necessary modifications to the existing code, particularly refining the support vector machine (linear neural network). This involved fitting the model across a grid of hyperparameters, saving it for future use, and deploying it. I developed a state machine that uses the classifier and localization data to ascertain the robot's current state. It also controls the UI by projecting various images on the balloon providing instructions. 
+
+
+I developed an algorithm, processing a text file of walls to create a “bloated map”, ensuring the robot avoids corners when following waypoints with Dijkstra's algorithm. 
+
+Additionally, I also quick fixes to the robot code such as inverting the output from feedback linearization and recording training data. All work is implemented as ROS (robot operating system) nodes for deployment.
+
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://FKTXT.godaddysites.com" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/FKTXT/FKTXT" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
 
                     <div class="ProjectItem" id="fktxt" onclick="openThePopup('fktxt')">
                         <img src="{{ url_for('static',filename='images/ftxt.png') }}" alt="Lives SMP">
