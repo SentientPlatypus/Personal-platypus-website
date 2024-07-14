@@ -260,6 +260,47 @@
                         </div>        
                     </div>
 
+                    <div class="ProjectItem" id="Wholered" onclick="openThePopup('Wholered')">
+                        <img src="{{ url_for('static',filename='images/tyrannosaurusred.png') }}" alt="Lives SMP">
+                        <h3>
+                            Whole Lotta Red (Red hot chilli bot)
+                        </h3>
+                        <p>
+                            "The code for 2024 FRC Visions"
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/apriltags.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Whole Lotta Red (Red hot chilli bot)
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    For the 2024 FRC game, Crescendo, I continued doing PnP but this time: with 6 cameras. 
+
+
+                                    Goodbye Code Red Robotics!
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/CRRobotics/2024Visions" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://github.com/CRRobotics/2024Visions/blob/master/Code_Red_Robotics_2024_Visions_Docs.pdf" target="_blank"><i class="fa-solid fa-scroll fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
+
                     <div class="ProjectItem" id="jackal" onclick="openThePopup('jackal')">
                         <img src="{{ url_for('static',filename='images/jackal.png') }}" alt="Lives SMP">
                         <h3>
@@ -373,7 +414,10 @@
                                     approach, by adding geometric brownian motion as an indicator. I worked on experimenting with sentiment to see if it was a good indicator. Unfortunately, due to its volatility, it would not provide much advantage to the model. 
                                     The website shows the stock price over time, the "state" of the environment over time, and finally a recommended action. (0 for short, 1 for idle, and 2 for long.). We have realized that simulation time is quite a bottleneck for website performance, so we are working to implement the model with CUDA architecture to 
                                     really take advantage of parallel processing.
-                                    Once we work out some kinks, BelugaSturgeon should be up and running very soon!
+                                    
+
+                                    Additionally, we offer models that partition money into chosen stocks that maximizes the logarithmic value of the portfolio.
+                                    TO make a model, you can pay 3 dollars.
                                 </p>
                             </div>
                             <div class="popupFooter">
