@@ -216,6 +216,71 @@
                     </p> 
                 </div>
                 <div class="Projects">
+                    <div class="ProjectItem" id="socialexp" onclick="openThePopup('socialexp')">
+                        <img src="{{ url_for('static',filename='images/ScrollNudge.png') }}" alt="Lives SMP">
+                        <h3>
+                            Scroll Nudge Experiment
+                        </h3>
+                        <p>
+                            Code for the Scroll Nudge Experiment
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/ScrollNudge.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Scroll Nudge Experiment
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Context: The paper aims to study how ranking quality affects seller behavior on a B2B platform. The platform arranges buyer requests sequentially on a seller’s log in page. When the seller logs in, they view requests sequentially starting from the top and click on a button called “contact buyer” if they want to transact with the buyer. The platform generates revenue from the number of times the seller clicks on the “contact buyer” button. The platform is making investments to improve ranking quality, i.e., it wants to show buyer requests that have the highest value to the seller at the top of the page.
+
+                                    Empirical results from my paper thus far show that as the platform improves ranking quality, sellers decrease the number of positions viewed on the page, i.e., they do not scroll deep. While this is a good outcome for the seller as they spend less effort on the platform, it may lead to lost usage for the platform, i.e., since the seller is not scrolling deep, there is a possibility of there being a request that the seller would have liked (or clicked “contact buyer” button) if only they had seen it.
+                                    
+                                    To overcome this possibility, we are recommending the platform to accompany their investments in improving ranking quality with scroll nudges. A scroll nudge is a prompt to the seller to scroll at least up to a certain position number before ending a session. We want to test this strategy using an experiment at different levels of ranking quality.
+                                    
+                                    Goal: Study the impact of scroll nudges on the number of “contact buyer” clicks and views of the seller at different levels of ranking quality.
+                                    <br>
+                                    Experiment design: We two groups of participants as follows:
+
+                                    without a scroll nudge
+
+                                    with a scroll nudge
+
+                                    Each participant will be asked to play 30 rounds. In each round we will show a list of 500 requests each and the participant is asked to find all buyer requests which have a value greater than a threshold V (= 75). Among the 30 rounds, 10 will have perfect ranking, 10 will have partial ranking and 10 will have random ranking. The sequence in which the perfect, partial and random ranking are shown can be randomly generated with the following conditions met.
+
+                                    Among the first 6, there must be 2 partial, 2 perfect and 2 random sequences
+
+                                    Among the last 6, there must be 2 partial, 2 perfect and 2 random sequences
+
+                                    The rest can be sequenced randomly.
+
+                                    Compensation: Participants will be paid a fixed fee to participate, and a small compensation based on the number of requests they find with a value greater than V.
+
+                                    How do we rank: We consider that the value of each buyer request for a seller comes from four features, say x1, x2, x3, x4, x5, x6. The value from each feature is randomly drawn from uniform distributions U(1,17), U(1,19), U(1,14), U(1,19), U(1,17), U(1,14) respectively. The total value of a request for a seller is the sum of values from all the features.
+
+                                    Perfect ranking: We obtain this by sorting requests based on total value
+
+                                    Partial ranking: We obtain this by sorting requests based on value from only A and C
+
+                                    Random ranking: We do not sort.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/SentientPlatypus/scrollnudge" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
 
                     <div class="ProjectItem" id="FightRig" onclick="openThePopup('FightRig')">
                         <img src="{{ url_for('static',filename='images/FightRig.png') }}" alt="Lives SMP">
