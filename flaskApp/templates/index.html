@@ -35,7 +35,7 @@
                 <p>
                     <span class="let">let</span> <span class="red">mut</span> me <span class="red">=</span> <span class="function">Dev</span>{<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">name</span> : <span class="function">String</span>::<span class="function">from</span>(<span class = "str">“Gene”</span>), <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">age</span> : <span class="int">17</span>, <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class = "param">age</span> : <span class="int">18</span>, <br>
             };
                 </p>
             </div>
@@ -216,6 +216,50 @@
                     </p> 
                 </div>
                 <div class="Projects">
+
+                    <div class="ProjectItem" id="lockd" onclick="openThePopup('lockd')">
+                        <img src="{{ url_for('static',filename='images/lockd.png') }}" alt="Lives SMP">
+                        <h3>
+                            Lockd
+                        </h3>
+                        <p>
+                            Big Red Hacks 2024 Finalist and Best Beginner Hack.
+                        </p>
+                        <div class="popupData">
+                            <div class="popupBanner">
+                                <img src="{{ url_for('static',filename='images/lockdemo.png') }}" alt="CODE RED" class="popupBanner">
+                            </div>
+                            <div class="popupHead">
+                                <h3>
+                                    Lockd.
+                                </h3>
+                                <div class="xContainer">
+                                    <i class="fa-solid fa-x X" onclick="closeThePopup()"></i>
+                                </div>
+                            </div>
+                            <div class="popupContent">
+                                <p>
+                                    Project we built for BigRedHacks. We created a motorized smart lock system with remote control and break-in detection, along with an app to go with it. 
+                                    The lock system was built using a Raspberry Pi and a Servo, supported in a 3-D printed case. A shock and sound sensor connected to the Pi was responsible for break-in detection. 
+                                    The app was scaffolded using React Native with Expos for the frontend and Flask for the backend, and connects to a web server hosted by the Pi. 
+                                    By sending requests to various API endpoints from the Pi's web server, the app is able to remotely unlock and lock the system, and monitor for any red flags raised by the detection system. 
+                                    Whenever suspicious activity is detected i.e. the sensors detect activity beyond normal threshold, a push notification and email is sent out to everyone in the group.
+                                </p>
+                            </div>
+                            <div class="popupFooter">
+                                <h3>
+                                    Links:
+                                </h3>
+                                <div class="links">
+                                    <a href="https://github.com/bigredhacks-LockD/lockd" target="_blank"><i class="fa-brands fa-github fa-2x socialsIcon"></i></a>
+                                    <a href="https://devpost.com/software/lockd" target="_blank"><i class="fa-solid fa-globe fa-2x socialsIcon"></i></a>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>
+
+
+
                     <div class="ProjectItem" id="socialexp" onclick="openThePopup('socialexp')">
                         <img src="{{ url_for('static',filename='images/ScrollNudge.png') }}" alt="Lives SMP">
                         <h3>
